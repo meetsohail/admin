@@ -1,0 +1,17 @@
+/* -------------------------------------------------------------------------- */
+/*                               Browser Fixing                               */
+/* -------------------------------------------------------------------------- */
+
+// Firefox fixed
+.firefox{ .dropcap:first-letter{ margin-top: 0.175em; } }
+
+
+// Edge fixed
+.edge{
+  .bg-holder{
+    .bg-video{
+      height: 100%;
+      width: auto;
+    }
+  }
+}

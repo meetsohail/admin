@@ -1,0 +1,114 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Tiny Slider                                */
+/* -------------------------------------------------------------------------- */
+.theme-slider{
+  position: relative;
+  .tiny-slider:not(.tns-slider){
+    > div:not(:first-child){
+      display: none;
+    }
+  }
+  @include hover-focus{
+    .tns-controls{
+      button[data-controls="prev"],
+      button[data-controls="next"]{
+        opacity: 0.5;
+      }
+    }
+  }
+  .tns-controls{
+    button[data-controls="prev"],
+    button[data-controls="next"]{
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      background: #fff;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: 0.125rem 0.125rem 0.25rem rgba(0,0,0,.1);
+      transition: opacity 0.4s ease-in-out;
+      color: $gray-700;
+      border: 0;
+      z-index: 1;
+      opacity: 0;
+      @include hover-focus{
+        opacity: 1;
+      }
+    }
+    button[data-controls="prev"]{
+      left: 10px;
+    }
+    button[data-controls="next"]{
+      right: 10px;
+    }
+  }
+
+  .tns-nav{
+    text-align: center;
+    button{
+      position: relative;
+      overflow: hidden;
+      height: map_get($spacers, 1);
+      width: 1.5625rem;
+      margin-right: map_get($spacers, 2);
+      background-color: $gray-300;
+      border-radius: 0.25rem;
+      border: 0 !important;
+      transition: $transition-base;
+      outline: none;
+
+      @include hover-focus{
+        background-color: $gray-400;
+      }
+
+      @include media-breakpoint-up(lg) { width: 2.1875rem; }
+      @include media-breakpoint-up(xl) { width: 2.8125rem; }
+
+      &:after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $gray-900;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        border-radius: $border-radius;
+        z-index: 1;
+      }
+      &.tns-nav-active{
+        background-color: $gray-700 !important;
+        &:after{
+          animation: NavAnimation 5s;
+        }
+      }
+    }
+  }
+  .tns-outer{
+    button[data-action]{
+      border: 0;
+      background-color: transparent;
+      color: $gray-600;
+      @include hover-focus{
+        color: $gray-800;
+      }
+    }
+  }
+  &.slider-nav-inner{
+    .tns-nav{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 1.25rem;
+    }
+  }
+}
+
+
+@keyframes NavAnimation {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0); }
+  85% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}

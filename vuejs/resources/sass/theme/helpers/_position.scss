@@ -1,0 +1,34 @@
+/* -------------------------------------------------------------------------- */
+/*                                  Position                                  */
+/* -------------------------------------------------------------------------- */
+
+.sticky-top{
+  z-index: 1015;
+}
+.container,
+.container-fluid {
+  position: relative;
+}
+
+.t-0 { top: 0; }
+.b-0 { bottom: 0; }
+.l-0 { left: 0; }
+.r-0 { right: 0; }
+.a-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.absolute-centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.absolute-vertical-center{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

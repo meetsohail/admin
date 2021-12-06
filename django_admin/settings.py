@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users'
+    'users',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'vuejs'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +58,7 @@ ROOT_URLCONF = 'django_admin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,12 +77,30 @@ WSGI_APPLICATION = 'django_admin.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if os.environ.get('DB_BACKEND') == 'postgres':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django_db_geventpool.backends.postgresql_psycopg2',
+            'NAME': os.environ.get('DB_NAME'),
+            'USER': os.environ.get('DB_USER'),
+            'PASSWORD': os.environ.get('DB_PASSWORD'),
+            'HOST': os.environ.get('DB_HOST'),
+            'PORT': os.environ.get('DB_PORT'),
+            'ATOMIC_REQUESTS': False,
+            'CONN_MAX_AGE': 0,
+            'OPTIONS': {
+                'MAX_CONNS': 100,
+                'REUSE_CONNS': 50
+            }
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
@@ -124,3 +145,75 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static'
+MEDIA_ROOT = BASE_DIR / 'uploads/'
+AUTH_USER_MODEL = 'users.User'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'error.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
+}
+
+from django.urls import reverse_lazy
+LOGIN_URL = '/auth/login/'
+LOGIN_REDIRECT_URL = reverse_lazy('dashboard:home')
+
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = os.environ.get('EMAIL_HOST')
+    EMAIL_PORT = os.environ.get('DB_PORT')
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+    EMAIL_USE_TLS = False
+else:
+    ANYMAIL = {
+        'MAILGUN_API_KEY': os.environ.get('MAILGUN_API_KEY'),
+        'MAILGUN_SENDER_DOMAIN': os.environ.get('MAILGUN_DOMAIN')
+    }
+
+    EMAIL_BACKEND = 'anymail.backends.mailgun.EmailBackend'
+
+DEFAULT_FROM_EMAIL = os.environ.get('FROM_EMAIL')
+FROM_EMAIL = DEFAULT_FROM_EMAIL
+SERVER_EMAIL = os.environ.get('SERVER_EMAIL')
+
+# Stripe settings
+STRIPE_PUB_KEY = os.environ.get('STRIPE_PUB_KEY')
+STRIPE_SEC_KEY = os.environ.get('STRIPE_SEC_KEY')
+STRIPE_PRICE_ID = os.environ.get('STRIPE_PRICE_ID')
+STRIPE_WEBHOOK_SECRET = os.environ.get('STRIPE_WEBHOOK_SECRET')
+STRIPE_CURRENCY='USD'
+
+# Celery settings
+BROKER_HOST = os.environ.get('BROKER_HOST', 'localhost')
+BROKER_USER = os.environ.get('BROKER_USER', None)
+BROKER_PASSWORD = os.environ.get('BROKER_PASSWORD', None)
+
+CELERY_BROKER_URL = f'amqp://{BROKER_HOST}'
+CELERY_ACKS_LATE = True
+# General settings
+SITE_NAME = os.environ.get('SITE_NAME', 'RankSpy')
+SITE_URL = os.environ.get('SITE_URL', 'http://localhost:8000')
+MAX_USERS_PER_IP=10
+MAX_FAILED_LOGINS=20
+
+# On registration
+SETUP_STRIPE_CUSTOMER=os.environ.get('SETUP_STRIPE_CUSTOMER', True)
+SEND_WELCOME_EMAIL=os.environ.get('SEND_WELCOME_EMAIL', True)
+SERPSBOT_API_KEY = os.environ.get('SERPSBOT_API_KEY')

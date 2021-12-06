@@ -1,0 +1,169 @@
+/*-----------------------------------------------
+|   Button
+-----------------------------------------------*/
+button,
+.btn {
+  &.disabled,
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+/*-----------------------------------------------
+|   Button Reveal
+-----------------------------------------------*/
+.btn-reveal-trigger {
+  @include hover-focus {
+    .btn-reveal {
+      box-shadow: $btn-reveal-hover-shadow;
+      &:hover,
+      &:focus,
+      &:active{
+        color: $dark !important;
+      }
+    }
+  }
+  .btn-reveal {
+    &:active:focus,
+    &:active,
+    &:focus {
+      box-shadow: none;
+      color: $dark !important;
+      background-color: darken($white, 10%);
+      border-color: darken($white, 12.5%);
+    }
+  }
+  .dropdown-toggle:after {
+    display: none;
+  }
+}
+
+// custom code
+.rounded{
+  border-radius: 24px !important;
+}
+.btn-black{
+  background: linear-gradient(45deg,#003f63,#0181cb);
+  border: none;
+}
+.gradient-dark{
+  background: linear-gradient(45deg,#003f63,#0472b1);
+}
+.gradient-warning{
+  background: linear-gradient(
+    45deg, #f2b138, #f5803e);
+}
+.gradient-success{
+  background: linear-gradient(
+    45deg, #027a49, #0ac174);
+}
+.gradient-danger{
+  background: linear-gradient(
+45deg, #a30808, #e63757);
+
+}
+
+.btn-orange{
+      background: linear-gradient(
+45deg, #f2b138, #f5803e);
+  border: none;
+
+  .btn-green{
+    background: linear-gradient(
+      45deg, #027a49, #0ac174);
+          border: none;
+  }
+
+  .btn-red{
+    background: linear-gradient(
+45deg, #a30808, #e63757);
+    border: none;
+  }
+}
+
+input:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+select:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+// custom code ends
+
+/*-----------------------------------------------
+|   Falcon buttons
+-----------------------------------------------*/
+$theme-falcon-btn-colors: (
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "default": $dark,
+);
+
+@each $color, $value in $theme-falcon-btn-colors {
+  .btn-falcon-#{$color} {
+    @if $color != "default" {
+      // color: $value !important;
+      @include button-variant(
+        $white,
+        $white,
+        $value,
+        $white,
+        $white,
+        $value,
+        color-level($value, -10),
+      );
+    } @else {
+      @include button-variant($white, $white, $gray-800, $white, $white);
+    }
+
+    box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1),
+      0 2px 5px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba($black, 0.07),
+      0 1px 2px 0 rgba($black, 0.08);
+    @include hover-focus {
+      &:not(.disabled):not(:disabled) {
+        color: darken($value, 8.5%) !important;
+        box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1),
+          0 2px 5px 0 rgba(43, 45, 80, 0.1), 0 3px 9px 0 rgba(43, 45, 80, 0.08),
+          0 1px 1.5px 0 rgba($black, 0.08), 0 1px 2px 0 rgba($black, 0.08);
+      }
+    }
+    &:active {
+      box-shadow: none !important;
+      color: darken($value, 8.5%) !important;
+    }
+  }
+}
+
+/*-----------------------------------------------
+|   Brand Outline Buttons
+-----------------------------------------------*/
+.btn-outline-facebook {
+  @include button-outline-variant($facebook);
+}
+.btn-outline-twitter {
+  @include button-outline-variant($twitter);
+}
+.btn-outline-google-plus {
+  @include button-outline-variant($google-plus);
+}
+
+/*-----------------------------------------------
+|   Profile Page Introduction
+-----------------------------------------------*/
+.btn-intro-collapse {
+  .less {
+    display: none;
+  }
+  &[aria-expanded="true"] {
+    .less {
+      display: inline;
+    }
+    .full {
+      display: none;
+    }
+  }
+}

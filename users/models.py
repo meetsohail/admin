@@ -5,7 +5,6 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import BaseUserManager
 from django.conf import settings
 import stripe
-from billing.models import Product
 from rest_framework.authtoken.models import Token
 from django.template.loader import render_to_string
 from django.template import Template, Context
@@ -60,8 +59,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     trial_used = models.BooleanField(default=False)
     stripe_cust_id = models.CharField(max_length=255, null=True)
     stripe_sub_id = models.CharField(max_length=255, null=True)
-    subscriptions = models.ManyToManyField(Product, related_name='users')
-    locations = models.ManyToManyField(Location, related_name='users')
     payment_method_id = models.CharField(max_length=150, null=True)
     stripe_last4 = models.CharField(max_length=10, null=True)
     card_brand = models.CharField(max_length=50, null=True)
