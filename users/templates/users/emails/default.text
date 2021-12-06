@@ -1,0 +1,4 @@
+{% for p in paragraphs %}{{ p }}{% endfor %}{% if show_footer %}
+
+Sincerely,
+{{ SITE_NAME }} Team{% endif %}

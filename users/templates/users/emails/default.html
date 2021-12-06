@@ -1,0 +1,14 @@
+{% extends 'billing/emails/master.html' %}
+
+{% block content %}
+
+{% for p in paragraphs %}
+<p style="{{ EMAIL_PARAGRAPH_CLASS }}">
+    {{ p|safe }}
+</p>
+{% endfor %}
+{% if show_footer %}
+<p style="{{ EMAIL_PARAGRAPH_CLASS }}">Sincerely,<br>
+<strong>{{ SITE_NAME }} Team</strong></p>
+{% endif %}
+{% endblock %}
