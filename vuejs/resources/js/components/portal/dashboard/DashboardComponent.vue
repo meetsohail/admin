@@ -1,4 +1,5 @@
 <template>
+<div>
      <div class="row">
           <div class="col-12 col-lg-6 col-xl">
 
@@ -932,6 +933,7 @@
 
           </div>
         </div> <!-- / .row -->
+        </div>
 </template>
 <script>
 // import ProjectsTable from '../projects/partials/ProjectsTable';

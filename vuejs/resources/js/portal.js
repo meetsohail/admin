@@ -1,7 +1,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-// window.axios.defaults.baseURL = '/api/';
+window.axios.defaults.baseURL = '/api/';
 
 export const bus = new Vue();
 
@@ -11,7 +11,7 @@ Vue.use(VueRouter);
 import vSelect from 'vue-select';
 Vue.component('v-select', vSelect);
 
-Vue.filter('toCurrency', function (value) {
+Vue.filter('toCurrency', function(value) {
     value = parseFloat(value);
     var formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -21,7 +21,7 @@ Vue.filter('toCurrency', function (value) {
     return formatter.format(value);
 });
 
-Vue.filter('toNumber', function (value) {
+Vue.filter('toNumber', function(value) {
     if (typeof value !== "number") {
         return value;
     }
@@ -44,10 +44,10 @@ Vue.component('loading-component', require('./components/global/LoadingComponent
 Vue.component('chart-component', require('./components/global/ChartComponent').default);
 Vue.component('alert-component', require('./components/global/AlertComponent').default);
 Vue.component('billing-credit', require('./components/global/BillingCreditComponent').default);
-Vue.component('progressbar-widget',require('./components/portal/widgets/ProgressbarComponent.vue').default);
-Vue.component('line-widget',require('./components/portal/widgets/LinechartComponent.vue').default);
-Vue.component('health-widget',require('./components/portal/widgets/HealthchartComponent.vue').default);
-Vue.component('pie-widget',require('./components/portal/widgets/PiechartComponent.vue').default);
+Vue.component('progressbar-widget', require('./components/portal/widgets/ProgressbarComponent.vue').default);
+Vue.component('line-widget', require('./components/portal/widgets/LinechartComponent.vue').default);
+Vue.component('health-widget', require('./components/portal/widgets/HealthchartComponent.vue').default);
+Vue.component('pie-widget', require('./components/portal/widgets/PiechartComponent.vue').default);
 
 Vue.mixin({
     data() {
@@ -58,7 +58,7 @@ Vue.mixin({
     },
     methods: {
         getPercentage(numA, numB) {
-            return parseFloat(parseFloat(numA)/parseFloat(numB) * 100);
+            return parseFloat(parseFloat(numA) / parseFloat(numB) * 100);
         }
     }
 });

@@ -1691,6 +1691,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 // import ProjectsTable from '../projects/partials/ProjectsTable';
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -5636,8 +5638,2056 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
-var staticRenderFns = []
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 col-lg-6 col-xl" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "row align-items-center gx-0" }, [
+                _c("div", { staticClass: "col" }, [
+                  _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
+                    _vm._v(
+                      "\n                      Value\n                    "
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "h2 mb-0" }, [
+                    _vm._v(
+                      "\n                      $24,500\n                    "
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "badge bg-success-soft mt-n1" }, [
+                    _vm._v(
+                      "\n                      +3.5%\n                    "
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-auto" }, [
+                  _c("span", {
+                    staticClass: "h2 fe fe-dollar-sign text-muted mb-0",
+                  }),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-lg-6 col-xl" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "row align-items-center gx-0" }, [
+                _c("div", { staticClass: "col" }, [
+                  _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
+                    _vm._v(
+                      "\n                      Total hours\n                    "
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "h2 mb-0" }, [
+                    _vm._v(
+                      "\n                      763.5\n                    "
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-auto" }, [
+                  _c("span", {
+                    staticClass: "h2 fe fe-briefcase text-muted mb-0",
+                  }),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-lg-6 col-xl" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "row align-items-center gx-0" }, [
+                _c("div", { staticClass: "col" }, [
+                  _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
+                    _vm._v(
+                      "\n                      Exit %\n                    "
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "h2 mb-0" }, [
+                    _vm._v(
+                      "\n                      35.5%\n                    "
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-auto" }, [
+                  _c("div", { staticClass: "chart chart-sparkline" }, [
+                    _c("canvas", {
+                      staticClass: "chart-canvas",
+                      attrs: { id: "sparklineChart" },
+                    }),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-lg-6 col-xl" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "row align-items-center gx-0" }, [
+                _c("div", { staticClass: "col" }, [
+                  _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
+                    _vm._v(
+                      "\n                      Avg. Time\n                    "
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "h2 mb-0" }, [
+                    _vm._v(
+                      "\n                      2:37\n                    "
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-auto" }, [
+                  _c("span", { staticClass: "h2 fe fe-clock text-muted mb-0" }),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 col-xl-8" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _c("h4", { staticClass: "card-header-title" }, [
+                _vm._v("\n                  Conversions\n                "),
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "text-muted me-3" }, [
+                _vm._v(
+                  "\n                  Last year comparision:\n                "
+                ),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-check form-switch" }, [
+                _c("input", {
+                  staticClass: "form-check-input",
+                  attrs: {
+                    type: "checkbox",
+                    id: "cardToggle",
+                    "data-toggle": "chart",
+                    "data-target": "#conversionsChart",
+                    "data-trigger": "change",
+                    "data-action": "add",
+                    "data-dataset": "1",
+                  },
+                }),
+                _vm._v(" "),
+                _c("label", {
+                  staticClass: "form-check-label",
+                  attrs: { for: "cardToggle" },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "chart" }, [
+                _c("canvas", {
+                  staticClass: "chart-canvas",
+                  attrs: { id: "conversionsChart" },
+                }),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-xl-4" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _c("h4", { staticClass: "card-header-title" }, [
+                _vm._v(
+                  "\n                  Traffic Channels\n                "
+                ),
+              ]),
+              _vm._v(" "),
+              _c(
+                "ul",
+                { staticClass: "nav nav-tabs nav-tabs-sm card-header-tabs" },
+                [
+                  _c(
+                    "li",
+                    {
+                      staticClass: "nav-item",
+                      attrs: {
+                        "data-toggle": "chart",
+                        "data-target": "#trafficChart",
+                        "data-trigger": "click",
+                        "data-action": "toggle",
+                        "data-dataset": "0",
+                      },
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link active",
+                          attrs: { href: "#", "data-bs-toggle": "tab" },
+                        },
+                        [
+                          _vm._v(
+                            "\n                      All\n                    "
+                          ),
+                        ]
+                      ),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    {
+                      staticClass: "nav-item",
+                      attrs: {
+                        "data-toggle": "chart",
+                        "data-target": "#trafficChart",
+                        "data-trigger": "click",
+                        "data-action": "toggle",
+                        "data-dataset": "1",
+                      },
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "#", "data-bs-toggle": "tab" },
+                        },
+                        [
+                          _vm._v(
+                            "\n                      Direct\n                    "
+                          ),
+                        ]
+                      ),
+                    ]
+                  ),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "chart chart-appended" }, [
+                _c("canvas", {
+                  staticClass: "chart-canvas",
+                  attrs: {
+                    id: "trafficChart",
+                    "data-toggle": "legend",
+                    "data-target": "#trafficChartLegend",
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "chart-legend",
+                attrs: { id: "trafficChartLegend" },
+              }),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 col-xl-4" }, [
+          _c("div", { staticClass: "card card-fill" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _c("h4", { staticClass: "card-header-title" }, [
+                _vm._v("\n                  Projects\n                "),
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "small",
+                  attrs: { href: "project-overview.html" },
+                },
+                [_vm._v("View all")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "list-group list-group-flush my-n3" }, [
+                _c("div", { staticClass: "list-group-item" }, [
+                  _c("div", { staticClass: "row align-items-center" }, [
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "avatar avatar-4by3",
+                          attrs: { href: "project-overview.html" },
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "avatar-img rounded",
+                            attrs: {
+                              src: "assets/img/avatars/projects/project-1.jpg",
+                              alt: "...",
+                            },
+                          }),
+                        ]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col ms-n2" }, [
+                      _c("h4", { staticClass: "mb-1" }, [
+                        _c("a", { attrs: { href: "project-overview.html" } }, [
+                          _vm._v("Homepage Redesign"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text small text-muted" }, [
+                        _c("time", { attrs: { datetime: "2018-05-24" } }, [
+                          _vm._v("Updated 4hr ago"),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c("div", { staticClass: "dropdown" }, [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-ellipses dropdown-toggle",
+                            attrs: {
+                              href: "#",
+                              role: "button",
+                              "data-bs-toggle": "dropdown",
+                              "aria-haspopup": "true",
+                              "aria-expanded": "false",
+                            },
+                          },
+                          [_c("i", { staticClass: "fe fe-more-vertical" })]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "dropdown-menu dropdown-menu-end" },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Action\n                            "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Another action\n                            "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Something else here\n                            "
+                                ),
+                              ]
+                            ),
+                          ]
+                        ),
+                      ]),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "list-group-item" }, [
+                  _c("div", { staticClass: "row align-items-center" }, [
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "avatar avatar-4by3",
+                          attrs: { href: "project-overview.html" },
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "avatar-img rounded",
+                            attrs: {
+                              src: "assets/img/avatars/projects/project-2.jpg",
+                              alt: "...",
+                            },
+                          }),
+                        ]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col ms-n2" }, [
+                      _c("h4", { staticClass: "mb-1" }, [
+                        _c("a", { attrs: { href: "project-overview.html" } }, [
+                          _vm._v("Travels & Time"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text small text-muted" }, [
+                        _c("time", { attrs: { datetime: "2018-05-24" } }, [
+                          _vm._v("Updated 4hr ago"),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c("div", { staticClass: "dropdown" }, [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-ellipses dropdown-toggle",
+                            attrs: {
+                              href: "#",
+                              role: "button",
+                              "data-bs-toggle": "dropdown",
+                              "aria-haspopup": "true",
+                              "aria-expanded": "false",
+                            },
+                          },
+                          [_c("i", { staticClass: "fe fe-more-vertical" })]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "dropdown-menu dropdown-menu-end" },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Action\n                            "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Another action\n                            "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Something else here\n                            "
+                                ),
+                              ]
+                            ),
+                          ]
+                        ),
+                      ]),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "list-group-item" }, [
+                  _c("div", { staticClass: "row align-items-center" }, [
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "avatar avatar-4by3",
+                          attrs: { href: "project-overview.html" },
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "avatar-img rounded",
+                            attrs: {
+                              src: "assets/img/avatars/projects/project-3.jpg",
+                              alt: "...",
+                            },
+                          }),
+                        ]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col ms-n2" }, [
+                      _c("h4", { staticClass: "mb-1" }, [
+                        _c("a", { attrs: { href: "project-overview.html" } }, [
+                          _vm._v("Safari Exploration"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text small text-muted" }, [
+                        _c("time", { attrs: { datetime: "2018-05-24" } }, [
+                          _vm._v("Updated 4hr ago"),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c("div", { staticClass: "dropdown" }, [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-ellipses dropdown-toggle",
+                            attrs: {
+                              href: "#",
+                              role: "button",
+                              "data-bs-toggle": "dropdown",
+                              "aria-haspopup": "true",
+                              "aria-expanded": "false",
+                            },
+                          },
+                          [_c("i", { staticClass: "fe fe-more-vertical" })]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "dropdown-menu dropdown-menu-end" },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Action\n                            "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Another action\n                            "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Something else here\n                            "
+                                ),
+                              ]
+                            ),
+                          ]
+                        ),
+                      ]),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "list-group-item" }, [
+                  _c("div", { staticClass: "row align-items-center" }, [
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "avatar avatar-4by3",
+                          attrs: { href: "project-overview.html" },
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "avatar-img rounded",
+                            attrs: {
+                              src: "assets/img/avatars/projects/project-5.jpg",
+                              alt: "...",
+                            },
+                          }),
+                        ]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col ms-n2" }, [
+                      _c("h4", { staticClass: "mb-1" }, [
+                        _c("a", { attrs: { href: "project-overview.html" } }, [
+                          _vm._v("Personal Site"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text small text-muted" }, [
+                        _c("time", { attrs: { datetime: "2018-05-24" } }, [
+                          _vm._v("Updated 4hr ago"),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c("div", { staticClass: "dropdown" }, [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-ellipses dropdown-toggle",
+                            attrs: {
+                              href: "#",
+                              role: "button",
+                              "data-bs-toggle": "dropdown",
+                              "aria-haspopup": "true",
+                              "aria-expanded": "false",
+                            },
+                          },
+                          [_c("i", { staticClass: "fe fe-more-vertical" })]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "dropdown-menu dropdown-menu-end" },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Action\n                            "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Another action\n                            "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                              Something else here\n                            "
+                                ),
+                              ]
+                            ),
+                          ]
+                        ),
+                      ]),
+                    ]),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-xl-8" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _c("h4", { staticClass: "card-header-title" }, [
+                _vm._v("\n                  Sales\n                "),
+              ]),
+              _vm._v(" "),
+              _c(
+                "ul",
+                { staticClass: "nav nav-tabs nav-tabs-sm card-header-tabs" },
+                [
+                  _c(
+                    "li",
+                    {
+                      staticClass: "nav-item",
+                      attrs: {
+                        "data-toggle": "chart",
+                        "data-target": "#salesChart",
+                        "data-trigger": "click",
+                        "data-action": "toggle",
+                        "data-dataset": "0",
+                      },
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link active",
+                          attrs: { href: "#", "data-bs-toggle": "tab" },
+                        },
+                        [
+                          _vm._v(
+                            "\n                      All\n                    "
+                          ),
+                        ]
+                      ),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    {
+                      staticClass: "nav-item",
+                      attrs: {
+                        "data-toggle": "chart",
+                        "data-target": "#salesChart",
+                        "data-trigger": "click",
+                        "data-action": "toggle",
+                        "data-dataset": "1",
+                      },
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "#", "data-bs-toggle": "tab" },
+                        },
+                        [
+                          _vm._v(
+                            "\n                      Direct\n                    "
+                          ),
+                        ]
+                      ),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    {
+                      staticClass: "nav-item",
+                      attrs: {
+                        "data-toggle": "chart",
+                        "data-target": "#salesChart",
+                        "data-trigger": "click",
+                        "data-action": "toggle",
+                        "data-dataset": "2",
+                      },
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "#", "data-bs-toggle": "tab" },
+                        },
+                        [
+                          _vm._v(
+                            "\n                      Organic\n                    "
+                          ),
+                        ]
+                      ),
+                    ]
+                  ),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "chart" }, [
+                _c("canvas", {
+                  staticClass: "chart-canvas",
+                  attrs: { id: "salesChart" },
+                }),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _c("div", { staticClass: "row align-items-center" }, [
+                _c("div", { staticClass: "col" }, [
+                  _c("h4", { staticClass: "card-header-title" }, [
+                    _vm._v(
+                      "\n                      Goals\n                    "
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-auto" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-sm btn-white",
+                      attrs: { href: "#!" },
+                    },
+                    [
+                      _vm._v(
+                        "\n                      Export\n                    "
+                      ),
+                    ]
+                  ),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "table-responsive mb-0",
+                attrs: {
+                  "data-list":
+                    '{"valueNames": ["goal-project", "goal-status", "goal-progress", "goal-date"]}',
+                },
+              },
+              [
+                _c(
+                  "table",
+                  { staticClass: "table table-sm table-nowrap card-table" },
+                  [
+                    _c("thead", [
+                      _c("tr", [
+                        _c("th", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-muted list-sort",
+                              attrs: { href: "#", "data-sort": "goal-project" },
+                            },
+                            [
+                              _vm._v(
+                                "\n                          Goal\n                        "
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("th", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-muted list-sort",
+                              attrs: { href: "#", "data-sort": "goal-status" },
+                            },
+                            [
+                              _vm._v(
+                                "\n                          Status\n                        "
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("th", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-muted list-sort",
+                              attrs: {
+                                href: "#",
+                                "data-sort": "goal-progress",
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n                          Progress\n                        "
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("th", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-muted list-sort",
+                              attrs: { href: "#", "data-sort": "goal-date" },
+                            },
+                            [
+                              _vm._v(
+                                "\n                          Due date\n                        "
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("th", { staticClass: "text-end" }, [
+                          _vm._v(
+                            "\n                        Team\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("th"),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("tbody", { staticClass: "list" }, [
+                      _c("tr", [
+                        _c("td", { staticClass: "goal-project" }, [
+                          _vm._v(
+                            "\n                        Update the API\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-status" }, [
+                          _c("span", { staticClass: "text-warning" }, [
+                            _vm._v("●"),
+                          ]),
+                          _vm._v(" In progress\n                      "),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-progress" }, [
+                          _vm._v(
+                            "\n                        55%\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-date" }, [
+                          _c("time", { attrs: { datetime: "2018-10-24" } }, [
+                            _vm._v("07/24/18"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c("div", { staticClass: "avatar-group" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "avatar avatar-xs",
+                                attrs: {
+                                  href: "profile-posts.html",
+                                  "data-bs-toggle": "tooltip",
+                                  title: "Dianna Smiley",
+                                },
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "avatar-img rounded-circle",
+                                  attrs: {
+                                    src: "assets/img/avatars/profiles/avatar-1.jpg",
+                                    alt: "...",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "avatar avatar-xs",
+                                attrs: {
+                                  href: "profile-posts.html",
+                                  "data-bs-toggle": "tooltip",
+                                  title: "Ab Hadley",
+                                },
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "avatar-img rounded-circle",
+                                  attrs: {
+                                    src: "assets/img/avatars/profiles/avatar-2.jpg",
+                                    alt: "...",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "avatar avatar-xs",
+                                attrs: {
+                                  href: "profile-posts.html",
+                                  "data-bs-toggle": "tooltip",
+                                  title: "Adolfo Hess",
+                                },
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "avatar-img rounded-circle",
+                                  attrs: {
+                                    src: "assets/img/avatars/profiles/avatar-3.jpg",
+                                    alt: "...",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "avatar avatar-xs",
+                                attrs: {
+                                  href: "profile-posts.html",
+                                  "data-bs-toggle": "tooltip",
+                                  title: "Daniela Dewitt",
+                                },
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "avatar-img rounded-circle",
+                                  attrs: {
+                                    src: "assets/img/avatars/profiles/avatar-4.jpg",
+                                    alt: "...",
+                                  },
+                                }),
+                              ]
+                            ),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c("div", { staticClass: "dropdown" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "dropdown-ellipses dropdown-toggle",
+                                attrs: {
+                                  href: "#",
+                                  role: "button",
+                                  "data-bs-toggle": "dropdown",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false",
+                                },
+                              },
+                              [_c("i", { staticClass: "fe fe-more-vertical" })]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-end",
+                              },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Another action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Something else here\n                            "
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "goal-project" }, [
+                          _vm._v(
+                            "\n                        Release v1.2-Beta\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-status" }, [
+                          _c("span", { staticClass: "text-warning" }, [
+                            _vm._v("●"),
+                          ]),
+                          _vm._v(" In progress\n                      "),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-progress" }, [
+                          _vm._v(
+                            "\n                        25%\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-date" }, [
+                          _c("time", { attrs: { datetime: "2018-10-24" } }, [
+                            _vm._v("08/26/18"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c(
+                            "div",
+                            { staticClass: "avatar-group justify-content-end" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Dianna Smiley",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-1.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Ab Hadley",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-2.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Adolfo Hess",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-3.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c("div", { staticClass: "dropdown" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "dropdown-ellipses dropdown-toggle",
+                                attrs: {
+                                  href: "#",
+                                  role: "button",
+                                  "data-bs-toggle": "dropdown",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false",
+                                },
+                              },
+                              [_c("i", { staticClass: "fe fe-more-vertical" })]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-end",
+                              },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Another action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Something else here\n                            "
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "goal-project" }, [
+                          _vm._v(
+                            "\n                        GDPR Compliance\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-status" }, [
+                          _c("span", { staticClass: "text-success" }, [
+                            _vm._v("●"),
+                          ]),
+                          _vm._v(" Completed\n                      "),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-progress" }, [
+                          _vm._v(
+                            "\n                        100%\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-date" }, [
+                          _c("time", { attrs: { datetime: "2018-10-24" } }, [
+                            _vm._v("06/19/18"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c(
+                            "div",
+                            { staticClass: "avatar-group justify-content-end" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Dianna Smiley",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-1.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Ab Hadley",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-2.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Adolfo Hess",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-3.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c("div", { staticClass: "dropdown" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "dropdown-ellipses dropdown-toggle",
+                                attrs: {
+                                  href: "#",
+                                  role: "button",
+                                  "data-bs-toggle": "dropdown",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false",
+                                },
+                              },
+                              [_c("i", { staticClass: "fe fe-more-vertical" })]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-end",
+                              },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Another action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Something else here\n                            "
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "goal-project" }, [
+                          _vm._v(
+                            "\n                        v1.2 Documentation\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-status" }, [
+                          _c("span", { staticClass: "text-danger" }, [
+                            _vm._v("●"),
+                          ]),
+                          _vm._v(" Cancelled\n                      "),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-progress" }, [
+                          _vm._v(
+                            "\n                        0%\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-date" }, [
+                          _c("time", { attrs: { datetime: "2018-10-24" } }, [
+                            _vm._v("06/25/18"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c(
+                            "div",
+                            { staticClass: "avatar-group justify-content-end" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Dianna Smiley",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-1.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Ab Hadley",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-2.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c("div", { staticClass: "dropdown" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "dropdown-ellipses dropdown-toggle",
+                                attrs: {
+                                  href: "#",
+                                  role: "button",
+                                  "data-bs-toggle": "dropdown",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false",
+                                },
+                              },
+                              [
+                                _c("span", {
+                                  staticClass: "fe fe-more-vertical",
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-end",
+                              },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Another action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Something else here\n                            "
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "goal-project" }, [
+                          _vm._v(
+                            "\n                        Plan design offsite\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-status" }, [
+                          _c("span", { staticClass: "text-success" }, [
+                            _vm._v("●"),
+                          ]),
+                          _vm._v(" Completed\n                      "),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-progress" }, [
+                          _vm._v(
+                            "\n                        100%\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "goal-date" }, [
+                          _c("time", { attrs: { datetime: "2018-10-24" } }, [
+                            _vm._v("06/30/18"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c(
+                            "div",
+                            { staticClass: "avatar-group justify-content-end" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Dianna Smiley",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-1.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Ab Hadley",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-2.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Adolfo Hess",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-3.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "avatar avatar-xs",
+                                  attrs: {
+                                    href: "#!",
+                                    "data-bs-toggle": "tooltip",
+                                    title: "Daniela Dewitt",
+                                  },
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "avatar-img rounded-circle",
+                                    attrs: {
+                                      src: "assets/img/avatars/profiles/avatar-4.jpg",
+                                      alt: "...",
+                                    },
+                                  }),
+                                ]
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-end" }, [
+                          _c("div", { staticClass: "dropdown" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "dropdown-ellipses dropdown-toggle",
+                                attrs: {
+                                  href: "#",
+                                  role: "button",
+                                  "data-bs-toggle": "dropdown",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false",
+                                },
+                              },
+                              [_c("i", { staticClass: "fe fe-more-vertical" })]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-end",
+                              },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Another action\n                            "
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "dropdown-item",
+                                    attrs: { href: "#!" },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                              Something else here\n                            "
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                  ]
+                ),
+              ]
+            ),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 col-xl-5" }, [
+          _c("div", { staticClass: "card card-fill" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _c("h4", { staticClass: "card-header-title" }, [
+                _vm._v("\n                  Recent Activity\n                "),
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "small", attrs: { href: "#!" } }, [
+                _vm._v("View all"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "list-group list-group-flush list-group-activity my-n3",
+                },
+                [
+                  _c("div", { staticClass: "list-group-item" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-auto" }, [
+                        _c(
+                          "div",
+                          { staticClass: "avatar avatar-sm avatar-online" },
+                          [
+                            _c("img", {
+                              staticClass: "avatar-img rounded-circle",
+                              attrs: {
+                                src: "assets/img/avatars/profiles/avatar-1.jpg",
+                                alt: "...",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col ms-n2" }, [
+                        _c("h5", { staticClass: "mb-1" }, [
+                          _vm._v(
+                            "\n                          Dianna Smiley\n                        "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "small text-gray-700 mb-0" }, [
+                          _vm._v(
+                            '\n                          Uploaded the files "Launchday Logo" and "New Design".\n                        '
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("small", { staticClass: "text-muted" }, [
+                          _vm._v(
+                            "\n                          2m ago\n                        "
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "list-group-item" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-auto" }, [
+                        _c(
+                          "div",
+                          { staticClass: "avatar avatar-sm avatar-online" },
+                          [
+                            _c("img", {
+                              staticClass: "avatar-img rounded-circle",
+                              attrs: {
+                                src: "assets/img/avatars/profiles/avatar-2.jpg",
+                                alt: "...",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col ms-n2" }, [
+                        _c("h5", { staticClass: "mb-1" }, [
+                          _vm._v(
+                            "\n                          Ab Hadley\n                        "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "small text-gray-700 mb-0" }, [
+                          _vm._v(
+                            '\n                          Shared the "Why Dashkit?" post with 124 subscribers.\n                        '
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("small", { staticClass: "text-muted" }, [
+                          _vm._v(
+                            "\n                          1h ago\n                        "
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "list-group-item" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-auto" }, [
+                        _c(
+                          "div",
+                          { staticClass: "avatar avatar-sm avatar-offline" },
+                          [
+                            _c("img", {
+                              staticClass: "avatar-img rounded-circle",
+                              attrs: {
+                                src: "assets/img/avatars/profiles/avatar-3.jpg",
+                                alt: "...",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col ms-n2" }, [
+                        _c("h5", { staticClass: "mb-1" }, [
+                          _vm._v(
+                            "\n                          Adolfo Hess\n                        "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "small text-gray-700 mb-0" }, [
+                          _vm._v(
+                            "\n                          Exported sales data from Launchday's subscriber data.\n                        "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("small", { staticClass: "text-muted" }, [
+                          _vm._v(
+                            "\n                          3h ago\n                        "
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                  ]),
+                ]
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-xl-7" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _c("h4", { staticClass: "card-header-title" }, [
+                _vm._v(
+                  "\n                  Scratchpad Checklist\n                "
+                ),
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "badge bg-secondary-soft" }, [
+                _vm._v("\n                  23 Archived\n                "),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "checklist" }, [
+                _c("div", { staticClass: "form-check" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox", id: "checklistOne" },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Delete the old mess in functions files."),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox", id: "checklistTwo" },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Refactor the core social sharing modules."),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox", id: "checklistThree" },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v(
+                      "Create the release notes for the new pages so customers get psyched."
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox", id: "checklistFour" },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Send Dianna those meeting notes."),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox", id: "checklistFive" },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Share the documentation for the new unified API."),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "checklistSix",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v(
+                      "Clean up the Figma file with all of the avatars, buttons, and other\n                      components."
+                    ),
+                  ]),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-footer" }, [
+              _c("div", { staticClass: "row align-items-center" }, [
+                _c("div", { staticClass: "col" }, [
+                  _c("textarea", {
+                    staticClass:
+                      "form-control form-control-flush form-control-auto",
+                    attrs: {
+                      "data-autosize": "",
+                      rows: "1",
+                      placeholder: "Create a task",
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-auto" }, [
+                  _c("button", { staticClass: "btn btn-sm btn-primary" }, [
+                    _vm._v("\n                      Add\n                    "),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+]
+render._withStripped = true
 
 
 
@@ -25567,9 +27617,9 @@ module.exports = g;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// window.axios.defaults.xsrfHeaderName = 'X-CSRFToken';
-// window.axios.defaults.xsrfCookieName = 'csrftoken';
-// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.xsrfHeaderName = 'X-CSRFToken';
+window.axios.defaults.xsrfCookieName = 'csrftoken';
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
@@ -26973,8 +29023,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store */ "./resources/js/store.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // window.axios.defaults.baseURL = '/api/';
-
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+window.axios.defaults.baseURL = '/api/';
 var bus = new Vue();
 
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
