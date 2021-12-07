@@ -90,5 +90,5 @@ local_settings.py
 db.sqlite3
 vars.ini
 vars.sh
-vuejs/node_modules/
+node_modules/
 uploads/
