@@ -5943,7 +5943,7 @@ var staticRenderFns = [
                           _c("img", {
                             staticClass: "avatar-img rounded",
                             attrs: {
-                              src: "/static/authentication/assets/img/avatars/projects/project-1.jpg",
+                              src: "/static/dashboard/assets/img/avatars/projects/project-1.jpg",
                               alt: "...",
                             },
                           }),
@@ -6044,7 +6044,7 @@ var staticRenderFns = [
                           _c("img", {
                             staticClass: "avatar-img rounded",
                             attrs: {
-                              src: "/static/authentication/assets/img/avatars/projects/project-2.jpg",
+                              src: "/static/dashboard/assets/img/avatars/projects/project-2.jpg",
                               alt: "...",
                             },
                           }),
@@ -6145,7 +6145,7 @@ var staticRenderFns = [
                           _c("img", {
                             staticClass: "avatar-img rounded",
                             attrs: {
-                              src: "/static/authentication/assets/img/avatars/projects/project-3.jpg",
+                              src: "/static/dashboard/assets/img/avatars/projects/project-3.jpg",
                               alt: "...",
                             },
                           }),
@@ -6246,7 +6246,7 @@ var staticRenderFns = [
                           _c("img", {
                             staticClass: "avatar-img rounded",
                             attrs: {
-                              src: "/static/authentication/assets/img/avatars/projects/project-5.jpg",
+                              src: "/static/dashboard/assets/img/avatars/projects/project-5.jpg",
                               alt: "...",
                             },
                           }),
@@ -6610,7 +6610,7 @@ var staticRenderFns = [
                                 _c("img", {
                                   staticClass: "avatar-img rounded-circle",
                                   attrs: {
-                                    src: "/static/authentication/assets/img/avatars/profiles/avatar-1.jpg",
+                                    src: "/static/dashboard/assets/img/avatars/profiles/avatar-1.jpg",
                                     alt: "...",
                                   },
                                 }),
@@ -6631,7 +6631,7 @@ var staticRenderFns = [
                                 _c("img", {
                                   staticClass: "avatar-img rounded-circle",
                                   attrs: {
-                                    src: "/static/authentication/assets/img/avatars/profiles/avatar-2.jpg",
+                                    src: "/static/dashboard/assets/img/avatars/profiles/avatar-2.jpg",
                                     alt: "...",
                                   },
                                 }),
@@ -6652,7 +6652,7 @@ var staticRenderFns = [
                                 _c("img", {
                                   staticClass: "avatar-img rounded-circle",
                                   attrs: {
-                                    src: "/static/authentication/assets/img/avatars/profiles/avatar-3.jpg",
+                                    src: "/static/dashboard/assets/img/avatars/profiles/avatar-3.jpg",
                                     alt: "...",
                                   },
                                 }),
@@ -6673,7 +6673,7 @@ var staticRenderFns = [
                                 _c("img", {
                                   staticClass: "avatar-img rounded-circle",
                                   attrs: {
-                                    src: "/static/authentication/assets/img/avatars/profiles/avatar-4.jpg",
+                                    src: "/static/dashboard/assets/img/avatars/profiles/avatar-4.jpg",
                                     alt: "...",
                                   },
                                 }),
@@ -6795,7 +6795,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-1.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-1.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -6816,7 +6816,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-2.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-2.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -6837,7 +6837,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-3.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-3.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -6960,7 +6960,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-1.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-1.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -6981,7 +6981,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-2.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-2.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -7002,7 +7002,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-3.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-3.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -7125,7 +7125,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-1.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-1.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -7146,7 +7146,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-2.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-2.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -7273,7 +7273,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-1.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-1.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -7294,7 +7294,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-2.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-2.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -7315,7 +7315,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-3.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-3.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -7336,7 +7336,7 @@ var staticRenderFns = [
                                   _c("img", {
                                     staticClass: "avatar-img rounded-circle",
                                     attrs: {
-                                      src: "/static/authentication/assets/img/avatars/profiles/avatar-4.jpg",
+                                      src: "/static/dashboard/assets/img/avatars/profiles/avatar-4.jpg",
                                       alt: "...",
                                     },
                                   }),
@@ -7453,7 +7453,7 @@ var staticRenderFns = [
                             _c("img", {
                               staticClass: "avatar-img rounded-circle",
                               attrs: {
-                                src: "/static/authentication/assets/img/avatars/profiles/avatar-1.jpg",
+                                src: "/static/dashboard/assets/img/avatars/profiles/avatar-1.jpg",
                                 alt: "...",
                               },
                             }),
@@ -7493,7 +7493,7 @@ var staticRenderFns = [
                             _c("img", {
                               staticClass: "avatar-img rounded-circle",
                               attrs: {
-                                src: "/static/authentication/assets/img/avatars/profiles/avatar-2.jpg",
+                                src: "/static/dashboard/assets/img/avatars/profiles/avatar-2.jpg",
                                 alt: "...",
                               },
                             }),
@@ -7533,7 +7533,7 @@ var staticRenderFns = [
                             _c("img", {
                               staticClass: "avatar-img rounded-circle",
                               attrs: {
-                                src: "/static/authentication/assets/img/avatars/profiles/avatar-3.jpg",
+                                src: "/static/dashboard/assets/img/avatars/profiles/avatar-3.jpg",
                                 alt: "...",
                               },
                             }),

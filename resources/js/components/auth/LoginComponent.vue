@@ -1,6 +1,7 @@
 <template>
     <div>
         <logo-component/>
+        
         <div class="card">
             <div class="card-body p-4 p-sm-5">
                 <div class="row text-left justify-content-between align-items-center mb-2">

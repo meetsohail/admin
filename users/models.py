@@ -57,6 +57,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     last_name = models.CharField(max_length=50)
     email = models.EmailField(unique=True, null=True)
     trial_used = models.BooleanField(default=False)
+    locations = models.ManyToManyField(Location, related_name='users')
     stripe_cust_id = models.CharField(max_length=255, null=True)
     stripe_sub_id = models.CharField(max_length=255, null=True)
     payment_method_id = models.CharField(max_length=150, null=True)

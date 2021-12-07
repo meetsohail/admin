@@ -145,6 +145,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -1826,17 +1827,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "a",
-      {
-        staticClass: "d-flex flex-center mb-4",
-        attrs: { href: "https://rankspy.net" },
-      },
+      { staticClass: "d-flex flex-center mb-4", attrs: { href: "#" } },
       [
         _c("img", {
           staticClass: "mr-3",
           attrs: {
-            src: "/static/falcon/assets/images/logo-full.png",
+            src: "/static/dashboard/assets/img/logo.svg",
             alt: "logo",
-            width: "200",
+            width: "50",
           },
         }),
       ]
