@@ -75,19 +75,7 @@
                         </div>
                     </form>
 
-                    <!-- Navigation -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <router-link class="nav-link " :to="{name: 'dashboard'}">
-                                <i class="fe fe-home"></i> Dashboard
-                            </router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link class="nav-link " :to="{name: 'users'}">
-                                <i class="fe fe-users"></i> Manage Users
-                            </router-link>
-                        </li>
-                    </ul>
+                    {% include 'dashboard/partials/sidebar.html'%}
 
                     <!-- Divider -->
                     <hr class="navbar-divider my-3">
@@ -115,60 +103,24 @@
             {% include 'dashboard/partials/topbar.html' %}
 
 
-            <!-- HEADER -->
-            <div class="header">
-
-                <div class="container-fluid">
-
-                    <!-- Body -->
-                    <div class="header-body">
-                        <div class="row align-items-end">
-                            <div class="col">
-
-                                <!-- Pretitle -->
-                                <h6 class="header-pretitle">
-                                    Overview
-                                </h6>
-
-                                <!-- Title -->
-                                <h1 class="header-title">
-                                    Dashboard
-                                </h1>
-
-                            </div>
-                            <div class="col-auto">
-
-                                <!-- Button -->
-                                <a href="#!" class="btn btn-primary lift">
-                  Create Report
-                </a>
-
-                            </div>
-                        </div>
-                        <!-- / .row -->
-                    </div>
-                    <!-- / .header-body -->
-
-                </div>
-            </div>
-            <!-- / .header -->
-
-            <!-- CARDS -->
             <div class="container-fluid">
                 <router-view></router-view>
-
             </div>
 
         </div>
         <!-- / .main-content -->
     </div>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Theme JS -->
-    <script src="{% static 'dashboard/assets/js/portal.js' %}"></script>
+
     <script src="{% static 'dashboard/assets/js/vendor.bundle.js' %}"></script>
 
     <!-- Theme JS -->
     <script src="{% static 'dashboard/assets/js/theme.bundle.js' %}"></script>
+    <script src="{% static 'dashboard/assets/js/portal.js' %}"></script>
+
 </body>
 
 </html>
