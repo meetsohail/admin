@@ -1,0 +1,12 @@
+{% extends 'billing/emails/master.html' %}
+
+{% block content %}
+<p style="{{ EMAIL_PARAGRAPH_CLASS }}">
+    Hi {{ user.first_name }},
+</p>
+<p style="{{ EMAIL_PARAGRAPH_CLASS }}">
+    We are pleased to have you on board. If you have any questions, never hesitate to ask us. We will always be here to help you out!
+</p>
+
+{% include 'billing/emails/partials/cta.html' with BUTTON_TEXT='hi' ACTION_URL='asfdas' %}
+{% endblock %}

@@ -111,7 +111,7 @@ export default {
     };
   },
   mounted() {
-    docReady(tooltipInit);
+    // docReady(tooltipInit);
     let _this = this;
     _this.getUsers();
   },
@@ -163,7 +163,7 @@ export default {
   },
   watch: {
     busy(oldVal, newVal) {
-      docReady(tooltipInit);
+      // docReady(tooltipInit);
     },
   },
 };

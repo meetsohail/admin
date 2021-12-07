@@ -1693,6 +1693,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // import ProjectsTable from '../projects/partials/ProjectsTable';
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -3840,8 +3858,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    docReady(tooltipInit);
-
+    // docReady(tooltipInit);
     var _this = this;
 
     _this.getUsers();
@@ -3897,8 +3914,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   watch: {
-    busy: function busy(oldVal, newVal) {
-      docReady(tooltipInit);
+    busy: function busy(oldVal, newVal) {// docReady(tooltipInit);
     }
   }
 });
@@ -5658,7 +5674,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "col" }, [
                   _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
                     _vm._v(
-                      "\n                      Value\n                    "
+                      "\n                                Value\n                            "
                     ),
                   ]),
                   _vm._v(" "),
@@ -5692,7 +5708,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "col" }, [
                   _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
                     _vm._v(
-                      "\n                      Total hours\n                    "
+                      "\n                                Total hours\n                            "
                     ),
                   ]),
                   _vm._v(" "),
@@ -5720,7 +5736,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "col" }, [
                   _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
                     _vm._v(
-                      "\n                      Exit %\n                    "
+                      "\n                                Exit %\n                            "
                     ),
                   ]),
                   _vm._v(" "),
@@ -5751,7 +5767,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "col" }, [
                   _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
                     _vm._v(
-                      "\n                      Avg. Time\n                    "
+                      "\n                                Avg. Time\n                            "
                     ),
                   ]),
                   _vm._v(" "),
@@ -5776,7 +5792,9 @@ var staticRenderFns = [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [
               _c("h4", { staticClass: "card-header-title" }, [
-                _vm._v("\n                  Conversions\n                "),
+                _vm._v(
+                  "\n                        Conversions\n                    "
+                ),
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "text-muted me-3" }, [
@@ -5822,7 +5840,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "card-header" }, [
               _c("h4", { staticClass: "card-header-title" }, [
                 _vm._v(
-                  "\n                  Traffic Channels\n                "
+                  "\n                        Traffic Channels\n                    "
                 ),
               ]),
               _vm._v(" "),
@@ -5915,7 +5933,9 @@ var staticRenderFns = [
           _c("div", { staticClass: "card card-fill" }, [
             _c("div", { staticClass: "card-header" }, [
               _c("h4", { staticClass: "card-header-title" }, [
-                _vm._v("\n                  Projects\n                "),
+                _vm._v(
+                  "\n                        Projects\n                    "
+                ),
               ]),
               _vm._v(" "),
               _c(
@@ -6342,7 +6362,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [
               _c("h4", { staticClass: "card-header-title" }, [
-                _vm._v("\n                  Sales\n                "),
+                _vm._v("\n                        Sales\n                    "),
               ]),
               _vm._v(" "),
               _c(
@@ -6456,7 +6476,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "col" }, [
                   _c("h4", { staticClass: "card-header-title" }, [
                     _vm._v(
-                      "\n                      Goals\n                    "
+                      "\n                                Goals\n                            "
                     ),
                   ]),
                 ]),
@@ -6559,7 +6579,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("th", { staticClass: "text-end" }, [
                           _vm._v(
-                            "\n                        Team\n                      "
+                            "\n                                    Team\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -6571,7 +6591,7 @@ var staticRenderFns = [
                       _c("tr", [
                         _c("td", { staticClass: "goal-project" }, [
                           _vm._v(
-                            "\n                        Update the API\n                      "
+                            "\n                                    Update the API\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -6579,12 +6599,14 @@ var staticRenderFns = [
                           _c("span", { staticClass: "text-warning" }, [
                             _vm._v("●"),
                           ]),
-                          _vm._v(" In progress\n                      "),
+                          _vm._v(
+                            " In progress\n                                "
+                          ),
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "goal-progress" }, [
                           _vm._v(
-                            "\n                        55%\n                      "
+                            "\n                                    55%\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -6753,7 +6775,7 @@ var staticRenderFns = [
                       _c("tr", [
                         _c("td", { staticClass: "goal-project" }, [
                           _vm._v(
-                            "\n                        Release v1.2-Beta\n                      "
+                            "\n                                    Release v1.2-Beta\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -6761,12 +6783,14 @@ var staticRenderFns = [
                           _c("span", { staticClass: "text-warning" }, [
                             _vm._v("●"),
                           ]),
-                          _vm._v(" In progress\n                      "),
+                          _vm._v(
+                            " In progress\n                                "
+                          ),
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "goal-progress" }, [
                           _vm._v(
-                            "\n                        25%\n                      "
+                            "\n                                    25%\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -6918,7 +6942,7 @@ var staticRenderFns = [
                       _c("tr", [
                         _c("td", { staticClass: "goal-project" }, [
                           _vm._v(
-                            "\n                        GDPR Compliance\n                      "
+                            "\n                                    GDPR Compliance\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -6926,12 +6950,14 @@ var staticRenderFns = [
                           _c("span", { staticClass: "text-success" }, [
                             _vm._v("●"),
                           ]),
-                          _vm._v(" Completed\n                      "),
+                          _vm._v(
+                            " Completed\n                                "
+                          ),
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "goal-progress" }, [
                           _vm._v(
-                            "\n                        100%\n                      "
+                            "\n                                    100%\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -7083,7 +7109,7 @@ var staticRenderFns = [
                       _c("tr", [
                         _c("td", { staticClass: "goal-project" }, [
                           _vm._v(
-                            "\n                        v1.2 Documentation\n                      "
+                            "\n                                    v1.2 Documentation\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -7091,12 +7117,14 @@ var staticRenderFns = [
                           _c("span", { staticClass: "text-danger" }, [
                             _vm._v("●"),
                           ]),
-                          _vm._v(" Cancelled\n                      "),
+                          _vm._v(
+                            " Cancelled\n                                "
+                          ),
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "goal-progress" }, [
                           _vm._v(
-                            "\n                        0%\n                      "
+                            "\n                                    0%\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -7231,7 +7259,7 @@ var staticRenderFns = [
                       _c("tr", [
                         _c("td", { staticClass: "goal-project" }, [
                           _vm._v(
-                            "\n                        Plan design offsite\n                      "
+                            "\n                                    Plan design offsite\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -7239,12 +7267,14 @@ var staticRenderFns = [
                           _c("span", { staticClass: "text-success" }, [
                             _vm._v("●"),
                           ]),
-                          _vm._v(" Completed\n                      "),
+                          _vm._v(
+                            " Completed\n                                "
+                          ),
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "goal-progress" }, [
                           _vm._v(
-                            "\n                        100%\n                      "
+                            "\n                                    100%\n                                "
                           ),
                         ]),
                         _vm._v(" "),
@@ -7427,7 +7457,9 @@ var staticRenderFns = [
           _c("div", { staticClass: "card card-fill" }, [
             _c("div", { staticClass: "card-header" }, [
               _c("h4", { staticClass: "card-header-title" }, [
-                _vm._v("\n                  Recent Activity\n                "),
+                _vm._v(
+                  "\n                        Recent Activity\n                    "
+                ),
               ]),
               _vm._v(" "),
               _c("a", { staticClass: "small", attrs: { href: "#!" } }, [
@@ -7464,13 +7496,13 @@ var staticRenderFns = [
                       _c("div", { staticClass: "col ms-n2" }, [
                         _c("h5", { staticClass: "mb-1" }, [
                           _vm._v(
-                            "\n                          Dianna Smiley\n                        "
+                            "\n                                        Dianna Smiley\n                                    "
                           ),
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "small text-gray-700 mb-0" }, [
                           _vm._v(
-                            '\n                          Uploaded the files "Launchday Logo" and "New Design".\n                        '
+                            '\n                                        Uploaded the files "Launchday Logo" and "New Design".\n                                    '
                           ),
                         ]),
                         _vm._v(" "),
@@ -7504,13 +7536,13 @@ var staticRenderFns = [
                       _c("div", { staticClass: "col ms-n2" }, [
                         _c("h5", { staticClass: "mb-1" }, [
                           _vm._v(
-                            "\n                          Ab Hadley\n                        "
+                            "\n                                        Ab Hadley\n                                    "
                           ),
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "small text-gray-700 mb-0" }, [
                           _vm._v(
-                            '\n                          Shared the "Why Dashkit?" post with 124 subscribers.\n                        '
+                            '\n                                        Shared the "Why Dashkit?" post with 124 subscribers.\n                                    '
                           ),
                         ]),
                         _vm._v(" "),
@@ -7544,13 +7576,13 @@ var staticRenderFns = [
                       _c("div", { staticClass: "col ms-n2" }, [
                         _c("h5", { staticClass: "mb-1" }, [
                           _vm._v(
-                            "\n                          Adolfo Hess\n                        "
+                            "\n                                        Adolfo Hess\n                                    "
                           ),
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "small text-gray-700 mb-0" }, [
                           _vm._v(
-                            "\n                          Exported sales data from Launchday's subscriber data.\n                        "
+                            "\n                                        Exported sales data from Launchday's subscriber data.\n                                    "
                           ),
                         ]),
                         _vm._v(" "),
@@ -7573,7 +7605,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "card-header" }, [
               _c("h4", { staticClass: "card-header-title" }, [
                 _vm._v(
-                  "\n                  Scratchpad Checklist\n                "
+                  "\n                        Scratchpad Checklist\n                    "
                 ),
               ]),
               _vm._v(" "),
