@@ -12,5 +12,5 @@ urlpatterns = [
     path('do-register/', views.register_view, name='register'),
     path('do-reset-password/', views.reset_view, name='reset'),
     path('do-update-password/', views.update_pass_view, name='updatepass'),
-    re_path('^.*$', passestest(TemplateView.as_view(template_name='authetication/layouts/auth-master.html')), name='spa')
+    re_path('^.*$', passestest(TemplateView.as_view(template_name='authentication/layouts/auth-master.html')), name='spa')
 ]

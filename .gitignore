@@ -90,5 +90,5 @@ local_settings.py
 db.sqlite3
 vars.ini
 vars.sh
-falcon/node_modules/
+vuejs/node_modules/
 uploads/
