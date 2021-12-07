@@ -1,4 +1,4 @@
 {
-    "/static/dashboard/assets/js/auth.js": "/static/dashboard/assets/js/auth.js",
-    "/static/dashboard/assets/js/portal.js": "/static/dashboard/assets/js/portal.js"
+    "/authentication/static/authentication/assets/js/auth.js": "/authentication/static/authentication/assets/js/auth.js",
+    "/dashboard/static/dashboard/assets/js/portal.js": "/dashboard/static/dashboard/assets/js/portal.js"
 }
