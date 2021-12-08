@@ -278,7 +278,7 @@
                 <div class="dropdown-menu dropdown-menu-end">
                     <router-link :to="{name:'profile'}" class="dropdown-item">Settings</router-link>
                     <hr class="dropdown-divider">
-                    <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                    <a @click="signOut()" class="dropdown-item" href="javascript:void(0)">Logout</a>
                 </div>
 
             </div>
