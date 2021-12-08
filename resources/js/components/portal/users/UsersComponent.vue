@@ -207,19 +207,19 @@
                             <a class="list-sort text-muted" data-sort="item-name" href="#">Name</a>
                           </th>
                           <th>
-                            <a class="list-sort text-muted" data-sort="item-title" href="#">Job title</a>
-                          </th>
-                          <th>
                             <a class="list-sort text-muted" data-sort="item-email" href="#">Email</a>
                           </th>
                           <th>
-                            <a class="list-sort text-muted" data-sort="item-phone" href="#">Phone</a>
+                            <a class="list-sort text-muted" data-sort="item-phone" href="#">Card 4 Digit</a>
                           </th>
                           <th>
-                            <a class="list-sort text-muted" data-sort="item-score" href="#">Lead score</a>
+                            <a class="list-sort text-muted" data-sort="item-score" href="#">Card Brand</a>
+                          </th>
+                          <th colspan="">
+                            <a class="list-sort text-muted" data-sort="item-company" href="#">Payment Method ID</a>
                           </th>
                           <th colspan="2">
-                            <a class="list-sort text-muted" data-sort="item-company" href="#">Company</a>
+                            <a class="list-sort text-muted" data-sort="item-company" href="#">Joined</a>
                           </th>
                         </tr>
                       </thead>
@@ -241,8 +241,14 @@
 
                             <!-- Avatar -->
                             <div class="avatar avatar-xs align-middle me-2">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg" alt="...">
+                              <img class="avatar-img rounded-circle" v-bind:src="user.avatar_url" alt="...">
                             </div> <a class="item-name text-reset" href="profile-posts.html">{{ user.first_name }} {{ user.last_name }}</a>
+
+                          </td>
+                           <td>
+
+                            <!-- Email -->
+                            <a class="item-email text-reset" :href="'mailto:'+user.email">{{user.email}}</a>
 
                           </td>
                           <td class="">
@@ -251,12 +257,7 @@
                             <span class="item-title">{{user.stripe_last4}}</span>
 
                           </td>
-                          <td>
-
-                            <!-- Email -->
-                            <a class="item-email text-reset" href="mailto:john.doe@company.com">{{user.email}}</a>
-
-                          </td>
+                         
                           <td>
 
                             <!-- Phone -->

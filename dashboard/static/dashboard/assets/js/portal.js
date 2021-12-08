@@ -5914,6 +5914,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["pagination"],
   data: function data() {
@@ -12907,7 +12908,23 @@ var render = function () {
                                   _vm._m(5, true),
                                   _vm._v(" "),
                                   _c("td", [
-                                    _vm._m(6, true),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "avatar avatar-xs align-middle me-2",
+                                      },
+                                      [
+                                        _c("img", {
+                                          staticClass:
+                                            "avatar-img rounded-circle",
+                                          attrs: {
+                                            src: user.avatar_url,
+                                            alt: "...",
+                                          },
+                                        }),
+                                      ]
+                                    ),
                                     _vm._v(" "),
                                     _c(
                                       "a",
@@ -12925,23 +12942,21 @@ var render = function () {
                                     ),
                                   ]),
                                   _vm._v(" "),
-                                  _c("td", {}, [
-                                    _c("span", { staticClass: "item-title" }, [
-                                      _vm._v(_vm._s(user.stripe_last4)),
-                                    ]),
-                                  ]),
-                                  _vm._v(" "),
                                   _c("td", [
                                     _c(
                                       "a",
                                       {
                                         staticClass: "item-email text-reset",
-                                        attrs: {
-                                          href: "mailto:john.doe@company.com",
-                                        },
+                                        attrs: { href: "mailto:" + user.email },
                                       },
                                       [_vm._v(_vm._s(user.email))]
                                     ),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", {}, [
+                                    _c("span", { staticClass: "item-title" }, [
+                                      _vm._v(_vm._s(user.stripe_last4)),
+                                    ]),
                                   ]),
                                   _vm._v(" "),
                                   _c("td", [
@@ -12977,7 +12992,7 @@ var render = function () {
                                     ),
                                   ]),
                                   _vm._v(" "),
-                                  _vm._m(7, true),
+                                  _vm._m(6, true),
                                 ])
                               }),
                             ],
@@ -12987,7 +13002,7 @@ var render = function () {
                       ),
                     ]),
                 _vm._v(" "),
-                _vm._m(8),
+                _vm._m(7),
               ]
             ),
           ]
@@ -13014,9 +13029,9 @@ var render = function () {
                 },
               },
               [
-                _vm._m(9),
+                _vm._m(8),
                 _vm._v(" "),
-                _vm._m(10),
+                _vm._m(9),
                 _vm._v(" "),
                 _c("div", { staticClass: "row g-0" }, [
                   _c(
@@ -13082,7 +13097,7 @@ var render = function () {
                   ),
                 ]),
                 _vm._v(" "),
-                _vm._m(11),
+                _vm._m(10),
               ]
             ),
           ]
@@ -13437,17 +13452,6 @@ var staticRenderFns = [
             "a",
             {
               staticClass: "list-sort text-muted",
-              attrs: { "data-sort": "item-title", href: "#" },
-            },
-            [_vm._v("Job title")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("th", [
-          _c(
-            "a",
-            {
-              staticClass: "list-sort text-muted",
               attrs: { "data-sort": "item-email", href: "#" },
             },
             [_vm._v("Email")]
@@ -13461,7 +13465,7 @@ var staticRenderFns = [
               staticClass: "list-sort text-muted",
               attrs: { "data-sort": "item-phone", href: "#" },
             },
-            [_vm._v("Phone")]
+            [_vm._v("Card 4 Digit")]
           ),
         ]),
         _vm._v(" "),
@@ -13472,7 +13476,18 @@ var staticRenderFns = [
               staticClass: "list-sort text-muted",
               attrs: { "data-sort": "item-score", href: "#" },
             },
-            [_vm._v("Lead score")]
+            [_vm._v("Card Brand")]
+          ),
+        ]),
+        _vm._v(" "),
+        _c("th", { attrs: { colspan: "" } }, [
+          _c(
+            "a",
+            {
+              staticClass: "list-sort text-muted",
+              attrs: { "data-sort": "item-company", href: "#" },
+            },
+            [_vm._v("Payment Method ID")]
           ),
         ]),
         _vm._v(" "),
@@ -13483,7 +13498,7 @@ var staticRenderFns = [
               staticClass: "list-sort text-muted",
               attrs: { "data-sort": "item-company", href: "#" },
             },
-            [_vm._v("Company")]
+            [_vm._v("Joined")]
           ),
         ]),
       ]),
@@ -13505,17 +13520,6 @@ var staticRenderFns = [
           attrs: { for: "listCheckboxOne" },
         }),
       ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "avatar avatar-xs align-middle me-2" }, [
-      _c("img", {
-        staticClass: "avatar-img rounded-circle",
-        attrs: { src: "assets/img/avatars/profiles/avatar-2.jpg", alt: "..." },
-      }),
     ])
   },
   function () {

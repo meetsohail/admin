@@ -35,7 +35,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = User
-        fields = ['id', 'first_name', 'last_name', 'email', 'stripe_last4', 'card_brand', 'payment_method_id', 'date_joined', 'password']
+        fields = ['id', 'first_name', 'last_name', 'email', 'stripe_last4', 'card_brand', 'payment_method_id', 'date_joined', 'password','avatar_url']
     
     def update(self, instance, validated_data):
         for attr, value in validated_data.items():
