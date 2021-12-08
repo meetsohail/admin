@@ -1,26 +1,118 @@
 <template>
-    <div class="row">
-        <div class="col-lg-12 pr-lg-2">
-            <div v-if="saved" class="alert alert-success">Profile settings have been updated.</div>
-            <div class="card mb-3">
-                <div class="card-header">
-                    <h5 class="mb-0">Profile Settings</h5>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle">
+                      Overview
+                    </h6>
+
+                    <!-- Title -->
+                    <h1 class="header-title">
+                      Account
+                    </h1>
+
+                  </div>
+                </div> <!-- / .row -->
+              <accounts-topbar></accounts-topbar>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <form>
+
+              <div class="row justify-content-between align-items-center">
+                <div class="col">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+
+                      <!-- Avatar -->
+                      <div class="avatar">
+                        <img class="avatar-img rounded-circle" :src="user.avatar_url" alt="...">
+                      </div>
+
+                    </div>
+                    <div class="col ms-n2">
+
+                      <!-- Heading -->
+                      <h4 class="mb-1">
+                        Your avatar
+                      </h4>
+
+                      <!-- Text -->
+                      <small class="text-muted">
+                        You can change your profile from gravatar againt the provided email
+                      </small>
+
+                    </div>
+                  </div> <!-- / .row -->
                 </div>
-                <div class="card-body bg-light">
-                    <div class="row g-3">
-                        <div class="col-lg-6">
-                            <label class="form-label" for="first-name">First Name</label>
-                            <input :disabled="busy" :class="{'is-invalid': errors.first_name}" class="form-control" v-model="user.first_name" id="first-name" type="text"/>
-                            <div class="invalid-feedback" v-if="errors.first_name">{{ errors.first_name[0] }}</div>
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="last-name">Last Name</label>
-                            <input :disabled="busy" :class="{'is-invalid': errors.last_name}" class="form-control" id="last-name" type="text" v-model="user.last_name" />
+                <div class="col-auto">
+
+                
+
+                </div>
+              </div> <!-- / .row -->
+
+              <!-- Divider -->
+              <hr class="my-5">
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- First name -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      First name
+                    </label>
+
+                    <!-- Input -->
+                   <input :disabled="busy" :class="{'is-invalid': errors.first_name}" class="form-control" v-model="user.first_name" id="first-name" type="text"/>
+                   <div class="invalid-feedback" v-if="errors.first_name">{{ errors.first_name[0] }}</div>
+
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Last name -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      Last name
+                    </label>
+
+                    <!-- Input -->
+                   <input :disabled="busy" :class="{'is-invalid': errors.last_name}" class="form-control" id="last-name" type="text" v-model="user.last_name" />
                             <div class="invalid-feedback" v-if="errors.last_name">{{ errors.last_name[0] }}</div>
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="email1">Email</label>
-                            <input
+
+                  </div>
+
+                </div>
+                <div class="col-6">
+
+                  <!-- Email address -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="mb-1">
+                      Email address
+                    </label>
+
+                
+
+                    <!-- Input -->
+                    <input
                                 class="form-control"
                                 id="email1"
                                 type="text"
@@ -29,20 +121,46 @@
                                 :class="{'is-invalid': errors.email}"
                             />
                             <div class="invalid-feedback" v-if="errors.email">{{ errors.email[0] }}</div>
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="password">Password</label>
-                            <input :disabled="busy" :class="{'is-invalid': errors.password}" class="form-control" placeholder="Leave blank if you don't want to change." id="password" type="password" autocomplete="new-password" v-model="password" />
-                            <div class="invalid-feedback" v-if="errors.password">{{ errors.password[0] }}</div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end">
-                            <button :disabled="busy" @click="updateProfile()" class="btn btn-black text-white rounded shadow" type="submit">Update</button>
-                        </div>
-                    </div>
+
+                  </div>
+
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="col-6 col-md-6">
+
+                  <!-- Phone -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      Password
+                    </label>
+
+                    <!-- Input -->
+                    <input :disabled="busy" :class="{'is-invalid': errors.password}" class="form-control" placeholder="Leave blank if you don't want to change." id="password" type="password" autocomplete="new-password" v-model="password" />
+                            <div class="invalid-feedback" v-if="errors.password">{{ errors.password[0] }}</div>
+
+                  </div>
+
+                </div>
+                
+              </div> <!-- / .row -->
+
+              <!-- Button -->
+              <button :disabled="busy" @click="updateProfile()" class="btn btn-primary">
+                Save changes
+              </button>
+
+              <!-- Divider -->
+              <hr class="my-5">
+
+            </form>
+
+            <br><br>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+
 </template>
 <script>
 export default {

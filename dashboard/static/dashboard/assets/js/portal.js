@@ -429,6 +429,177 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1420,339 +1591,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 // import ProjectsTable from '../projects/partials/ProjectsTable';
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1767,6 +1605,51 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {}
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -1947,6 +1830,124 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7146,181 +7147,393 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.$store.state.user
-    ? _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-12" }, [
-          !_vm.$store.state.user.stripe_last4
-            ? _c(
+  return _c("div", { staticClass: "container-fluid" }, [
+    _vm.$store.state.user
+      ? _c("div", { staticClass: "row justify-content-center" }, [
+          _c("div", { staticClass: "col-12 col-lg-10 col-xl-8" }, [
+            _c("div", { staticClass: "header mt-md-5" }, [
+              _c(
                 "div",
-                {
-                  staticClass: "alert text-white alert-danger gradient-danger",
-                },
-                [
-                  _vm._v(
-                    "\n      To top-up your account, you need to set a payment method first.\n    "
-                  ),
-                ]
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.delmethod
-            ? _c("div", { staticClass: "alert alert-warning" }, [
-                _c("span", { staticClass: "d-block mb-2" }, [
-                  _vm._v(
-                    "If this payment method is removed, your subscription renewals will fail. To\n        keep your subscriptions active, you need to have a valid payment method on file.\n        Do you really want to remove your current card?"
-                  ),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-sm btn-warning",
-                    attrs: { disabled: _vm.deleting },
-                    on: {
-                      click: function ($event) {
-                        return _vm.removePaymentMethod()
-                      },
-                    },
-                  },
-                  [
-                    _c("loading-component", {
-                      attrs: {
-                        busy: _vm.deleting,
-                        nText: "Remove",
-                        bText: "Removing",
-                      },
-                    }),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-sm btn-success",
-                    attrs: { disabled: _vm.deleting },
-                    on: {
-                      click: function ($event) {
-                        _vm.delmethod = false
-                      },
-                    },
-                  },
-                  [_vm._v("\n        Cancel\n      ")]
-                ),
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _c("div", { staticClass: "card mb-3" }, [
-            _c("div", { staticClass: "card-header gradient-dark " }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col" }, [
-                  _c("h5", { staticClass: "mb-0 text-white" }, [
-                    !_vm.$store.state.user.stripe_last4
-                      ? _c("span", [_vm._v("Add Card")])
-                      : _c("span", [_vm._v("Update Card")]),
+                { staticClass: "header-body" },
+                [_vm._m(0), _vm._v(" "), _c("accounts-topbar")],
+                1
+              ),
+            ]),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _vm._m(2),
+            _vm._v(" "),
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("div", { staticClass: "row align-items-center" }, [
+                  _c("div", { staticClass: "col" }, [
+                    _c("h4", { staticClass: "card-header-title" }, [
+                      !_vm.$store.state.user.stripe_last4
+                        ? _c("span", [_vm._v("Add Card")])
+                        : _c("span", [_vm._v("Update Card")]),
+                    ]),
                   ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col text-right" }, [
-                  _vm.$store.state.user.stripe_last4 &&
-                  _vm.$store.state.user.card_brand &&
-                  !_vm.delmethod
-                    ? _c(
-                        "small",
-                        {
-                          staticClass:
-                            "text-white border border-light p-1 rounded",
-                        },
-                        [
-                          _c(
-                            "span",
-                            { staticClass: "font-weight-bold font-italic" },
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-auto" }, [
+                    _c("span", { staticClass: "badge badge-primary" }, [
+                      _vm.$store.state.user.stripe_last4 &&
+                      _vm.$store.state.user.card_brand &&
+                      !_vm.delmethod
+                        ? _c(
+                            "small",
+                            {
+                              staticClass:
+                                "text-white border border-light p-1 rounded",
+                            },
                             [
+                              _c(
+                                "span",
+                                { staticClass: "font-weight-bold font-italic" },
+                                [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$store.state.user.card_brand.toUpperCase()
+                                    )
+                                  ),
+                                ]
+                              ),
                               _vm._v(
-                                _vm._s(
-                                  _vm.$store.state.user.card_brand.toUpperCase()
-                                )
+                                "\n              ****" +
+                                  _vm._s(_vm.$store.state.user.stripe_last4) +
+                                  "\n              "
+                              ),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "text-light px-2",
+                                  attrs: { href: "javascript:void(0)" },
+                                  on: {
+                                    click: function ($event) {
+                                      _vm.delmethod = true
+                                    },
+                                  },
+                                },
+                                [
+                                  _c("i", {
+                                    staticClass: "fas fa-times-circle",
+                                  }),
+                                ]
                               ),
                             ]
-                          ),
-                          _vm._v(
-                            "\n              ****" +
-                              _vm._s(_vm.$store.state.user.stripe_last4) +
-                              "\n              "
-                          ),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "text-light px-2",
-                              attrs: { href: "javascript:void(0)" },
-                              on: {
-                                click: function ($event) {
-                                  _vm.delmethod = true
-                                },
-                              },
+                          )
+                        : _vm._e(),
+                    ]),
+                  ]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c("div", { staticClass: "row g-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12" },
+                    [
+                      _c("card", {
+                        ref: "card",
+                        staticClass: "form-control stripe-card",
+                        class: { complete: _vm.complete },
+                        attrs: { disabled: _vm.busy, stripe: _vm.stripePubKey },
+                        on: {
+                          change: function ($event) {
+                            _vm.complete = $event.complete
+                          },
+                        },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-12 d-flex justify-content-end" },
+                    [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-dark btn-sm rounded text-white",
+                          attrs: { disabled: _vm.busy, type: "submit" },
+                          on: {
+                            click: function ($event) {
+                              return _vm.updateBillingInfo()
                             },
-                            [_c("i", { staticClass: "fas fa-times-circle" })]
-                          ),
-                        ]
-                      )
-                    : _vm._e(),
+                          },
+                        },
+                        [
+                          _c("loading-component", {
+                            attrs: { busy: _vm.busy },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]
+                  ),
                 ]),
               ]),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body bg-light" }, [
-              _c("div", { staticClass: "row g-3" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-md-12" },
-                  [
-                    _c("card", {
-                      ref: "card",
-                      staticClass: "form-control stripe-card",
-                      class: { complete: _vm.complete },
-                      attrs: { disabled: _vm.busy, stripe: _vm.stripePubKey },
-                      on: {
-                        change: function ($event) {
-                          _vm.complete = $event.complete
-                        },
-                      },
-                    }),
-                  ],
-                  1
-                ),
-              ]),
-            ]),
+            _vm._m(3),
             _vm._v(" "),
-            _c("div", { staticClass: "card-footer" }, [
-              _c("div", { staticClass: "row" }, [
+            _vm._m(4),
+            _vm._v(" "),
+            _c("br"),
+          ]),
+        ])
+      : _c("div", {}, [
+          _c("h3", { staticClass: "text-center mt-5" }, [
+            _vm._v("Permission denied!"),
+          ]),
+        ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row align-items-center" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("h6", { staticClass: "header-pretitle" }, [
+          _vm._v("\n                    Overview\n                  "),
+        ]),
+        _vm._v(" "),
+        _c("h1", { staticClass: "header-title" }, [
+          _vm._v("\n                    Account\n                  "),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "alert alert-danger" }, [
+      _c("i", { staticClass: "fe fe-info me-1" }),
+      _vm._v(" You are near your API limits.\n          "),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12 col-md-6" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("div", { staticClass: "row align-items-center" }, [
+              _c("div", { staticClass: "col" }, [
+                _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
+                  _vm._v(
+                    "\n                        Current plan\n                      "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "h2 mb-0" }, [
+                  _vm._v(
+                    "\n                        $29/mo\n                      "
+                  ),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-auto" }, [
                 _c(
-                  "div",
-                  { staticClass: "col-12 d-flex justify-content-end" },
-                  [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-black rounded text-white",
-                        attrs: { disabled: _vm.busy, type: "submit" },
-                        on: {
-                          click: function ($event) {
-                            return _vm.updateBillingInfo()
-                          },
-                        },
-                      },
-                      [_c("loading-component", { attrs: { busy: _vm.busy } })],
-                      1
-                    ),
-                  ]
+                  "a",
+                  {
+                    staticClass: "btn btn-sm btn-primary",
+                    attrs: { href: "pricing.html" },
+                  },
+                  [_vm._v("Upgrade")]
                 ),
               ]),
             ]),
           ]),
         ]),
-      ])
-    : _vm._e()
-}
-var staticRenderFns = []
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-12 col-md-6" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("div", { staticClass: "row align-items-center" }, [
+              _c("div", { staticClass: "col" }, [
+                _c("h6", { staticClass: "text-uppercase text-muted mb-2" }, [
+                  _vm._v("\n                        API usage "),
+                  _c("i", {
+                    staticClass: "fe fe-info",
+                    attrs: {
+                      "data-bs-toggle": "tooltip",
+                      "data-title": "Your limits renew on May 1, 2020",
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "h2 mb-0" }, [
+                  _vm._v(
+                    "\n                        7,500 of 10,000\n                      "
+                  ),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-auto" }, [
+                _c("div", { staticClass: "chart chart-sparkline" }, [
+                  _c("canvas", {
+                    staticClass: "chart-canvas",
+                    attrs: { id: "sparklineChart" },
+                  }),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h4", { staticClass: "card-header-title" }, [
+          _vm._v("\n                Invoices\n              "),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "table-responsive" }, [
+        _c("table", { staticClass: "table table-sm table-nowrap card-table" }, [
+          _c("thead", [
+            _c("tr", [
+              _c("th", [_vm._v("Invoice ID")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Date")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Amount")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Status")]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("tbody", { staticClass: "fs-base" }, [
+            _c("tr", [
+              _c("td", [
+                _c("a", { attrs: { href: "invoice.html" } }, [
+                  _vm._v("Invoice #10395"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("time", { attrs: { datetime: "2020-04-24" } }, [
+                  _vm._v("Apr. 24, 2020"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _vm._v("\n                      $29.00\n                    "),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("span", { staticClass: "badge bg-secondary" }, [
+                  _vm._v("Outstanding"),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [
+                _c("a", { attrs: { href: "invoice.html" } }, [
+                  _vm._v("Invoice #10244"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("time", { attrs: { datetime: "2020-03-24" } }, [
+                  _vm._v("Mar. 24, 2020"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _vm._v("\n                      $29.00\n                    "),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("span", { staticClass: "badge bg-success" }, [
+                  _vm._v("Paid"),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [
+                _c("a", { attrs: { href: "invoice.html" } }, [
+                  _vm._v("Invoice #10119"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("time", { attrs: { datetime: "2020-02-24" } }, [
+                  _vm._v("Feb. 24, 2020"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _vm._v("\n                      $29.00\n                    "),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("span", { staticClass: "badge bg-success" }, [
+                  _vm._v("Paid"),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [
+                _c("a", { attrs: { href: "invoice.html" } }, [
+                  _vm._v("Invoice #10062"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("time", { attrs: { datetime: "2020-01-24" } }, [
+                  _vm._v("Jan. 24, 2020"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _vm._v("\n                      $29.00\n                    "),
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("span", { staticClass: "badge bg-success" }, [
+                  _vm._v("Paid"),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-center" }, [
+      _c("small", { staticClass: "text-muted" }, [
+        _vm._v("Don’t need Dashkit anymore? "),
+        _c("a", { attrs: { href: "#!" } }, [_vm._v("Cancel your account")]),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -7905,737 +8118,6 @@ var staticRenderFns = [
                       staticClass: "h2 fe fe-clock text-muted mb-0",
                     }),
                   ]),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-12 col-xl-8" }, [
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h4", { staticClass: "card-header-title" }, [
-                  _vm._v(
-                    "\n                        Conversions\n                    "
-                  ),
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "text-muted me-3" }, [
-                  _vm._v(
-                    "\n                  Last year comparision:\n                "
-                  ),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-check form-switch" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: {
-                      type: "checkbox",
-                      id: "cardToggle",
-                      "data-toggle": "chart",
-                      "data-target": "#conversionsChart",
-                      "data-trigger": "change",
-                      "data-action": "add",
-                      "data-dataset": "1",
-                    },
-                  }),
-                  _vm._v(" "),
-                  _c("label", {
-                    staticClass: "form-check-label",
-                    attrs: { for: "cardToggle" },
-                  }),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("div", { staticClass: "chart" }, [
-                  _c("canvas", {
-                    staticClass: "chart-canvas",
-                    attrs: { id: "conversionsChart" },
-                  }),
-                ]),
-              ]),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-12 col-xl-4" }, [
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h4", { staticClass: "card-header-title" }, [
-                  _vm._v(
-                    "\n                        Traffic Channels\n                    "
-                  ),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "ul",
-                  { staticClass: "nav nav-tabs nav-tabs-sm card-header-tabs" },
-                  [
-                    _c(
-                      "li",
-                      {
-                        staticClass: "nav-item",
-                        attrs: {
-                          "data-toggle": "chart",
-                          "data-target": "#trafficChart",
-                          "data-trigger": "click",
-                          "data-action": "toggle",
-                          "data-dataset": "0",
-                        },
-                      },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link active",
-                            attrs: { href: "#", "data-bs-toggle": "tab" },
-                          },
-                          [
-                            _vm._v(
-                              "\n                      All\n                    "
-                            ),
-                          ]
-                        ),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass: "nav-item",
-                        attrs: {
-                          "data-toggle": "chart",
-                          "data-target": "#trafficChart",
-                          "data-trigger": "click",
-                          "data-action": "toggle",
-                          "data-dataset": "1",
-                        },
-                      },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: { href: "#", "data-bs-toggle": "tab" },
-                          },
-                          [
-                            _vm._v(
-                              "\n                      Direct\n                    "
-                            ),
-                          ]
-                        ),
-                      ]
-                    ),
-                  ]
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("div", { staticClass: "chart chart-appended" }, [
-                  _c("canvas", {
-                    staticClass: "chart-canvas",
-                    attrs: {
-                      id: "trafficChart",
-                      "data-toggle": "legend",
-                      "data-target": "#trafficChartLegend",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "chart-legend",
-                  attrs: { id: "trafficChartLegend" },
-                }),
-              ]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-12 col-xl-4" }, [
-            _c("div", { staticClass: "card card-fill" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h4", { staticClass: "card-header-title" }, [
-                  _vm._v(
-                    "\n                        Projects\n                    "
-                  ),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "small",
-                    attrs: { href: "project-overview.html" },
-                  },
-                  [_vm._v("View all")]
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c(
-                  "div",
-                  { staticClass: "list-group list-group-flush my-n3" },
-                  [
-                    _c("div", { staticClass: "list-group-item" }, [
-                      _c("div", { staticClass: "row align-items-center" }, [
-                        _c("div", { staticClass: "col-auto" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "avatar avatar-4by3",
-                              attrs: { href: "project-overview.html" },
-                            },
-                            [
-                              _c("img", {
-                                staticClass: "avatar-img rounded",
-                                attrs: {
-                                  src: "/static/dashboard/assets/img/avatars/projects/project-1.jpg",
-                                  alt: "...",
-                                },
-                              }),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col ms-n2" }, [
-                          _c("h4", { staticClass: "mb-1" }, [
-                            _c(
-                              "a",
-                              { attrs: { href: "project-overview.html" } },
-                              [_vm._v("Homepage Redesign")]
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "p",
-                            { staticClass: "card-text small text-muted" },
-                            [
-                              _c(
-                                "time",
-                                { attrs: { datetime: "2018-05-24" } },
-                                [_vm._v("Updated 4hr ago")]
-                              ),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-auto" }, [
-                          _c("div", { staticClass: "dropdown" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "dropdown-ellipses dropdown-toggle",
-                                attrs: {
-                                  href: "#",
-                                  role: "button",
-                                  "data-bs-toggle": "dropdown",
-                                  "aria-haspopup": "true",
-                                  "aria-expanded": "false",
-                                },
-                              },
-                              [_c("i", { staticClass: "fe fe-more-vertical" })]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "dropdown-menu dropdown-menu-end",
-                              },
-                              [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Action\n                            "
-                                    ),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Another action\n                            "
-                                    ),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Something else here\n                            "
-                                    ),
-                                  ]
-                                ),
-                              ]
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "list-group-item" }, [
-                      _c("div", { staticClass: "row align-items-center" }, [
-                        _c("div", { staticClass: "col-auto" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "avatar avatar-4by3",
-                              attrs: { href: "project-overview.html" },
-                            },
-                            [
-                              _c("img", {
-                                staticClass: "avatar-img rounded",
-                                attrs: {
-                                  src: "/static/dashboard/assets/img/avatars/projects/project-2.jpg",
-                                  alt: "...",
-                                },
-                              }),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col ms-n2" }, [
-                          _c("h4", { staticClass: "mb-1" }, [
-                            _c(
-                              "a",
-                              { attrs: { href: "project-overview.html" } },
-                              [_vm._v("Travels & Time")]
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "p",
-                            { staticClass: "card-text small text-muted" },
-                            [
-                              _c(
-                                "time",
-                                { attrs: { datetime: "2018-05-24" } },
-                                [_vm._v("Updated 4hr ago")]
-                              ),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-auto" }, [
-                          _c("div", { staticClass: "dropdown" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "dropdown-ellipses dropdown-toggle",
-                                attrs: {
-                                  href: "#",
-                                  role: "button",
-                                  "data-bs-toggle": "dropdown",
-                                  "aria-haspopup": "true",
-                                  "aria-expanded": "false",
-                                },
-                              },
-                              [_c("i", { staticClass: "fe fe-more-vertical" })]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "dropdown-menu dropdown-menu-end",
-                              },
-                              [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Action\n                            "
-                                    ),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Another action\n                            "
-                                    ),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Something else here\n                            "
-                                    ),
-                                  ]
-                                ),
-                              ]
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "list-group-item" }, [
-                      _c("div", { staticClass: "row align-items-center" }, [
-                        _c("div", { staticClass: "col-auto" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "avatar avatar-4by3",
-                              attrs: { href: "project-overview.html" },
-                            },
-                            [
-                              _c("img", {
-                                staticClass: "avatar-img rounded",
-                                attrs: {
-                                  src: "/static/dashboard/assets/img/avatars/projects/project-3.jpg",
-                                  alt: "...",
-                                },
-                              }),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col ms-n2" }, [
-                          _c("h4", { staticClass: "mb-1" }, [
-                            _c(
-                              "a",
-                              { attrs: { href: "project-overview.html" } },
-                              [_vm._v("Safari Exploration")]
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "p",
-                            { staticClass: "card-text small text-muted" },
-                            [
-                              _c(
-                                "time",
-                                { attrs: { datetime: "2018-05-24" } },
-                                [_vm._v("Updated 4hr ago")]
-                              ),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-auto" }, [
-                          _c("div", { staticClass: "dropdown" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "dropdown-ellipses dropdown-toggle",
-                                attrs: {
-                                  href: "#",
-                                  role: "button",
-                                  "data-bs-toggle": "dropdown",
-                                  "aria-haspopup": "true",
-                                  "aria-expanded": "false",
-                                },
-                              },
-                              [_c("i", { staticClass: "fe fe-more-vertical" })]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "dropdown-menu dropdown-menu-end",
-                              },
-                              [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Action\n                            "
-                                    ),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Another action\n                            "
-                                    ),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Something else here\n                            "
-                                    ),
-                                  ]
-                                ),
-                              ]
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "list-group-item" }, [
-                      _c("div", { staticClass: "row align-items-center" }, [
-                        _c("div", { staticClass: "col-auto" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "avatar avatar-4by3",
-                              attrs: { href: "project-overview.html" },
-                            },
-                            [
-                              _c("img", {
-                                staticClass: "avatar-img rounded",
-                                attrs: {
-                                  src: "/static/dashboard/assets/img/avatars/projects/project-5.jpg",
-                                  alt: "...",
-                                },
-                              }),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col ms-n2" }, [
-                          _c("h4", { staticClass: "mb-1" }, [
-                            _c(
-                              "a",
-                              { attrs: { href: "project-overview.html" } },
-                              [_vm._v("Personal Site")]
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "p",
-                            { staticClass: "card-text small text-muted" },
-                            [
-                              _c(
-                                "time",
-                                { attrs: { datetime: "2018-05-24" } },
-                                [_vm._v("Updated 4hr ago")]
-                              ),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-auto" }, [
-                          _c("div", { staticClass: "dropdown" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "dropdown-ellipses dropdown-toggle",
-                                attrs: {
-                                  href: "#",
-                                  role: "button",
-                                  "data-bs-toggle": "dropdown",
-                                  "aria-haspopup": "true",
-                                  "aria-expanded": "false",
-                                },
-                              },
-                              [_c("i", { staticClass: "fe fe-more-vertical" })]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "dropdown-menu dropdown-menu-end",
-                              },
-                              [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Action\n                            "
-                                    ),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Another action\n                            "
-                                    ),
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#!" },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                              Something else here\n                            "
-                                    ),
-                                  ]
-                                ),
-                              ]
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
-                  ]
-                ),
-              ]),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-12 col-xl-8" }, [
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h4", { staticClass: "card-header-title" }, [
-                  _vm._v(
-                    "\n                        Sales\n                    "
-                  ),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "ul",
-                  { staticClass: "nav nav-tabs nav-tabs-sm card-header-tabs" },
-                  [
-                    _c(
-                      "li",
-                      {
-                        staticClass: "nav-item",
-                        attrs: {
-                          "data-toggle": "chart",
-                          "data-target": "#salesChart",
-                          "data-trigger": "click",
-                          "data-action": "toggle",
-                          "data-dataset": "0",
-                        },
-                      },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link active",
-                            attrs: { href: "#", "data-bs-toggle": "tab" },
-                          },
-                          [
-                            _vm._v(
-                              "\n                      All\n                    "
-                            ),
-                          ]
-                        ),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass: "nav-item",
-                        attrs: {
-                          "data-toggle": "chart",
-                          "data-target": "#salesChart",
-                          "data-trigger": "click",
-                          "data-action": "toggle",
-                          "data-dataset": "1",
-                        },
-                      },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: { href: "#", "data-bs-toggle": "tab" },
-                          },
-                          [
-                            _vm._v(
-                              "\n                      Direct\n                    "
-                            ),
-                          ]
-                        ),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass: "nav-item",
-                        attrs: {
-                          "data-toggle": "chart",
-                          "data-target": "#salesChart",
-                          "data-trigger": "click",
-                          "data-action": "toggle",
-                          "data-dataset": "2",
-                        },
-                      },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: { href: "#", "data-bs-toggle": "tab" },
-                          },
-                          [
-                            _vm._v(
-                              "\n                      Organic\n                    "
-                            ),
-                          ]
-                        ),
-                      ]
-                    ),
-                  ]
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("div", { staticClass: "chart" }, [
-                  _c("canvas", {
-                    staticClass: "chart-canvas",
-                    attrs: { id: "salesChart" },
-                  }),
                 ]),
               ]),
             ]),
@@ -9939,6 +9421,100 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=template&id=53928f52&":
+/*!*****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=template&id=53928f52& ***!
+  \*****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row align-items-center" }, [
+    _c("div", { staticClass: "col" }, [
+      _c("ul", { staticClass: "nav nav-tabs nav-overflow header-tabs" }, [
+        _c(
+          "li",
+          { staticClass: "nav-item" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "nav-link",
+                class: _vm.$route.name == "profile" ? "active" : "",
+                attrs: { to: { name: "profile" } },
+              },
+              [_vm._v("\n                      General\n                    ")]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { staticClass: "nav-item" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "nav-link",
+                class: _vm.$route.name == "billing" ? "active" : "",
+                attrs: { to: { name: "billing" } },
+              },
+              [_vm._v("\n                      Billing\n                    ")]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+      ]),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c(
+        "a",
+        { staticClass: "nav-link", attrs: { href: "account-security.html" } },
+        [_vm._v("\n                      Security\n                    ")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-link",
+          attrs: { href: "account-notifications.html" },
+        },
+        [_vm._v("\n                      Notifications\n                    ")]
+      ),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/partials/NotificationsComponent.vue?vue&type=template&id=6d380ccc&":
 /*!*****************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/portal/partials/NotificationsComponent.vue?vue&type=template&id=6d380ccc& ***!
@@ -10307,190 +9883,219 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-lg-12 pr-lg-2" }, [
-      _vm.saved
-        ? _c("div", { staticClass: "alert alert-success" }, [
-            _vm._v("Profile settings have been updated."),
-          ])
-        : _vm._e(),
-      _vm._v(" "),
-      _c("div", { staticClass: "card mb-3" }, [
-        _vm._m(0),
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-12 col-lg-10 col-xl-8" }, [
+        _c("div", { staticClass: "header mt-md-5" }, [
+          _c(
+            "div",
+            { staticClass: "header-body" },
+            [_vm._m(0), _vm._v(" "), _c("accounts-topbar")],
+            1
+          ),
+        ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body bg-light" }, [
-          _c("div", { staticClass: "row g-3" }, [
-            _c("div", { staticClass: "col-lg-6" }, [
-              _c(
-                "label",
-                { staticClass: "form-label", attrs: { for: "first-name" } },
-                [_vm._v("First Name")]
-              ),
+        _c("form", [
+          _c(
+            "div",
+            { staticClass: "row justify-content-between align-items-center" },
+            [
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "row align-items-center" }, [
+                  _c("div", { staticClass: "col-auto" }, [
+                    _c("div", { staticClass: "avatar" }, [
+                      _c("img", {
+                        staticClass: "avatar-img rounded-circle",
+                        attrs: { src: _vm.user.avatar_url, alt: "..." },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(1),
+                ]),
+              ]),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.first_name,
-                    expression: "user.first_name",
-                  },
-                ],
-                staticClass: "form-control",
-                class: { "is-invalid": _vm.errors.first_name },
-                attrs: { disabled: _vm.busy, id: "first-name", type: "text" },
-                domProps: { value: _vm.user.first_name },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "first_name", $event.target.value)
-                  },
-                },
-              }),
-              _vm._v(" "),
-              _vm.errors.first_name
-                ? _c("div", { staticClass: "invalid-feedback" }, [
-                    _vm._v(_vm._s(_vm.errors.first_name[0])),
-                  ])
-                : _vm._e(),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-lg-6" }, [
-              _c(
-                "label",
-                { staticClass: "form-label", attrs: { for: "last-name" } },
-                [_vm._v("Last Name")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.last_name,
-                    expression: "user.last_name",
-                  },
-                ],
-                staticClass: "form-control",
-                class: { "is-invalid": _vm.errors.last_name },
-                attrs: { disabled: _vm.busy, id: "last-name", type: "text" },
-                domProps: { value: _vm.user.last_name },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "last_name", $event.target.value)
-                  },
-                },
-              }),
-              _vm._v(" "),
-              _vm.errors.last_name
-                ? _c("div", { staticClass: "invalid-feedback" }, [
-                    _vm._v(_vm._s(_vm.errors.last_name[0])),
-                  ])
-                : _vm._e(),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-lg-6" }, [
-              _c(
-                "label",
-                { staticClass: "form-label", attrs: { for: "email1" } },
-                [_vm._v("Email")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.email,
-                    expression: "user.email",
-                  },
-                ],
-                staticClass: "form-control",
-                class: { "is-invalid": _vm.errors.email },
-                attrs: { id: "email1", type: "text", disabled: _vm.busy },
-                domProps: { value: _vm.user.email },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "email", $event.target.value)
-                  },
-                },
-              }),
-              _vm._v(" "),
-              _vm.errors.email
-                ? _c("div", { staticClass: "invalid-feedback" }, [
-                    _vm._v(_vm._s(_vm.errors.email[0])),
-                  ])
-                : _vm._e(),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-lg-6" }, [
-              _c(
-                "label",
-                { staticClass: "form-label", attrs: { for: "password" } },
-                [_vm._v("Password")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.password,
-                    expression: "password",
-                  },
-                ],
-                staticClass: "form-control",
-                class: { "is-invalid": _vm.errors.password },
-                attrs: {
-                  disabled: _vm.busy,
-                  placeholder: "Leave blank if you don't want to change.",
-                  id: "password",
-                  type: "password",
-                  autocomplete: "new-password",
-                },
-                domProps: { value: _vm.password },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.password = $event.target.value
-                  },
-                },
-              }),
-              _vm._v(" "),
-              _vm.errors.password
-                ? _c("div", { staticClass: "invalid-feedback" }, [
-                    _vm._v(_vm._s(_vm.errors.password[0])),
-                  ])
-                : _vm._e(),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-12 d-flex justify-content-end" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-black text-white rounded shadow",
-                  attrs: { disabled: _vm.busy, type: "submit" },
+              _c("div", { staticClass: "col-auto" }),
+            ]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "my-5" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12 col-md-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { staticClass: "form-label" }, [
+                  _vm._v("\n                  First name\n                "),
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.user.first_name,
+                      expression: "user.first_name",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  class: { "is-invalid": _vm.errors.first_name },
+                  attrs: { disabled: _vm.busy, id: "first-name", type: "text" },
+                  domProps: { value: _vm.user.first_name },
                   on: {
-                    click: function ($event) {
-                      return _vm.updateProfile()
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.user, "first_name", $event.target.value)
                     },
                   },
-                },
-                [_vm._v("Update")]
-              ),
+                }),
+                _vm._v(" "),
+                _vm.errors.first_name
+                  ? _c("div", { staticClass: "invalid-feedback" }, [
+                      _vm._v(_vm._s(_vm.errors.first_name[0])),
+                    ])
+                  : _vm._e(),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-12 col-md-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { staticClass: "form-label" }, [
+                  _vm._v("\n                  Last name\n                "),
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.user.last_name,
+                      expression: "user.last_name",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  class: { "is-invalid": _vm.errors.last_name },
+                  attrs: { disabled: _vm.busy, id: "last-name", type: "text" },
+                  domProps: { value: _vm.user.last_name },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.user, "last_name", $event.target.value)
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _vm.errors.last_name
+                  ? _c("div", { staticClass: "invalid-feedback" }, [
+                      _vm._v(_vm._s(_vm.errors.last_name[0])),
+                    ])
+                  : _vm._e(),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { staticClass: "mb-1" }, [
+                  _vm._v("\n                  Email address\n                "),
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.user.email,
+                      expression: "user.email",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  class: { "is-invalid": _vm.errors.email },
+                  attrs: { id: "email1", type: "text", disabled: _vm.busy },
+                  domProps: { value: _vm.user.email },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.user, "email", $event.target.value)
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _vm.errors.email
+                  ? _c("div", { staticClass: "invalid-feedback" }, [
+                      _vm._v(_vm._s(_vm.errors.email[0])),
+                    ])
+                  : _vm._e(),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-6 col-md-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { staticClass: "form-label" }, [
+                  _vm._v("\n                  Password\n                "),
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.password,
+                      expression: "password",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  class: { "is-invalid": _vm.errors.password },
+                  attrs: {
+                    disabled: _vm.busy,
+                    placeholder: "Leave blank if you don't want to change.",
+                    id: "password",
+                    type: "password",
+                    autocomplete: "new-password",
+                  },
+                  domProps: { value: _vm.password },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.password = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _vm.errors.password
+                  ? _c("div", { staticClass: "invalid-feedback" }, [
+                      _vm._v(_vm._s(_vm.errors.password[0])),
+                    ])
+                  : _vm._e(),
+              ]),
             ]),
           ]),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-primary",
+              attrs: { disabled: _vm.busy },
+              on: {
+                click: function ($event) {
+                  return _vm.updateProfile()
+                },
+              },
+            },
+            [_vm._v("\n            Save changes\n          ")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "my-5" }),
         ]),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
       ]),
     ]),
   ])
@@ -10500,8 +10105,32 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", { staticClass: "mb-0" }, [_vm._v("Profile Settings")]),
+    return _c("div", { staticClass: "row align-items-center" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("h6", { staticClass: "header-pretitle" }, [
+          _vm._v("\n                  Overview\n                "),
+        ]),
+        _vm._v(" "),
+        _c("h1", { staticClass: "header-title" }, [
+          _vm._v("\n                  Account\n                "),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col ms-n2" }, [
+      _c("h4", { staticClass: "mb-1" }, [
+        _vm._v("\n                    Your avatar\n                  "),
+      ]),
+      _vm._v(" "),
+      _c("small", { staticClass: "text-muted" }, [
+        _vm._v(
+          "\n                    You can change your profile from gravatar againt the provided email\n                  "
+        ),
+      ]),
     ])
   },
 ]
@@ -12811,7 +12440,41 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row justify-content-center" }, [
     _c("div", { staticClass: "col-12" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "header" }, [
+        _c("div", { staticClass: "header-body" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "row align-items-center" }, [
+            _c("div", { staticClass: "col" }, [
+              _c(
+                "ul",
+                { staticClass: "nav nav-tabs nav-overflow header-tabs" },
+                [
+                  _c("li", { staticClass: "nav-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link text-nowrap active",
+                        attrs: { href: "#!" },
+                      },
+                      [
+                        _vm._v("\n                       All contacts "),
+                        _c(
+                          "span",
+                          {
+                            staticClass: "badge rounded-pill bg-secondary-soft",
+                          },
+                          [_vm._v(_vm._s(_vm.users.count))]
+                        ),
+                      ]
+                    ),
+                  ]),
+                ]
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "tab-content" }, [
         _c(
@@ -13111,92 +12774,64 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header" }, [
-      _c("div", { staticClass: "header-body" }, [
-        _c("div", { staticClass: "row align-items-center" }, [
-          _c("div", { staticClass: "col" }, [
-            _c("h6", { staticClass: "header-pretitle" }, [
-              _vm._v("\n                   Overview\n                 "),
-            ]),
-            _vm._v(" "),
-            _c("h1", { staticClass: "header-title text-truncate" }, [
-              _vm._v("\n                   Users\n                 "),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-auto" }, [
-            _c(
-              "div",
-              {
-                staticClass: "nav btn-group d-inline-flex",
-                attrs: { role: "tablist" },
-              },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-white active",
-                    attrs: {
-                      id: "contactsListTab",
-                      "data-bs-toggle": "tab",
-                      "data-bs-target": "#contactsListPane",
-                      role: "tab",
-                      "aria-controls": "contactsListPane",
-                      "aria-selected": "true",
-                    },
-                  },
-                  [_c("span", { staticClass: "fe fe-list" })]
-                ),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-white",
-                    attrs: {
-                      id: "contactsCardsTab",
-                      "data-bs-toggle": "tab",
-                      "data-bs-target": "#contactsCardsPane",
-                      role: "tab",
-                      "aria-controls": "contactsCardsPane",
-                      "aria-selected": "false",
-                    },
-                  },
-                  [_c("span", { staticClass: "fe fe-grid" })]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              { staticClass: "btn btn-primary ms-2", attrs: { href: "#!" } },
-              [_vm._v("\n                   Add contact\n                 ")]
-            ),
-          ]),
+    return _c("div", { staticClass: "row align-items-center" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("h6", { staticClass: "header-pretitle" }, [
+          _vm._v("\n                   Overview\n                 "),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "row align-items-center" }, [
-          _c("div", { staticClass: "col" }, [
-            _c("ul", { staticClass: "nav nav-tabs nav-overflow header-tabs" }, [
-              _c("li", { staticClass: "nav-item" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link text-nowrap active",
-                    attrs: { href: "#!" },
-                  },
-                  [
-                    _vm._v("\n                       All contacts "),
-                    _c(
-                      "span",
-                      { staticClass: "badge rounded-pill bg-secondary-soft" },
-                      [_vm._v("823")]
-                    ),
-                  ]
-                ),
-              ]),
-            ]),
-          ]),
+        _c("h1", { staticClass: "header-title text-truncate" }, [
+          _vm._v("\n                   Users\n                 "),
         ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-auto" }, [
+        _c(
+          "div",
+          {
+            staticClass: "nav btn-group d-inline-flex",
+            attrs: { role: "tablist" },
+          },
+          [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-white active",
+                attrs: {
+                  id: "contactsListTab",
+                  "data-bs-toggle": "tab",
+                  "data-bs-target": "#contactsListPane",
+                  role: "tab",
+                  "aria-controls": "contactsListPane",
+                  "aria-selected": "true",
+                },
+              },
+              [_c("span", { staticClass: "fe fe-list" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-white",
+                attrs: {
+                  id: "contactsCardsTab",
+                  "data-bs-toggle": "tab",
+                  "data-bs-target": "#contactsCardsPane",
+                  role: "tab",
+                  "aria-controls": "contactsCardsPane",
+                  "aria-selected": "false",
+                },
+              },
+              [_c("span", { staticClass: "fe fe-grid" })]
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          { staticClass: "btn btn-primary ms-2", attrs: { href: "#!" } },
+          [_vm._v("\n                   Add contact\n                 ")]
+        ),
       ]),
     ])
   },
@@ -33677,6 +33312,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/portal/partials/AccountTopBarComponent.vue":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/portal/partials/AccountTopBarComponent.vue ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _AccountTopBarComponent_vue_vue_type_template_id_53928f52___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AccountTopBarComponent.vue?vue&type=template&id=53928f52& */ "./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=template&id=53928f52&");
+/* harmony import */ var _AccountTopBarComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AccountTopBarComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AccountTopBarComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AccountTopBarComponent_vue_vue_type_template_id_53928f52___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AccountTopBarComponent_vue_vue_type_template_id_53928f52___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/portal/partials/AccountTopBarComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************!*\
+  !*** ./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountTopBarComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccountTopBarComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountTopBarComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=template&id=53928f52&":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=template&id=53928f52& ***!
+  \***********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountTopBarComponent_vue_vue_type_template_id_53928f52___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccountTopBarComponent.vue?vue&type=template&id=53928f52& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/partials/AccountTopBarComponent.vue?vue&type=template&id=53928f52&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountTopBarComponent_vue_vue_type_template_id_53928f52___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountTopBarComponent_vue_vue_type_template_id_53928f52___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/portal/partials/NotificationsComponent.vue":
 /*!****************************************************************************!*\
   !*** ./resources/js/components/portal/partials/NotificationsComponent.vue ***!
@@ -34632,6 +34336,7 @@ Vue.component('progressbar-widget', __webpack_require__(/*! ./components/portal/
 Vue.component('line-widget', __webpack_require__(/*! ./components/portal/widgets/LinechartComponent.vue */ "./resources/js/components/portal/widgets/LinechartComponent.vue")["default"]);
 Vue.component('health-widget', __webpack_require__(/*! ./components/portal/widgets/HealthchartComponent.vue */ "./resources/js/components/portal/widgets/HealthchartComponent.vue")["default"]);
 Vue.component('pie-widget', __webpack_require__(/*! ./components/portal/widgets/PiechartComponent.vue */ "./resources/js/components/portal/widgets/PiechartComponent.vue")["default"]);
+Vue.component('accounts-topbar', __webpack_require__(/*! ./components/portal/partials/AccountTopBarComponent.vue */ "./resources/js/components/portal/partials/AccountTopBarComponent.vue")["default"]);
 Vue.mixin({
   data: function data() {
     return {

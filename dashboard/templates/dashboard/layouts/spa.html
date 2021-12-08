@@ -110,6 +110,11 @@
         </div>
         <!-- / .main-content -->
     </div>
+    <script>
+        let stripePubKey = '{{ STRIPE_PUB_KEY }}';
+        let queuedJobsWaitTime = '{{ PENDING_JOBS_QUEUE_MINS}}';
+    </script>
+    <script src="https://js.stripe.com/v3/"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

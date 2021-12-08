@@ -45,7 +45,7 @@
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
                         <a href="#!" class="nav-link text-nowrap active">
-                          All contacts <span class="badge rounded-pill bg-secondary-soft">823</span>
+                          All contacts <span class="badge rounded-pill bg-secondary-soft">{{users.count}}</span>
                         </a>
                       </li>
                      
