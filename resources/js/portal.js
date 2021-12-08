@@ -49,6 +49,7 @@ Vue.component('line-widget', require('./components/portal/widgets/LinechartCompo
 Vue.component('health-widget', require('./components/portal/widgets/HealthchartComponent.vue').default);
 Vue.component('pie-widget', require('./components/portal/widgets/PiechartComponent.vue').default);
 Vue.component('accounts-topbar', require('./components/portal/partials/AccountTopBarComponent.vue').default);
+Vue.component('invoices', require('./components/portal/billing/InvoicesComponent.vue').default);
 
 Vue.mixin({
     data() {

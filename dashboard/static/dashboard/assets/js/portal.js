@@ -521,85 +521,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -790,51 +711,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["pagination"],
   data: function data() {
@@ -850,8 +726,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    docReady(tooltipInit);
-
+    // docReady(tooltipInit);
     var _this = this;
 
     _this.getinvoices();
@@ -907,8 +782,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   watch: {
-    busy: function busy(oldVal, newVal) {
-      docReady(tooltipInit);
+    busy: function busy(oldVal, newVal) {// docReady(tooltipInit);
     },
     status: function status(oldVal, newVal) {
       this.getinvoices();
@@ -7150,143 +7024,150 @@ var render = function () {
   return _c("div", { staticClass: "container-fluid" }, [
     _vm.$store.state.user
       ? _c("div", { staticClass: "row justify-content-center" }, [
-          _c("div", { staticClass: "col-12 col-lg-10 col-xl-8" }, [
-            _c("div", { staticClass: "header mt-md-5" }, [
-              _c(
-                "div",
-                { staticClass: "header-body" },
-                [_vm._m(0), _vm._v(" "), _c("accounts-topbar")],
-                1
-              ),
-            ]),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("div", { staticClass: "row align-items-center" }, [
-                  _c("div", { staticClass: "col" }, [
-                    _c("h4", { staticClass: "card-header-title" }, [
-                      !_vm.$store.state.user.stripe_last4
-                        ? _c("span", [_vm._v("Add Card")])
-                        : _c("span", [_vm._v("Update Card")]),
+          _c(
+            "div",
+            { staticClass: "col-12 col-lg-10 col-xl-8" },
+            [
+              _c("div", { staticClass: "header mt-md-5" }, [
+                _c(
+                  "div",
+                  { staticClass: "header-body" },
+                  [_vm._m(0), _vm._v(" "), _c("accounts-topbar")],
+                  1
+                ),
+              ]),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("div", { staticClass: "row align-items-center" }, [
+                    _c("div", { staticClass: "col" }, [
+                      _c("h4", { staticClass: "card-header-title" }, [
+                        !_vm.$store.state.user.stripe_last4
+                          ? _c("span", [_vm._v("Add Card")])
+                          : _c("span", [_vm._v("Update Card")]),
+                      ]),
                     ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-auto" }, [
-                    _c("span", { staticClass: "badge badge-primary" }, [
-                      _vm.$store.state.user.stripe_last4 &&
-                      _vm.$store.state.user.card_brand &&
-                      !_vm.delmethod
-                        ? _c(
-                            "small",
-                            {
-                              staticClass:
-                                "text-white border border-light p-1 rounded",
-                            },
-                            [
-                              _c(
-                                "span",
-                                { staticClass: "font-weight-bold font-italic" },
-                                [
-                                  _vm._v(
-                                    _vm._s(
-                                      _vm.$store.state.user.card_brand.toUpperCase()
-                                    )
-                                  ),
-                                ]
-                              ),
-                              _vm._v(
-                                "\n              ****" +
-                                  _vm._s(_vm.$store.state.user.stripe_last4) +
-                                  "\n              "
-                              ),
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "text-light px-2",
-                                  attrs: { href: "javascript:void(0)" },
-                                  on: {
-                                    click: function ($event) {
-                                      _vm.delmethod = true
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-auto" }, [
+                      _c("span", { staticClass: "badge badge-primary " }, [
+                        _vm.$store.state.user.stripe_last4 &&
+                        _vm.$store.state.user.card_brand &&
+                        !_vm.delmethod
+                          ? _c(
+                              "small",
+                              {
+                                staticClass:
+                                  "border border-light text-dark p-1 rounded",
+                              },
+                              [
+                                _c(
+                                  "span",
+                                  {
+                                    staticClass: "font-weight-bold font-italic",
+                                  },
+                                  [
+                                    _vm._v(
+                                      _vm._s(
+                                        _vm.$store.state.user.card_brand.toUpperCase()
+                                      )
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(
+                                  "\n              ****" +
+                                    _vm._s(_vm.$store.state.user.stripe_last4) +
+                                    "\n              "
+                                ),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "text-dark px-2",
+                                    attrs: { href: "javascript:void(0)" },
+                                    on: {
+                                      click: function ($event) {
+                                        _vm.delmethod = true
+                                      },
                                     },
                                   },
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass: "fas fa-times-circle",
-                                  }),
-                                ]
-                              ),
-                            ]
-                          )
-                        : _vm._e(),
+                                  [_c("i", { staticClass: "fe fe-trash" })]
+                                ),
+                              ]
+                            )
+                          : _vm._e(),
+                      ]),
                     ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "row g-3" }, [
+                    _c(
+                      "div",
+                      { staticClass: "col-md-12" },
+                      [
+                        _c("card", {
+                          ref: "card",
+                          staticClass: "form-control stripe-card",
+                          class: { complete: _vm.complete },
+                          attrs: {
+                            disabled: _vm.busy,
+                            stripe: _vm.stripePubKey,
+                          },
+                          on: {
+                            change: function ($event) {
+                              _vm.complete = $event.complete
+                            },
+                          },
+                        }),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-footer" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      { staticClass: "col-12 d-flex justify-content-end" },
+                      [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "btn btn-dark btn-sm rounded text-white",
+                            attrs: { disabled: _vm.busy, type: "submit" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.updateBillingInfo()
+                              },
+                            },
+                          },
+                          [
+                            _c("loading-component", {
+                              attrs: { busy: _vm.busy },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]
+                    ),
                   ]),
                 ]),
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("div", { staticClass: "row g-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12" },
-                    [
-                      _c("card", {
-                        ref: "card",
-                        staticClass: "form-control stripe-card",
-                        class: { complete: _vm.complete },
-                        attrs: { disabled: _vm.busy, stripe: _vm.stripePubKey },
-                        on: {
-                          change: function ($event) {
-                            _vm.complete = $event.complete
-                          },
-                        },
-                      }),
-                    ],
-                    1
-                  ),
-                ]),
-              ]),
+              _c("invoices"),
               _vm._v(" "),
-              _c("div", { staticClass: "card-footer" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-12 d-flex justify-content-end" },
-                    [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-dark btn-sm rounded text-white",
-                          attrs: { disabled: _vm.busy, type: "submit" },
-                          on: {
-                            click: function ($event) {
-                              return _vm.updateBillingInfo()
-                            },
-                          },
-                        },
-                        [
-                          _c("loading-component", {
-                            attrs: { busy: _vm.busy },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]
-                  ),
-                ]),
-              ]),
-            ]),
-            _vm._v(" "),
-            _vm._m(3),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _c("br"),
-          ]),
+              _vm._m(3),
+              _vm._v(" "),
+              _c("br"),
+            ],
+            1
+          ),
         ])
       : _c("div", {}, [
           _c("h3", { staticClass: "text-center mt-5" }, [
@@ -7400,132 +7281,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h4", { staticClass: "card-header-title" }, [
-          _vm._v("\n                Invoices\n              "),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "table-responsive" }, [
-        _c("table", { staticClass: "table table-sm table-nowrap card-table" }, [
-          _c("thead", [
-            _c("tr", [
-              _c("th", [_vm._v("Invoice ID")]),
-              _vm._v(" "),
-              _c("th", [_vm._v("Date")]),
-              _vm._v(" "),
-              _c("th", [_vm._v("Amount")]),
-              _vm._v(" "),
-              _c("th", [_vm._v("Status")]),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("tbody", { staticClass: "fs-base" }, [
-            _c("tr", [
-              _c("td", [
-                _c("a", { attrs: { href: "invoice.html" } }, [
-                  _vm._v("Invoice #10395"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("time", { attrs: { datetime: "2020-04-24" } }, [
-                  _vm._v("Apr. 24, 2020"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _vm._v("\n                      $29.00\n                    "),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("span", { staticClass: "badge bg-secondary" }, [
-                  _vm._v("Outstanding"),
-                ]),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [
-                _c("a", { attrs: { href: "invoice.html" } }, [
-                  _vm._v("Invoice #10244"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("time", { attrs: { datetime: "2020-03-24" } }, [
-                  _vm._v("Mar. 24, 2020"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _vm._v("\n                      $29.00\n                    "),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("span", { staticClass: "badge bg-success" }, [
-                  _vm._v("Paid"),
-                ]),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [
-                _c("a", { attrs: { href: "invoice.html" } }, [
-                  _vm._v("Invoice #10119"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("time", { attrs: { datetime: "2020-02-24" } }, [
-                  _vm._v("Feb. 24, 2020"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _vm._v("\n                      $29.00\n                    "),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("span", { staticClass: "badge bg-success" }, [
-                  _vm._v("Paid"),
-                ]),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [
-                _c("a", { attrs: { href: "invoice.html" } }, [
-                  _vm._v("Invoice #10062"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("time", { attrs: { datetime: "2020-01-24" } }, [
-                  _vm._v("Jan. 24, 2020"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _vm._v("\n                      $29.00\n                    "),
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("span", { staticClass: "badge bg-success" }, [
-                  _vm._v("Paid"),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("p", { staticClass: "text-center" }, [
       _c("small", { staticClass: "text-muted" }, [
         _vm._v("Don’t need Dashkit anymore? "),
@@ -7555,44 +7310,27 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-12" }, [
-      _c("div", { staticClass: "card mb-3" }, [
-        _c("div", { staticClass: "card-header gradient-dark text-white" }, [
-          _c(
-            "div",
-            { staticClass: "row align-items-center justify-content-between" },
-            [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-6 col-sm-auto d-flex align-items-center pr-0",
-                },
-                [
-                  _c(
-                    "h5",
-                    { staticClass: "text-white mb-0 text-nowrap py-2 py-xl-0" },
-                    [
-                      _vm._v("\n              Invoices"),
-                      _vm.invoices.count
-                        ? _c("span", [
-                            _vm._v(
-                              " (" +
-                                _vm._s(_vm._f("toNumber")(_vm.invoices.count)) +
-                                ")"
-                            ),
-                          ])
-                        : _vm._e(),
-                    ]
-                  ),
-                ]
+  return _c("div", { staticClass: "card" }, [
+    _c("div", { staticClass: "card-header" }, [
+      _c("h4", { staticClass: "card-header-title" }, [
+        _vm._v("\n            Invoices"),
+        _vm.invoices.count
+          ? _c("span", [
+              _vm._v(
+                " (" + _vm._s(_vm._f("toNumber")(_vm.invoices.count)) + ")"
               ),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body px-0 pt-0" }, [
+            ])
+          : _vm._e(),
+      ]),
+    ]),
+    _vm._v(" "),
+    !_vm.invoices || _vm.invoices.count == 0
+      ? _c("div", { staticClass: "row g-0 pt-4 text-center" }, [
+          _c("h5", { staticClass: "text-center text-muted my-5" }, [
+            _vm._v("No invoices found!"),
+          ]),
+        ])
+      : _c("div", [
           _vm.busy
             ? _c(
                 "div",
@@ -7608,317 +7346,247 @@ var render = function () {
                 ],
                 1
               )
-            : _c("div", [
-                !_vm.invoices || _vm.invoices.count == 0
-                  ? _c("div", { staticClass: "row g-0 pt-4 text-center" }, [
-                      _c("h5", { staticClass: "text-center text-muted my-5" }, [
-                        _vm._v("No invoices found!"),
-                      ]),
-                    ])
-                  : _c("div", { staticClass: "row g-0" }, [
-                      _c("div", { staticClass: "table-responsive" }, [
-                        _c("table", { staticClass: "table" }, [
+            : _c("div", { staticClass: "table-responsive" }, [
+                _c(
+                  "table",
+                  { staticClass: "table table-sm table-nowrap card-table" },
+                  [
+                    _c("thead", { staticClass: "bg-secondary " }, [
+                      _c("tr", [
+                        _c("th", { staticStyle: { width: "10%" } }, [
                           _c(
-                            "thead",
-                            { staticClass: "bg-secondary text-white" },
+                            "a",
+                            {
+                              staticClass: "text-decoration-none ",
+                              attrs: { href: "javascript:void(0)" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.orderinvoicesBy("pk")
+                                },
+                              },
+                            },
                             [
-                              _c("tr", [
-                                _c("th", { staticStyle: { width: "10%" } }, [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "text-decoration-none text-white",
-                                      attrs: { href: "javascript:void(0)" },
-                                      on: {
-                                        click: function ($event) {
-                                          return _vm.orderinvoicesBy("pk")
-                                        },
-                                      },
-                                    },
-                                    [
-                                      _vm.order_by == "pk"
-                                        ? _c("i", {
-                                            staticClass: "fas fa-arrow-up",
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(" "),
-                                      _vm.order_by == "-pk"
-                                        ? _c("i", {
-                                            staticClass: "fas fa-arrow-down",
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(
-                                        "\n                        ID\n                      "
-                                      ),
-                                    ]
-                                  ),
-                                ]),
-                                _vm._v(" "),
-                                _c("th", { staticStyle: { width: "20%" } }, [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "text-decoration-none text-white",
-                                      attrs: { href: "javascript:void(0)" },
-                                      on: {
-                                        click: function ($event) {
-                                          return _vm.orderinvoicesBy("cost")
-                                        },
-                                      },
-                                    },
-                                    [
-                                      _vm.order_by == "cost"
-                                        ? _c("i", {
-                                            staticClass: "fas fa-arrow-up",
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(" "),
-                                      _vm.order_by == "-cost"
-                                        ? _c("i", {
-                                            staticClass: "fas fa-arrow-down",
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(
-                                        "\n                        Amount\n                      "
-                                      ),
-                                    ]
-                                  ),
-                                ]),
-                                _vm._v(" "),
-                                _c("th", { staticStyle: { width: "20%" } }, [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "text-decoration-none text-white",
-                                      attrs: { href: "javascript:void(0)" },
-                                      on: {
-                                        click: function ($event) {
-                                          return _vm.orderinvoicesBy("status")
-                                        },
-                                      },
-                                    },
-                                    [
-                                      _vm.order_by == "status"
-                                        ? _c("i", {
-                                            staticClass: "fas fa-arrow-up",
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(" "),
-                                      _vm.order_by == "-status"
-                                        ? _c("i", {
-                                            staticClass: "fas fa-arrow-down",
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(
-                                        "\n                        Status\n                      "
-                                      ),
-                                    ]
-                                  ),
-                                ]),
-                                _vm._v(" "),
-                                _c("th", { attrs: { colspan: "2" } }, [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "text-decoration-none text-white",
-                                      attrs: { href: "javascript:void(0)" },
-                                      on: {
-                                        click: function ($event) {
-                                          return _vm.orderinvoicesBy("date")
-                                        },
-                                      },
-                                    },
-                                    [
-                                      _vm.order_by == "date"
-                                        ? _c("i", {
-                                            staticClass: "fas fa-arrow-up",
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(" "),
-                                      _vm.order_by == "-date"
-                                        ? _c("i", {
-                                            staticClass: "fas fa-arrow-down",
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(
-                                        "\n                        Invoice Date\n                      "
-                                      ),
-                                    ]
-                                  ),
-                                ]),
-                              ]),
+                              _vm.order_by == "pk"
+                                ? _c("i", { staticClass: "fas fa-arrow-up" })
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _vm.order_by == "-pk"
+                                ? _c("i", { staticClass: "fas fa-arrow-down" })
+                                : _vm._e(),
+                              _vm._v(
+                                "\n                              ID\n                            "
+                              ),
                             ]
                           ),
-                          _vm._v(" "),
+                        ]),
+                        _vm._v(" "),
+                        _c("th", { staticStyle: { width: "20%" } }, [
                           _c(
-                            "tbody",
-                            _vm._l(_vm.invoices.results, function (invoice) {
-                              return _c("tr", { key: invoice.id }, [
-                                _c("td", [_vm._v("#" + _vm._s(invoice.id))]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm._v(
-                                    _vm._s(_vm._f("toCurrency")(invoice.cost))
-                                  ),
-                                ]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  invoice.status == "paid"
-                                    ? _c(
-                                        "span",
-                                        {
-                                          staticClass:
-                                            "badge badge rounded-capsule badge-soft-primary",
-                                          staticStyle: { width: "80px" },
-                                        },
-                                        [
-                                          _vm._v("Paid "),
-                                          _c("span", {
-                                            staticClass:
-                                              "ml-1 fas fa-check-circle",
-                                            attrs: {
-                                              "data-fa-transform": "shrink-2",
-                                            },
-                                          }),
-                                        ]
-                                      )
-                                    : ["open", "draft"].includes(invoice.status)
-                                    ? _c(
-                                        "span",
-                                        {
-                                          staticClass:
-                                            "badge badge rounded-capsule badge-soft-warning",
-                                          staticStyle: { width: "80px" },
-                                        },
-                                        [
-                                          _vm._v("Pending "),
-                                          _c("span", {
-                                            staticClass: "ml-1 fas fa-stream",
-                                            attrs: {
-                                              "data-fa-transform": "shrink-2",
-                                            },
-                                          }),
-                                        ]
-                                      )
-                                    : invoice.status == "void"
-                                    ? _c(
-                                        "span",
-                                        {
-                                          staticClass:
-                                            "badge badge rounded-capsule badge-soft-danger",
-                                          staticStyle: { width: "80px" },
-                                        },
-                                        [
-                                          _vm._v("Void "),
-                                          _c("span", {
-                                            staticClass:
-                                              "ml-1 fas fa-times-circle",
-                                            attrs: {
-                                              "data-fa-transform": "shrink-2",
-                                            },
-                                          }),
-                                        ]
-                                      )
-                                    : invoice.status == "uncollectible"
-                                    ? _c(
-                                        "span",
-                                        {
-                                          staticClass:
-                                            "badge badge rounded-capsule badge-soft-danger",
-                                          staticStyle: { width: "80px" },
-                                        },
-                                        [
-                                          _vm._v("Invalid "),
-                                          _c("span", {
-                                            staticClass:
-                                              "ml-1 fas fa-info-circle",
-                                            attrs: {
-                                              "data-fa-transform": "shrink-2",
-                                            },
-                                          }),
-                                        ]
-                                      )
-                                    : _c(
-                                        "span",
-                                        {
-                                          staticClass:
-                                            "badge badge rounded-capsule badge-soft-danger",
-                                          staticStyle: { width: "80px" },
-                                        },
-                                        [
-                                          _vm._v("Unknown "),
-                                          _c("span", {
-                                            staticClass:
-                                              "ml-1 fas fa-info-circle",
-                                            attrs: {
-                                              "data-fa-transform": "shrink-2",
-                                            },
-                                          }),
-                                        ]
-                                      ),
-                                ]),
-                                _vm._v(" "),
-                                _c("td", [_vm._v(_vm._s(invoice.date))]),
-                                _vm._v(" "),
-                                _c("td", { staticClass: "text-right" }, [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "btn btn-sm btn-primary",
-                                      class: { disabled: !invoice.url },
-                                      attrs: {
-                                        target: "_blank",
-                                        href: invoice.url,
-                                      },
-                                    },
-                                    [_vm._v("View")]
-                                  ),
-                                ]),
-                              ])
-                            }),
-                            0
+                            "a",
+                            {
+                              staticClass: "text-decoration-none ",
+                              attrs: { href: "javascript:void(0)" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.orderinvoicesBy("cost")
+                                },
+                              },
+                            },
+                            [
+                              _vm.order_by == "cost"
+                                ? _c("i", { staticClass: "fas fa-arrow-up" })
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _vm.order_by == "-cost"
+                                ? _c("i", { staticClass: "fas fa-arrow-down" })
+                                : _vm._e(),
+                              _vm._v(
+                                "\n                              Amount\n                            "
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("th", { staticStyle: { width: "20%" } }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-decoration-none ",
+                              attrs: { href: "javascript:void(0)" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.orderinvoicesBy("status")
+                                },
+                              },
+                            },
+                            [
+                              _vm.order_by == "status"
+                                ? _c("i", { staticClass: "fas fa-arrow-up" })
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _vm.order_by == "-status"
+                                ? _c("i", { staticClass: "fas fa-arrow-down" })
+                                : _vm._e(),
+                              _vm._v(
+                                "\n                              Status\n                            "
+                              ),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("th", { attrs: { colspan: "2" } }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-decoration-none ",
+                              attrs: { href: "javascript:void(0)" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.orderinvoicesBy("date")
+                                },
+                              },
+                            },
+                            [
+                              _vm.order_by == "date"
+                                ? _c("i", { staticClass: "fas fa-arrow-up" })
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _vm.order_by == "-date"
+                                ? _c("i", { staticClass: "fas fa-arrow-down" })
+                                : _vm._e(),
+                              _vm._v(
+                                "\n                              Invoice Date\n                            "
+                              ),
+                            ]
                           ),
                         ]),
                       ]),
                     ]),
+                    _vm._v(" "),
+                    _c(
+                      "tbody",
+                      { staticClass: "fs-base" },
+                      _vm._l(_vm.invoices.results, function (invoice) {
+                        return _c("tr", { key: invoice.id }, [
+                          _c("td", [_vm._v("#" + _vm._s(invoice.id))]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(_vm._s(_vm._f("toCurrency")(invoice.cost))),
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            invoice.status == "paid"
+                              ? _c(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "badge badge rounded-capsule badge-soft-primary",
+                                    staticStyle: { width: "80px" },
+                                  },
+                                  [
+                                    _vm._v("Paid "),
+                                    _c("span", {
+                                      staticClass: "ml-1 fas fa-check-circle",
+                                      attrs: {
+                                        "data-fa-transform": "shrink-2",
+                                      },
+                                    }),
+                                  ]
+                                )
+                              : ["open", "draft"].includes(invoice.status)
+                              ? _c(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "badge badge rounded-capsule badge-soft-warning",
+                                    staticStyle: { width: "80px" },
+                                  },
+                                  [
+                                    _vm._v("Pending "),
+                                    _c("span", {
+                                      staticClass: "ml-1 fas fa-stream",
+                                      attrs: {
+                                        "data-fa-transform": "shrink-2",
+                                      },
+                                    }),
+                                  ]
+                                )
+                              : invoice.status == "void"
+                              ? _c(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "badge badge rounded-capsule badge-soft-danger",
+                                    staticStyle: { width: "80px" },
+                                  },
+                                  [
+                                    _vm._v("Void "),
+                                    _c("span", {
+                                      staticClass: "ml-1 fas fa-times-circle",
+                                      attrs: {
+                                        "data-fa-transform": "shrink-2",
+                                      },
+                                    }),
+                                  ]
+                                )
+                              : invoice.status == "uncollectible"
+                              ? _c(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "badge badge rounded-capsule badge-soft-danger",
+                                    staticStyle: { width: "80px" },
+                                  },
+                                  [
+                                    _vm._v("Invalid "),
+                                    _c("span", {
+                                      staticClass: "ml-1 fas fa-info-circle",
+                                      attrs: {
+                                        "data-fa-transform": "shrink-2",
+                                      },
+                                    }),
+                                  ]
+                                )
+                              : _c(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "badge badge rounded-capsule badge-soft-danger",
+                                    staticStyle: { width: "80px" },
+                                  },
+                                  [
+                                    _vm._v("Unknown "),
+                                    _c("span", {
+                                      staticClass: "ml-1 fas fa-info-circle",
+                                      attrs: {
+                                        "data-fa-transform": "shrink-2",
+                                      },
+                                    }),
+                                  ]
+                                ),
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v(_vm._s(invoice.date))]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-right" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-sm btn-primary",
+                                class: { disabled: !invoice.url },
+                                attrs: { target: "_blank", href: invoice.url },
+                              },
+                              [_vm._v("View")]
+                            ),
+                          ]),
+                        ])
+                      }),
+                      0
+                    ),
+                  ]
+                ),
               ]),
         ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-footer bg-light text-right" }, [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-falcon-default",
-              attrs: { disabled: !_vm.previous_offset },
-              on: {
-                click: function ($event) {
-                  ;(_vm.offset = _vm.previous_offset), _vm.getinvoices()
-                },
-              },
-            },
-            [_vm._v("\n          Previous\n        ")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-falcon-default",
-              attrs: { disabled: _vm.next_offset == false },
-              on: {
-                click: function ($event) {
-                  ;(_vm.offset = _vm.next_offset), _vm.getinvoices()
-                },
-              },
-            },
-            [_vm._v("\n          Next\n        ")]
-          ),
-        ]),
-      ]),
-    ]),
   ])
 }
 var staticRenderFns = []
@@ -34337,6 +34005,7 @@ Vue.component('line-widget', __webpack_require__(/*! ./components/portal/widgets
 Vue.component('health-widget', __webpack_require__(/*! ./components/portal/widgets/HealthchartComponent.vue */ "./resources/js/components/portal/widgets/HealthchartComponent.vue")["default"]);
 Vue.component('pie-widget', __webpack_require__(/*! ./components/portal/widgets/PiechartComponent.vue */ "./resources/js/components/portal/widgets/PiechartComponent.vue")["default"]);
 Vue.component('accounts-topbar', __webpack_require__(/*! ./components/portal/partials/AccountTopBarComponent.vue */ "./resources/js/components/portal/partials/AccountTopBarComponent.vue")["default"]);
+Vue.component('invoices', __webpack_require__(/*! ./components/portal/billing/InvoicesComponent.vue */ "./resources/js/components/portal/billing/InvoicesComponent.vue")["default"]);
 Vue.mixin({
   data: function data() {
     return {

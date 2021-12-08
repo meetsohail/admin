@@ -113,9 +113,9 @@
                   <div class="col-auto">
 
                     <!-- Button -->
-                    <span class="badge badge-primary">
+                    <span class="badge badge-primary ">
                       <small
-                class="text-white border border-light p-1 rounded"
+                class="border border-light text-dark p-1 rounded"
                 v-if="
                   $store.state.user.stripe_last4 &&
                   $store.state.user.card_brand &&
@@ -127,9 +127,9 @@
                 ****{{ $store.state.user.stripe_last4 }}
                 <a
                   @click="delmethod = true"
-                  class="text-light px-2"
+                  class="text-dark px-2"
                   href="javascript:void(0)"
-                  ><i class="fas fa-times-circle"></i></a
+                  ><i class="fe fe-trash"></i></a
               ></small>
                     </span>
 
@@ -168,86 +168,7 @@
               </div>
             </div>
             <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-
-                <!-- Title -->
-                <h4 class="card-header-title">
-                  Invoices
-                </h4>
-
-              </div>
-              <div class="table-responsive">
-                <table class="table table-sm table-nowrap card-table">
-                  <thead>
-                    <tr>
-                      <th>Invoice ID</th>
-                      <th>Date</th>
-                      <th>Amount</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody class="fs-base">
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10395</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-04-24">Apr. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <span class="badge bg-secondary">Outstanding</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10244</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-03-24">Mar. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <span class="badge bg-success">Paid</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10119</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-02-24">Feb. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <span class="badge bg-success">Paid</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10062</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-01-24">Jan. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <span class="badge bg-success">Paid</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+          <invoices></invoices>
 
             <!-- Text -->
             <p class="text-center">
