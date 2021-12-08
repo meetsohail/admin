@@ -83,11 +83,15 @@
                                                    Subscribed
                                                    </button>
                                 <br>
-                                <small v-if="switching && switching_prod==product.id" class="text-warning">Do you want to switch your current package to this one?</small><br>
-                                <a href="#" v-if="switching && switching_prod==product.id" @click="subscribe(product.id)" class="badge bg-danger small">Confirm?</a>
-                                <a href="#" v-if="switching && switching_prod==product.id" @click="cancelSubscribe()" class="badge bg-success small">Cancel?</a>
+                                <div class="text-center">
+                                  <small v-if="switching && switching_prod==product.id" class="text-warning">Do you want to switch your current package to this one?</small><br>
+                                  <span v-if="switching && switching_prod==product.id" @click="subscribe(product.id)" class="badge bg-danger small">Confirm?</span>
+                                  <span href="#" v-if="switching && switching_prod==product.id" @click="cancelSubscribe()" class="badge bg-success small">Cancel?</span>
+                                </div>
                             </div>
-                            <a class="btn btn-warning w-100 text-white" v-if="subs_id == product.id" @click="unsubscribe(product.id)">Unsubscribe</a>
+                            <div class="text-center">
+                            <span href="#!" class="small sm text-center text-weight-light text-muted" v-if="subs_id == product.id" @click="unsubscribe(product.id)">Unsubscribe</span>
+                            </div>
                             <br>
     
                             <a href="#" v-if="unsubbtn && pid==product.id" @click="unsubscribeCofirm(product.id)" class="badge badge-soft-danger small mt-3">Confirm?</a>

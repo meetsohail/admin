@@ -3611,6 +3611,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -12410,71 +12414,77 @@ var render = function () {
                                   _vm._v(" "),
                                   _c("br"),
                                   _vm._v(" "),
-                                  _vm.switching &&
-                                  _vm.switching_prod == product.id
-                                    ? _c(
-                                        "small",
-                                        { staticClass: "text-warning" },
-                                        [
-                                          _vm._v(
-                                            "Do you want to switch your current package to this one?"
-                                          ),
-                                        ]
-                                      )
-                                    : _vm._e(),
-                                  _c("br"),
-                                  _vm._v(" "),
-                                  _vm.switching &&
-                                  _vm.switching_prod == product.id
-                                    ? _c(
-                                        "a",
-                                        {
-                                          staticClass: "badge bg-danger small",
-                                          attrs: { href: "#" },
-                                          on: {
-                                            click: function ($event) {
-                                              return _vm.subscribe(product.id)
+                                  _c("div", { staticClass: "text-center" }, [
+                                    _vm.switching &&
+                                    _vm.switching_prod == product.id
+                                      ? _c(
+                                          "small",
+                                          { staticClass: "text-warning" },
+                                          [
+                                            _vm._v(
+                                              "Do you want to switch your current package to this one?"
+                                            ),
+                                          ]
+                                        )
+                                      : _vm._e(),
+                                    _c("br"),
+                                    _vm._v(" "),
+                                    _vm.switching &&
+                                    _vm.switching_prod == product.id
+                                      ? _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "badge bg-danger small",
+                                            on: {
+                                              click: function ($event) {
+                                                return _vm.subscribe(product.id)
+                                              },
                                             },
                                           },
-                                        },
-                                        [_vm._v("Confirm?")]
-                                      )
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  _vm.switching &&
-                                  _vm.switching_prod == product.id
-                                    ? _c(
-                                        "a",
-                                        {
-                                          staticClass: "badge bg-success small",
-                                          attrs: { href: "#" },
-                                          on: {
-                                            click: function ($event) {
-                                              return _vm.cancelSubscribe()
+                                          [_vm._v("Confirm?")]
+                                        )
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.switching &&
+                                    _vm.switching_prod == product.id
+                                      ? _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "badge bg-success small",
+                                            attrs: { href: "#" },
+                                            on: {
+                                              click: function ($event) {
+                                                return _vm.cancelSubscribe()
+                                              },
                                             },
                                           },
-                                        },
-                                        [_vm._v("Cancel?")]
-                                      )
-                                    : _vm._e(),
+                                          [_vm._v("Cancel?")]
+                                        )
+                                      : _vm._e(),
+                                  ]),
                                 ])
                               : _vm._e(),
                             _vm._v(" "),
-                            _vm.subs_id == product.id
-                              ? _c(
-                                  "a",
-                                  {
-                                    staticClass:
-                                      "btn btn-warning w-100 text-white",
-                                    on: {
-                                      click: function ($event) {
-                                        return _vm.unsubscribe(product.id)
+                            _c("div", { staticClass: "text-center" }, [
+                              _vm.subs_id == product.id
+                                ? _c(
+                                    "span",
+                                    {
+                                      staticClass:
+                                        "small sm text-center text-weight-light text-muted",
+                                      attrs: { href: "#!" },
+                                      on: {
+                                        click: function ($event) {
+                                          return _vm.unsubscribe(product.id)
+                                        },
                                       },
                                     },
-                                  },
-                                  [_vm._v("Unsubscribe")]
-                                )
-                              : _vm._e(),
+                                    [_vm._v("Unsubscribe")]
+                                  )
+                                : _vm._e(),
+                            ]),
                             _vm._v(" "),
                             _c("br"),
                             _vm._v(" "),
