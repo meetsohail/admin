@@ -1,5 +1,4 @@
-export const routes = [
-    {
+export const routes = [{
         path: '/test',
         name: 'bar',
         component: require('../components/portal/widgets/LinechartComponent').default,
@@ -51,6 +50,14 @@ export const routes = [
         path: '/billing-settings',
         name: 'billing',
         component: require('../components/portal/billing/BillingComponent').default,
+        meta: {
+            title: 'Billing Settings'
+        }
+    },
+    {
+        path: '/notifications',
+        name: 'notification',
+        component: require('../components/portal/profile/NotificationComponent').default,
         meta: {
             title: 'Billing Settings'
         }

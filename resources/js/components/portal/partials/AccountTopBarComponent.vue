@@ -14,16 +14,10 @@
                           Billing
                         </router-link>
                       </li>
-                     
                       <li class="nav-item">
-                        <a href="account-security.html" class="nav-link">
-                          Security
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-notifications.html" class="nav-link">
+                        <router-link :to="{name:'notification'}" class="nav-link" v-bind:class="$route.name == 'notification' ? 'active' : ''">
                           Notifications
-                        </a>
+                        </router-link>
                       </li>
                     </ul>
 

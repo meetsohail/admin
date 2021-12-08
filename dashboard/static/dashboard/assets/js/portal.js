@@ -1541,12 +1541,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1714,6 +1708,200 @@ __webpack_require__.r(__webpack_exports__);
         toastr.error('API token cannot be reset.');
       });
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {};
   }
 });
 
@@ -3256,11 +3444,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/portal/subscription/ProductComponent.vue?vue&type=script&lang=js& ***!
   \***********************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 //
 //
 //
@@ -3339,187 +3525,114 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      products: {},
-      busy: false,
-      status: true,
-      message: '',
-      subs_id: false,
-      errors: {},
-      unsubbtn: false,
-      pid: '',
-      successmsg: false,
-      errormsg: false,
-      subscribing: false,
-      endPoint: '',
-      switching: false,
-      switching_prod: ''
-    };
-  },
-  mounted: function mounted() {
-    docReady(tooltipInit);
-
-    var _this = this;
-
-    _this.getProducts();
-
-    _this.getSubscription();
-  },
-  methods: {
-    ConfirmSwitch: function ConfirmSwitch(product_id) {
-      var _this = this;
-
-      _this.switching = true;
-      _this.switching_prod = product_id;
-    },
-    cancelSubscribe: function cancelSubscribe() {
-      var _this = this;
-
-      _this.switching = false;
-      _this.switching_prod = '';
-    },
-    unsubscribe: function unsubscribe(prod_id) {
-      var _this = this;
-
-      _this.unsubbtn = true;
-      _this.pid = prod_id;
-    },
-    unsubscribeCancel: function unsubscribeCancel() {
-      var _this = this;
-
-      _this.unsubbtn = false;
-    },
-    unsubscribeCofirm: function unsubscribeCofirm(product_id) {
-      var _this = this;
-
-      _this.busy = true;
-      var fd = new FormData();
-      fd.append('product_id', product_id);
-      axios.post("/billing/unsubscribe/", fd).then(function (res) {
-        // _this.successmsg = true;
-        // _this.message = res.data.message;
-        _this.busy = false;
-
-        _this.getProducts();
-
-        _this.getSubscription();
-
-        _this.subscribing = false;
-        _this.subs_id = false;
-        _this.unsubbtn = false;
-        toastr.success(res.data.message);
-      })["catch"](function (err) {
-        console.log(err.status); // _this.errormsg = true;
-        // _this.message = err.response.data.message;
-
-        _this.busy = false;
-        toastr.success(err.response.data.message);
-      });
-    },
-    getSubscription: function getSubscription() {
-      var _this = this;
-
-      axios.get("/billing/get_subscribe/").then(function (res) {
-        if (res.data.product_id) {
-          _this.subs_id = res.data.product_id;
-        }
-
-        console.log(_this.subs_id);
-      })["catch"](function (err) {
-        _this.subs_id = false;
-      });
-    },
-    subscribe: function subscribe(product_id) {
-      var _this = this;
-
-      _this.busy = true;
-      _this.subscribing = product_id;
-
-      if (_this.subs_id == false) {
-        _this.endPoint = '/billing/subscribe/';
-      } else {
-        _this.endPoint = '/billing/switch/';
-      }
-
-      var fd = new FormData();
-      fd.append('product_id', product_id);
-      axios.post("".concat(_this.endPoint), fd).then(function (res) {
-        // _this.successmsg = true;
-        // _this.message = res.data.message;
-        _this.busy = false;
-
-        _this.getProducts();
-
-        _this.getSubscription();
-
-        toastr.success(res.data.message);
-      })["catch"](function (err) {
-        console.log(err.status); // _this.errormsg = true;
-
-        _this.message = err.response.data.message;
-        _this.busy = false;
-        toastr.error(err.response.data.message);
-      });
-      _this.switching = false;
-      _this.switching_prod = '';
-    },
-    getParameterByName: function getParameterByName(url, name) {
-      var match = RegExp("[?&]" + name + "=([^&]*)").exec(url);
-      return match && decodeURIComponent(match[1].replace(/\+/g, " "));
-    },
-    getProducts: function getProducts() {
-      var _this = this;
-
-      _this.busy = true;
-      axios.get("/billing/?status=true").then(function (res) {
-        _this.products = res.data;
-
-        if (res.data.next) {
-          _this.next_offset = _this.getParameterByName(res.data.next, "offset");
-        } else {
-          _this.next_offset = false;
-        }
-
-        if (res.data.previous) {
-          var prev_offset = _this.getParameterByName(res.data.previous, "offset");
-
-          if (!prev_offset) {
-            prev_offset = "0";
-          }
-
-          _this.previous_offset = prev_offset;
-        } else {
-          _this.previous_offset = false;
-        }
-
-        _this.busy = false;
-      })["catch"](function (err) {
-        _this.busy = false;
-        _this.products = false;
-      });
-    },
-    orderProductsBy: function orderProductsBy(order_by) {
-      var _this = this;
-
-      if (order_by == _this.order_by) {
-        _this.order_by = "-".concat(order_by);
-      } else {
-        _this.order_by = order_by;
-      }
-
-      _this.offset = "";
-
-      _this.getProducts();
-    }
-  },
-  watch: {
-    busy: function busy(oldVal, newVal) {
-      docReady(tooltipInit);
-    }
-  }
-});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -9212,42 +9325,31 @@ var render = function () {
           1
         ),
         _vm._v(" "),
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
+        _c(
+          "li",
+          { staticClass: "nav-item" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "nav-link",
+                class: _vm.$route.name == "notification" ? "active" : "",
+                attrs: { to: { name: "notification" } },
+              },
+              [
+                _vm._v(
+                  "\n                      Notifications\n                    "
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
       ]),
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c(
-        "a",
-        { staticClass: "nav-link", attrs: { href: "account-security.html" } },
-        [_vm._v("\n                      Security\n                    ")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c(
-        "a",
-        {
-          staticClass: "nav-link",
-          attrs: { href: "account-notifications.html" },
-        },
-        [_vm._v("\n                      Notifications\n                    ")]
-      ),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -9598,6 +9700,303 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("h5", { staticClass: "mb-0" }, [_vm._v("API Keys")]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=template&id=7f0a0434&":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=template&id=7f0a0434& ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-12 col-lg-10 col-xl-8" }, [
+        _c("div", { staticClass: "header mt-md-5" }, [
+          _c(
+            "div",
+            { staticClass: "header-body" },
+            [_vm._m(0), _vm._v(" "), _c("accounts-topbar")],
+            1
+          ),
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
+      ]),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row align-items-center" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("h6", { staticClass: "header-pretitle" }, [
+          _vm._v("\n                  Overview\n                "),
+        ]),
+        _vm._v(" "),
+        _c("h1", { staticClass: "header-title" }, [
+          _vm._v("\n                  Account\n                "),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h4", { staticClass: "card-header-title" }, [
+          _vm._v("\n              Notifications\n            "),
+        ]),
+        _vm._v(" "),
+        _c("button", { staticClass: "btn btn-sm btn-white" }, [
+          _vm._v("\n              Disable all\n            "),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "table-responsive" }, [
+        _c("table", { staticClass: "table table-sm table-nowrap card-table" }, [
+          _c("thead", [
+            _c("tr", [
+              _c("th", [_vm._v("Type")]),
+              _vm._v(" "),
+              _c("th", { staticClass: "text-center" }, [_vm._v("Call")]),
+              _vm._v(" "),
+              _c("th", { staticClass: "text-center" }, [_vm._v("Email")]),
+              _vm._v(" "),
+              _c("th", { staticClass: "text-center" }, [_vm._v("SMS")]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("tbody", { staticClass: "fs-base" }, [
+            _c("tr", [
+              _c("td", [
+                _vm._v(
+                  "\n                    Direct messages\n                  "
+                ),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "emailCheckboxOne",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "emailCheckboxOne" },
+                  }),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "smsCheckboxOne",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "smsCheckboxOne" },
+                  }),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [
+                _vm._v("\n                    Reminders\n                  "),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "emailCheckboxTwo",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "emailCheckboxTwo" },
+                  }),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "smsCheckboxTwo",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "smsCheckboxTwo" },
+                  }),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [
+                _vm._v("\n                    API Limits\n                  "),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox", id: "callCheckboxThree" },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "callCheckboxThree" },
+                  }),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "emailCheckboxThree",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "emailCheckboxThree" },
+                  }),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "smsCheckboxThree",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "smsCheckboxThree" },
+                  }),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [
+                _vm._v(
+                  "\n                    Policy & Community\n                  "
+                ),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox", id: "callCheckboxFour" },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "callCheckboxFour" },
+                  }),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "emailCheckboxFour",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "emailCheckboxFour" },
+                  }),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "text-center" }, [
+                _c("div", { staticClass: "form-check d-inline-block me-n3" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: {
+                      type: "checkbox",
+                      id: "smsCheckboxFour",
+                      checked: "",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", {
+                    staticClass: "form-check-label",
+                    attrs: { for: "smsCheckboxFour" },
+                  }),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
     ])
   },
 ]
@@ -11629,304 +12028,358 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row no-gutters" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c("div", { staticClass: "card mb-3" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _c(
-                "div",
-                { staticClass: "row g-0" },
-                [
-                  _vm._m(1),
-                  _vm._v(" "),
-                  !_vm.$store.state.user.payment_method_id
-                    ? _c("div", { staticClass: "col-12 mb-3" }, [
-                        _c(
-                          "div",
-                          { staticClass: "alert alert-warning" },
-                          [
-                            _vm._v(
-                              "Please update your payment method first to subscribe!\n                "
-                            ),
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-fluid" }, [
+      !_vm.$store.state.user.payment_method_id
+        ? _c("div", { staticClass: "row mt-n7" }, [
+            _c("div", { staticClass: "col-12 col-lg-23" }, [
+              _c("div", { staticClass: "card" }, [
+                _c("div", { staticClass: "card-body" }, [
+                  _c(
+                    "div",
+                    { staticClass: "alert alert-warning" },
+                    [
+                      _vm._v(
+                        "Please update your payment method first to subscribe!\n                            "
+                      ),
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "btn btn-info btn-sm",
+                          attrs: { to: { name: "billing" } },
+                        },
+                        [
+                          _c("i", { staticClass: "fas fa-credit-card" }),
+                          _vm._v(
+                            " Billing Settings\n                            "
+                          ),
+                        ]
+                      ),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+            ]),
+          ])
+        : _c(
+            "div",
+            { staticClass: "row mt-n7" },
+            [
+              _c("div", { staticClass: "col-12 mb-3" }, [
+                _vm.successmsg
+                  ? _c(
+                      "div",
+                      {
+                        staticClass: "alert alert-success",
+                        attrs: { role: "alert" },
+                      },
+                      [_vm._v(_vm._s(_vm.message))]
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.errormsg
+                  ? _c(
+                      "div",
+                      {
+                        staticClass: "alert alert-danger",
+                        attrs: { role: "alert" },
+                      },
+                      [_vm._v(_vm._s(_vm.message))]
+                    )
+                  : _vm._e(),
+              ]),
+              _vm._v(" "),
+              _vm._l(_vm.products.results, function (product) {
+                return _vm.products
+                  ? _c(
+                      "div",
+                      { key: product.id, staticClass: "col-12 col-lg-4" },
+                      [
+                        _c("div", { staticClass: "card" }, [
+                          _c("div", { staticClass: "card-body" }, [
                             _c(
-                              "router-link",
+                              "h6",
                               {
-                                staticClass: "btn btn-info btn-sm",
-                                attrs: { to: { name: "billing" } },
+                                staticClass:
+                                  "text-uppercase text-center text-muted my-4",
                               },
                               [
-                                _c("i", { staticClass: "fas fa-credit-card" }),
                                 _vm._v(
-                                  " Billing Settings\n                          "
+                                  "\n                            " +
+                                    _vm._s(product.product_name) +
+                                    "\n                        "
                                 ),
                               ]
                             ),
-                          ],
-                          1
-                        ),
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-12 mb-3" }, [
-                    _vm.successmsg
-                      ? _c(
-                          "div",
-                          {
-                            staticClass: "alert alert-success",
-                            attrs: { role: "alert" },
-                          },
-                          [_vm._v(_vm._s(_vm.message))]
-                        )
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _vm.errormsg
-                      ? _c(
-                          "div",
-                          {
-                            staticClass: "alert alert-danger",
-                            attrs: { role: "alert" },
-                          },
-                          [_vm._v(_vm._s(_vm.message))]
-                        )
-                      : _vm._e(),
-                  ]),
-                  _vm._v(" "),
-                  _vm._l(_vm.products.results, function (product) {
-                    return _vm.products
-                      ? _c(
-                          "div",
-                          {
-                            key: product.id,
-                            staticClass:
-                              "col-lg-4 border-top border-bottom border",
-                          },
-                          [
-                            _c("div", { staticClass: "h-100" }, [
-                              _c("div", { staticClass: "text-center p-4" }, [
-                                _c("h3", { staticClass: "fw-normal my-0" }, [
-                                  _vm._v(_vm._s(product.product_name)),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "row g-0 align-items-center justify-content-center",
+                              },
+                              [
+                                _vm._m(1, true),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-auto" }, [
+                                  _c("div", { staticClass: "display-2 mb-0" }, [
+                                    _vm._v(_vm._s(product.product_price)),
+                                  ]),
                                 ]),
-                                _vm._v(" "),
-                                _c("p", {
-                                  staticClass: "mt-3 text-left small",
-                                  domProps: {
-                                    innerHTML: _vm._s(
-                                      product.product_description
-                                    ),
-                                  },
-                                }),
-                                _vm._v(" "),
-                                _c("h2", { staticClass: "fw-medium my-4" }, [
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "h6 text-uppercase text-center text-muted mb-5",
+                              },
+                              [
+                                _vm._v(
+                                  "\n                            / month\n                        "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "mb-3" }, [
+                              _c(
+                                "ul",
+                                { staticClass: "list-group list-group-flush" },
+                                [
                                   _c(
-                                    "sup",
-                                    { staticClass: "fw-normal fs-2 me-1" },
-                                    [_vm._v("$")]
+                                    "li",
+                                    {
+                                      staticClass:
+                                        "list-group-item d-flex align-items-center justify-content-between px-0",
+                                    },
+                                    [
+                                      _c(
+                                        "small",
+                                        {
+                                          domProps: {
+                                            innerHTML: _vm._s(
+                                              product.product_description
+                                            ),
+                                          },
+                                        },
+                                        [_vm._v("Unlimited activity")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("i", {
+                                        staticClass:
+                                          "fe fe-check-circle text-success",
+                                      }),
+                                    ]
                                   ),
-                                  _vm._v(_vm._s(product.product_price)),
-                                  _c(
-                                    "small",
-                                    { staticClass: "fs--1 text-700" },
-                                    [_vm._v("/ Monthly")]
-                                  ),
-                                ]),
-                                _vm._v(" "),
-                                _vm.$store.state.user.payment_method_id
-                                  ? _c("div", [
-                                      !_vm.subs_id
-                                        ? _c(
-                                            "button",
-                                            {
-                                              staticClass: "btn btn-primary",
-                                              attrs: {
-                                                disabled:
-                                                  !_vm.$store.state.user
-                                                    .payment_method_id ||
-                                                  _vm.subs_id == product.id ||
-                                                  _vm.busy,
-                                              },
-                                              on: {
-                                                click: function ($event) {
-                                                  return _vm.subscribe(
-                                                    product.id
-                                                  )
-                                                },
-                                              },
-                                            },
-                                            [
-                                              _vm.subs_id == product.id
-                                                ? _c("span", [
-                                                    _vm._v(
-                                                      "\n                        Subscribed\n                      "
-                                                    ),
-                                                  ])
-                                                : _c("span", [
-                                                    _vm._v(
-                                                      "\n                        Subscribe\n                      "
-                                                    ),
-                                                  ]),
-                                              _vm._v(" "),
-                                              _vm.subscribing ==
-                                              product.product_id
-                                                ? _c("div", {
-                                                    staticClass:
-                                                      "spinner-border text-light spinner-border-sm",
-                                                    attrs: { role: "status" },
-                                                  })
-                                                : _vm._e(),
-                                            ]
-                                          )
-                                        : _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-primary btn-black rounded",
-                                              attrs: {
-                                                disabled:
-                                                  !_vm.$store.state.user
-                                                    .payment_method_id ||
-                                                  _vm.subs_id == product.id ||
-                                                  _vm.busy,
-                                              },
-                                              on: {
-                                                click: function ($event) {
-                                                  return _vm.ConfirmSwitch(
-                                                    product.id
-                                                  )
-                                                },
-                                              },
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                     Subscribed\n                     "
-                                              ),
-                                            ]
-                                          ),
-                                      _vm._v(" "),
-                                      _c("br"),
-                                      _vm._v(" "),
-                                      _vm.switching &&
-                                      _vm.switching_prod == product.id
-                                        ? _c(
-                                            "small",
-                                            { staticClass: "text-warning" },
-                                            [
-                                              _vm._v(
-                                                "Do you want to switch your current package to this one?"
-                                              ),
-                                            ]
-                                          )
-                                        : _vm._e(),
-                                      _c("br"),
-                                      _vm._v(" "),
-                                      _vm.switching &&
-                                      _vm.switching_prod == product.id
-                                        ? _c(
-                                            "a",
-                                            {
-                                              staticClass:
-                                                "badge badge-soft-danger small mt-3",
-                                              attrs: { href: "#" },
-                                              on: {
-                                                click: function ($event) {
-                                                  return _vm.subscribe(
-                                                    product.id
-                                                  )
-                                                },
-                                              },
-                                            },
-                                            [_vm._v("Confirm?")]
-                                          )
-                                        : _vm._e(),
-                                      _vm._v(" "),
-                                      _vm.switching &&
-                                      _vm.switching_prod == product.id
-                                        ? _c(
-                                            "a",
-                                            {
-                                              staticClass:
-                                                "badge badge-soft-info small",
-                                              attrs: { href: "#" },
-                                              on: {
-                                                click: function ($event) {
-                                                  return _vm.cancelSubscribe()
-                                                },
-                                              },
-                                            },
-                                            [_vm._v("Cancel?")]
-                                          )
-                                        : _vm._e(),
-                                    ])
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                _vm.subs_id == product.id
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass:
-                                          "btn-warning btn btn-sm mt-3",
-                                        on: {
-                                          click: function ($event) {
-                                            return _vm.unsubscribe(product.id)
-                                          },
-                                        },
-                                      },
-                                      [_vm._v("Unsubscribe")]
-                                    )
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                _c("br"),
-                                _vm._v(" "),
-                                _vm.unsubbtn && _vm.pid == product.id
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass:
-                                          "badge badge-soft-danger small mt-3",
-                                        attrs: { href: "#" },
-                                        on: {
-                                          click: function ($event) {
-                                            return _vm.unsubscribeCofirm(
-                                              product.id
-                                            )
-                                          },
-                                        },
-                                      },
-                                      [_vm._v("Confirm?")]
-                                    )
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                _vm.unsubbtn && _vm.pid == product.id
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass:
-                                          "badge badge-soft-info small",
-                                        attrs: { href: "#" },
-                                        on: {
-                                          click: function ($event) {
-                                            return _vm.unsubscribeCancel()
-                                          },
-                                        },
-                                      },
-                                      [_vm._v("Cancel?")]
-                                    )
-                                  : _vm._e(),
-                              ]),
+                                  _vm._v(" "),
+                                  _vm._m(2, true),
+                                  _vm._v(" "),
+                                  _vm._m(3, true),
+                                  _vm._v(" "),
+                                  _vm._m(4, true),
+                                ]
+                              ),
                             ]),
-                          ]
-                        )
-                      : _vm._e()
-                  }),
-                ],
-                2
-              ),
-            ]),
-          ]),
-        ]),
-      ]),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn w-100 btn-light",
+                                attrs: { href: "#!" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                      Start with Basic\n                    "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _vm.$store.state.user.payment_method_id
+                              ? _c("div", [
+                                  !_vm.subs_id
+                                    ? _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-primary",
+                                          attrs: {
+                                            disabled:
+                                              !_vm.$store.state.user
+                                                .payment_method_id ||
+                                              _vm.subs_id == product.id ||
+                                              _vm.busy,
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              return _vm.subscribe(product.id)
+                                            },
+                                          },
+                                        },
+                                        [
+                                          _vm.subs_id == product.id
+                                            ? _c("span", [
+                                                _vm._v(
+                                                  "\n                                              Subscribed\n                                            "
+                                                ),
+                                              ])
+                                            : _c("span", [
+                                                _vm._v(
+                                                  "\n                                              Subscribe\n                                            "
+                                                ),
+                                              ]),
+                                          _vm._v(" "),
+                                          _vm.subscribing == product.product_id
+                                            ? _c("div", {
+                                                staticClass:
+                                                  "spinner-border text-light spinner-border-sm",
+                                                attrs: { role: "status" },
+                                              })
+                                            : _vm._e(),
+                                        ]
+                                      )
+                                    : _c(
+                                        "button",
+                                        {
+                                          staticClass:
+                                            "btn btn-primary btn-black rounded",
+                                          attrs: {
+                                            disabled:
+                                              !_vm.$store.state.user
+                                                .payment_method_id ||
+                                              _vm.subs_id == product.id ||
+                                              _vm.busy,
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              return _vm.ConfirmSwitch(
+                                                product.id
+                                              )
+                                            },
+                                          },
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                           Subscribed\n                                           "
+                                          ),
+                                        ]
+                                      ),
+                                  _vm._v(" "),
+                                  _c("br"),
+                                  _vm._v(" "),
+                                  _vm.switching &&
+                                  _vm.switching_prod == product.id
+                                    ? _c(
+                                        "small",
+                                        { staticClass: "text-warning" },
+                                        [
+                                          _vm._v(
+                                            "Do you want to switch your current package to this one?"
+                                          ),
+                                        ]
+                                      )
+                                    : _vm._e(),
+                                  _c("br"),
+                                  _vm._v(" "),
+                                  _vm.switching &&
+                                  _vm.switching_prod == product.id
+                                    ? _c(
+                                        "a",
+                                        {
+                                          staticClass:
+                                            "badge badge-soft-danger small mt-3",
+                                          attrs: { href: "#" },
+                                          on: {
+                                            click: function ($event) {
+                                              return _vm.subscribe(product.id)
+                                            },
+                                          },
+                                        },
+                                        [_vm._v("Confirm?")]
+                                      )
+                                    : _vm._e(),
+                                  _vm._v(" "),
+                                  _vm.switching &&
+                                  _vm.switching_prod == product.id
+                                    ? _c(
+                                        "a",
+                                        {
+                                          staticClass:
+                                            "badge badge-soft-info small",
+                                          attrs: { href: "#" },
+                                          on: {
+                                            click: function ($event) {
+                                              return _vm.cancelSubscribe()
+                                            },
+                                          },
+                                        },
+                                        [_vm._v("Cancel?")]
+                                      )
+                                    : _vm._e(),
+                                ])
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _vm.subs_id == product.id
+                              ? _c(
+                                  "a",
+                                  {
+                                    staticClass: "btn-warning btn btn-sm mt-3",
+                                    on: {
+                                      click: function ($event) {
+                                        return _vm.unsubscribe(product.id)
+                                      },
+                                    },
+                                  },
+                                  [_vm._v("Unsubscribe")]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c("br"),
+                            _vm._v(" "),
+                            _vm.unsubbtn && _vm.pid == product.id
+                              ? _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "badge badge-soft-danger small mt-3",
+                                    attrs: { href: "#" },
+                                    on: {
+                                      click: function ($event) {
+                                        return _vm.unsubscribeCofirm(product.id)
+                                      },
+                                    },
+                                  },
+                                  [_vm._v("Confirm?")]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _vm.unsubbtn && _vm.pid == product.id
+                              ? _c(
+                                  "a",
+                                  {
+                                    staticClass: "badge badge-soft-info small",
+                                    attrs: { href: "#" },
+                                    on: {
+                                      click: function ($event) {
+                                        return _vm.unsubscribeCancel()
+                                      },
+                                    },
+                                  },
+                                  [_vm._v("Cancel?")]
+                                )
+                              : _vm._e(),
+                          ]),
+                        ]),
+                      ]
+                    )
+                  : _vm._e()
+              }),
+            ],
+            2
+          ),
+      _vm._v(" "),
+      _vm._m(5),
     ]),
   ])
 }
@@ -11935,10 +12388,22 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header gradient-dark" }, [
-      _c("div", { staticClass: "col-sm-auto" }, [
-        _c("h5", { staticClass: "d-inline-block text-white" }, [
-          _vm._v("Subscription"),
+    return _c("div", { staticClass: "pt-7 pb-8 bg-dark bg-ellipses" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c("div", { staticClass: "col-md-10 col-lg-8 col-xl-6" }, [
+            _c("h1", { staticClass: "display-3 text-center text-white" }, [
+              _vm._v(
+                "\n                        Plans & Pricing\n                    "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "lead text-center text-muted" }, [
+              _vm._v(
+                "\n                        We have plans and prices that fit your business perfectly. Make your client site a success with our products.\n                    "
+              ),
+            ]),
+          ]),
         ]),
       ]),
     ])
@@ -11947,10 +12412,131 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-12 mb-3" }, [
-      _c("div", {
-        staticClass: "row justify-content-center justify-content-sm-between",
-      }),
+    return _c("div", { staticClass: "col-auto" }, [
+      _c("div", { staticClass: "h2 mb-0" }, [_vm._v("$")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass:
+          "list-group-item d-flex align-items-center justify-content-between px-0",
+      },
+      [
+        _c("small", [_vm._v("Direct messaging")]),
+        _vm._v(" "),
+        _c("i", { staticClass: "fe fe-check-circle text-success" }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass:
+          "list-group-item d-flex align-items-center justify-content-between px-0",
+      },
+      [
+        _c("small", [_vm._v("Members")]),
+        _vm._v(" "),
+        _c("small", [_vm._v("10 members")]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass:
+          "list-group-item d-flex align-items-center justify-content-between px-0",
+      },
+      [
+        _c("small", [_vm._v("Admins")]),
+        _vm._v(" "),
+        _c("small", [_vm._v("No access")]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12 col-md-6" }, [
+        _c("div", { staticClass: "card card-inactive" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("h3", { staticClass: "text-center" }, [
+              _vm._v(
+                "\n                            Need some help deciding?\n                        "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-muted text-center" }, [
+              _vm._v(
+                "\n                            We can help you decide what’s the best for your company based on a lot of factors and other cool stuff that I’m going to write about.\n                        "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-center" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-outline-secondary",
+                  attrs: { href: "#!" },
+                },
+                [
+                  _vm._v(
+                    "\n                        Contact us\n                      "
+                  ),
+                ]
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-12 col-md-6" }, [
+        _c("div", { staticClass: "card card-inactive" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("h3", { staticClass: "text-center" }, [
+              _vm._v(
+                "\n                            Want a custom plan?\n                        "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-muted text-center" }, [
+              _vm._v(
+                "\n                            We can help you decide what’s the best for your company based on a lot of factors and other cool stuff that I’m going to write about.\n                        "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-center" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-outline-secondary",
+                  attrs: { href: "#!" },
+                },
+                [
+                  _vm._v(
+                    "\n                        Build it\n                      "
+                  ),
+                ]
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
     ])
   },
 ]
@@ -12177,336 +12763,347 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row justify-content-center" }, [
-    _c("div", { staticClass: "col-12" }, [
-      _c("div", { staticClass: "header" }, [
-        _c("div", { staticClass: "header-body" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("div", { staticClass: "row align-items-center" }, [
-            _c("div", { staticClass: "col" }, [
-              _c(
-                "ul",
-                { staticClass: "nav nav-tabs nav-overflow header-tabs" },
-                [
-                  _c("li", { staticClass: "nav-item" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "nav-link text-nowrap active",
-                        attrs: { href: "#!" },
-                      },
-                      [
-                        _vm._v("\n                       All contacts "),
-                        _c(
-                          "span",
-                          {
-                            staticClass: "badge rounded-pill bg-secondary-soft",
-                          },
-                          [_vm._v(_vm._s(_vm.users.count))]
-                        ),
-                      ]
-                    ),
-                  ]),
-                ]
-              ),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tab-content" }, [
-        _c(
-          "div",
-          {
-            staticClass: "tab-pane fade show active",
-            attrs: {
-              id: "contactsListPane",
-              role: "tabpanel",
-              "aria-labelledby": "contactsListTab",
-            },
-          },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "card",
-                attrs: {
-                  "data-list":
-                    '{"valueNames": ["item-name", "item-title", "item-email", "item-phone", "item-score", "item-company"], "page": 10, "pagination": {"paginationClass": "list-pagination"}}',
-                  id: "contactsList",
-                },
-              },
-              [
-                _c("div", { staticClass: "card-header" }, [
-                  _c("div", { staticClass: "row align-items-center" }, [
-                    _c("div", { staticClass: "col" }, [
-                      _c("form", [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "input-group input-group-flush input-group-merge input-group-reverse",
-                          },
-                          [
-                            _c("input", {
-                              staticClass: "form-control list-search",
-                              attrs: {
-                                type: "search",
-                                placeholder: "Search",
-                                disabled: _vm.busy,
-                              },
-                            }),
-                            _vm._v(" "),
-                            _vm._m(1),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(2),
-                    _vm._v(" "),
-                    _vm._m(3),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _vm.busy
-                  ? _c(
-                      "div",
-                      { staticClass: "row g-0 p-4 text-center" },
-                      [
-                        _c("loading-component", {
-                          attrs: {
-                            busy: _vm.busy,
-                            nText: "",
-                            bText: "Loading users...",
-                          },
-                        }),
-                      ],
-                      1
-                    )
-                  : _c("div", { staticClass: "table-responsive" }, [
+  return _c(
+    "div",
+    { staticClass: "row justify-content-center container-fluid" },
+    [
+      _c("div", { staticClass: "col-12" }, [
+        _c("div", { staticClass: "header" }, [
+          _c("div", { staticClass: "header-body" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "row align-items-center" }, [
+              _c("div", { staticClass: "col" }, [
+                _c(
+                  "ul",
+                  { staticClass: "nav nav-tabs nav-overflow header-tabs" },
+                  [
+                    _c("li", { staticClass: "nav-item" }, [
                       _c(
-                        "table",
+                        "a",
                         {
-                          staticClass:
-                            "table table-sm table-hover table-nowrap card-table",
+                          staticClass: "nav-link text-nowrap active",
+                          attrs: { href: "#!" },
                         },
                         [
-                          _vm._m(4),
-                          _vm._v(" "),
+                          _vm._v("\n                       All contacts "),
                           _c(
-                            "tbody",
-                            { staticClass: "list fs-base" },
-                            [
-                              !_vm.users || _vm.users.count == 0
-                                ? _c("tr", [
-                                    _c("td", [_vm._v("No User Found!")]),
-                                  ])
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _vm._l(_vm.users, function (user) {
-                                return _c("tr", { key: user.id }, [
-                                  _vm._m(5, true),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "avatar avatar-xs align-middle me-2",
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass:
-                                            "avatar-img rounded-circle",
-                                          attrs: {
-                                            src: user.avatar_url,
-                                            alt: "...",
-                                          },
-                                        }),
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "item-name text-reset",
-                                        attrs: { href: "profile-posts.html" },
-                                      },
-                                      [
-                                        _vm._v(
-                                          _vm._s(user.first_name) +
-                                            " " +
-                                            _vm._s(user.last_name)
-                                        ),
-                                      ]
-                                    ),
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "item-email text-reset",
-                                        attrs: { href: "mailto:" + user.email },
-                                      },
-                                      [_vm._v(_vm._s(user.email))]
-                                    ),
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", {}, [
-                                    _c("span", { staticClass: "item-title" }, [
-                                      _vm._v(_vm._s(user.stripe_last4)),
-                                    ]),
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "item-phone text-reset",
-                                        attrs: { href: "tel:1-123-456-7890" },
-                                      },
-                                      [_vm._v(_vm._s(user.card_brand))]
-                                    ),
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      {
-                                        staticClass:
-                                          "item-score badge bg-success-soft",
-                                      },
-                                      [_vm._v(_vm._s(user.payment_method_id))]
-                                    ),
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "item-company text-reset",
-                                        attrs: { href: "team-overview.html" },
-                                      },
-                                      [_vm._v(_vm._s(user.date_joined))]
-                                    ),
-                                  ]),
-                                  _vm._v(" "),
-                                  _vm._m(6, true),
-                                ])
-                              }),
-                            ],
-                            2
+                            "span",
+                            {
+                              staticClass:
+                                "badge rounded-pill bg-secondary-soft",
+                            },
+                            [_vm._v(_vm._s(_vm.users.count))]
                           ),
                         ]
                       ),
                     ]),
-                _vm._v(" "),
-                _vm._m(7),
-              ]
-            ),
-          ]
-        ),
+                  ]
+                ),
+              ]),
+            ]),
+          ]),
+        ]),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "tab-pane fade",
-            attrs: {
-              id: "contactsCardsPane",
-              role: "tabpanel",
-              "aria-labelledby": "contactsCardsTab",
-            },
-          },
-          [
-            _c(
-              "div",
-              {
-                attrs: {
-                  "data-list":
-                    '{"valueNames": ["item-name", "item-title", "item-email", "item-phone", "item-score", "item-company"], "page": 9, "pagination": {"paginationClass": "list-pagination"}}',
-                  id: "contactsCards",
-                },
+        _c("div", { staticClass: "tab-content" }, [
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade show active",
+              attrs: {
+                id: "contactsListPane",
+                role: "tabpanel",
+                "aria-labelledby": "contactsListTab",
               },
-              [
-                _vm._m(8),
-                _vm._v(" "),
-                _vm._m(9),
-                _vm._v(" "),
-                _c("div", { staticClass: "row g-0" }, [
-                  _c(
-                    "ul",
-                    {
-                      staticClass:
-                        "col list-pagination-prev pagination pagination-tabs justify-content-start",
-                    },
-                    [
-                      _c("li", { staticClass: "page-item" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "page-link",
-                            attrs: { disabled: !_vm.previous_offset },
-                            on: {
-                              click: function ($event) {
-                                ;(_vm.offset = _vm.previous_offset),
-                                  _vm.getUsers()
-                              },
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card",
+                  attrs: {
+                    "data-list":
+                      '{"valueNames": ["item-name", "item-title", "item-email", "item-phone", "item-score", "item-company"], "page": 10, "pagination": {"paginationClass": "list-pagination"}}',
+                    id: "contactsList",
+                  },
+                },
+                [
+                  _c("div", { staticClass: "card-header" }, [
+                    _c("div", { staticClass: "row align-items-center" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c("form", [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "input-group input-group-flush input-group-merge input-group-reverse",
                             },
+                            [
+                              _c("input", {
+                                staticClass: "form-control list-search",
+                                attrs: {
+                                  type: "search",
+                                  placeholder: "Search",
+                                  disabled: _vm.busy,
+                                },
+                              }),
+                              _vm._v(" "),
+                              _vm._m(1),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _vm._m(2),
+                      _vm._v(" "),
+                      _vm._m(3),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _vm.busy
+                    ? _c(
+                        "div",
+                        { staticClass: "row g-0 p-4 text-center" },
+                        [
+                          _c("loading-component", {
+                            attrs: {
+                              busy: _vm.busy,
+                              nText: "",
+                              bText: "Loading users...",
+                            },
+                          }),
+                        ],
+                        1
+                      )
+                    : _c("div", { staticClass: "table-responsive" }, [
+                        _c(
+                          "table",
+                          {
+                            staticClass:
+                              "table table-sm table-hover table-nowrap card-table",
                           },
                           [
-                            _c("i", { staticClass: "fe fe-arrow-left me-1" }),
-                            _vm._v(" Prev\n                     "),
+                            _vm._m(4),
+                            _vm._v(" "),
+                            _c(
+                              "tbody",
+                              { staticClass: "list fs-base" },
+                              [
+                                !_vm.users || _vm.users.count == 0
+                                  ? _c("tr", [
+                                      _c("td", [_vm._v("No User Found!")]),
+                                    ])
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm._l(_vm.users, function (user) {
+                                  return _c("tr", { key: user.id }, [
+                                    _vm._m(5, true),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass:
+                                            "avatar avatar-xs align-middle me-2",
+                                        },
+                                        [
+                                          _c("img", {
+                                            staticClass:
+                                              "avatar-img rounded-circle",
+                                            attrs: {
+                                              src: user.avatar_url,
+                                              alt: "...",
+                                            },
+                                          }),
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass: "item-name text-reset",
+                                          attrs: { href: "#!" },
+                                        },
+                                        [
+                                          _vm._v(
+                                            _vm._s(user.first_name) +
+                                              " " +
+                                              _vm._s(user.last_name)
+                                          ),
+                                        ]
+                                      ),
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass: "item-email text-reset",
+                                          attrs: { href: "#!" },
+                                        },
+                                        [_vm._v(_vm._s(user.email))]
+                                      ),
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", {}, [
+                                      _c(
+                                        "span",
+                                        { staticClass: "item-title" },
+                                        [_vm._v(_vm._s(user.stripe_last4))]
+                                      ),
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass: "item-phone text-reset",
+                                          attrs: { href: "#!" },
+                                        },
+                                        [_vm._v(_vm._s(user.card_brand))]
+                                      ),
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass:
+                                            "item-score badge bg-success-soft",
+                                        },
+                                        [_vm._v(_vm._s(user.payment_method_id))]
+                                      ),
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass:
+                                            "item-company text-reset",
+                                          attrs: { href: "#!" },
+                                        },
+                                        [_vm._v(_vm._s(user.date_joined))]
+                                      ),
+                                    ]),
+                                    _vm._v(" "),
+                                    _vm._m(6, true),
+                                  ])
+                                }),
+                              ],
+                              2
+                            ),
                           ]
                         ),
                       ]),
-                    ]
-                  ),
                   _vm._v(" "),
-                  _c("ul", {
-                    staticClass:
-                      "col list-pagination pagination pagination-tabs justify-content-center",
-                  }),
+                  _vm._m(7),
+                ]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "contactsCardsPane",
+                role: "tabpanel",
+                "aria-labelledby": "contactsCardsTab",
+              },
+            },
+            [
+              _c(
+                "div",
+                {
+                  attrs: {
+                    "data-list":
+                      '{"valueNames": ["item-name", "item-title", "item-email", "item-phone", "item-score", "item-company"], "page": 9, "pagination": {"paginationClass": "list-pagination"}}',
+                    id: "contactsCards",
+                  },
+                },
+                [
+                  _vm._m(8),
                   _vm._v(" "),
-                  _c(
-                    "ul",
-                    {
-                      staticClass:
-                        "col list-pagination-next pagination pagination-tabs justify-content-end",
-                    },
-                    [
-                      _c("li", { staticClass: "page-item" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "page-link",
-                            attrs: { disabled: _vm.next_offset == false },
-                            on: {
-                              click: function ($event) {
-                                ;(_vm.offset = _vm.next_offset), _vm.getUsers()
+                  _vm._m(9),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row g-0" }, [
+                    _c(
+                      "ul",
+                      {
+                        staticClass:
+                          "col list-pagination-prev pagination pagination-tabs justify-content-start",
+                      },
+                      [
+                        _c("li", { staticClass: "page-item" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "page-link",
+                              attrs: { disabled: !_vm.previous_offset },
+                              on: {
+                                click: function ($event) {
+                                  ;(_vm.offset = _vm.previous_offset),
+                                    _vm.getUsers()
+                                },
                               },
                             },
-                          },
-                          [
-                            _vm._v("\n                       Next "),
-                            _c("i", { staticClass: "fe fe-arrow-right ms-1" }),
-                          ]
-                        ),
-                      ]),
-                    ]
-                  ),
-                ]),
-                _vm._v(" "),
-                _vm._m(10),
-              ]
-            ),
-          ]
-        ),
+                            [
+                              _c("i", { staticClass: "fe fe-arrow-left me-1" }),
+                              _vm._v(" Prev\n                     "),
+                            ]
+                          ),
+                        ]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("ul", {
+                      staticClass:
+                        "col list-pagination pagination pagination-tabs justify-content-center",
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "ul",
+                      {
+                        staticClass:
+                          "col list-pagination-next pagination pagination-tabs justify-content-end",
+                      },
+                      [
+                        _c("li", { staticClass: "page-item" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "page-link",
+                              attrs: { disabled: _vm.next_offset == false },
+                              on: {
+                                click: function ($event) {
+                                  ;(_vm.offset = _vm.next_offset),
+                                    _vm.getUsers()
+                                },
+                              },
+                            },
+                            [
+                              _vm._v("\n                       Next "),
+                              _c("i", {
+                                staticClass: "fe fe-arrow-right ms-1",
+                              }),
+                            ]
+                          ),
+                        ]),
+                      ]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(10),
+                ]
+              ),
+            ]
+          ),
+        ]),
       ]),
-    ]),
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function () {
@@ -12861,7 +13458,7 @@ var staticRenderFns = [
               staticClass: "list-sort text-muted",
               attrs: { "data-sort": "item-company", href: "#" },
             },
-            [_vm._v("Payment Method ID")]
+            [_vm._v("Payment ID")]
           ),
         ]),
         _vm._v(" "),
@@ -33327,6 +33924,76 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/portal/profile/NotificationComponent.vue":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/portal/profile/NotificationComponent.vue ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _NotificationComponent_vue_vue_type_template_id_7f0a0434___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NotificationComponent.vue?vue&type=template&id=7f0a0434& */ "./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=template&id=7f0a0434&");
+/* harmony import */ var _NotificationComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NotificationComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _NotificationComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _NotificationComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _NotificationComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _NotificationComponent_vue_vue_type_template_id_7f0a0434___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _NotificationComponent_vue_vue_type_template_id_7f0a0434___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/portal/profile/NotificationComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_NotificationComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./NotificationComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_NotificationComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=template&id=7f0a0434&":
+/*!*********************************************************************************************************!*\
+  !*** ./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=template&id=7f0a0434& ***!
+  \*********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NotificationComponent_vue_vue_type_template_id_7f0a0434___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./NotificationComponent.vue?vue&type=template&id=7f0a0434& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/profile/NotificationComponent.vue?vue&type=template&id=7f0a0434&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NotificationComponent_vue_vue_type_template_id_7f0a0434___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NotificationComponent_vue_vue_type_template_id_7f0a0434___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/portal/profile/ProfileComponent.vue":
 /*!*********************************************************************!*\
   !*** ./resources/js/components/portal/profile/ProfileComponent.vue ***!
@@ -33538,14 +34205,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************************************************!*\
   !*** ./resources/js/components/portal/subscription/ProductComponent.vue ***!
   \**************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProductComponent_vue_vue_type_template_id_e07bc4f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProductComponent.vue?vue&type=template&id=e07bc4f0& */ "./resources/js/components/portal/subscription/ProductComponent.vue?vue&type=template&id=e07bc4f0&");
 /* harmony import */ var _ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/portal/subscription/ProductComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -33575,13 +34243,15 @@ component.options.__file = "resources/js/components/portal/subscription/ProductC
 /*!***************************************************************************************************!*\
   !*** ./resources/js/components/portal/subscription/ProductComponent.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ProductComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/portal/subscription/ProductComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -34170,6 +34840,13 @@ var routes = [{
   path: '/billing-settings',
   name: 'billing',
   component: __webpack_require__(/*! ../components/portal/billing/BillingComponent */ "./resources/js/components/portal/billing/BillingComponent.vue")["default"],
+  meta: {
+    title: 'Billing Settings'
+  }
+}, {
+  path: '/notifications',
+  name: 'notification',
+  component: __webpack_require__(/*! ../components/portal/profile/NotificationComponent */ "./resources/js/components/portal/profile/NotificationComponent.vue")["default"],
   meta: {
     title: 'Billing Settings'
   }

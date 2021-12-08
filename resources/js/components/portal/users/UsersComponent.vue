@@ -1,5 +1,5 @@
 <template>
-   <div class="row justify-content-center">
+   <div class="row justify-content-center container-fluid">
           <div class="col-12">
 
             <!-- Header -->
@@ -216,7 +216,7 @@
                             <a class="list-sort text-muted" data-sort="item-score" href="#">Card Brand</a>
                           </th>
                           <th colspan="">
-                            <a class="list-sort text-muted" data-sort="item-company" href="#">Payment Method ID</a>
+                            <a class="list-sort text-muted" data-sort="item-company" href="#">Payment ID</a>
                           </th>
                           <th colspan="2">
                             <a class="list-sort text-muted" data-sort="item-company" href="#">Joined</a>
@@ -242,13 +242,13 @@
                             <!-- Avatar -->
                             <div class="avatar avatar-xs align-middle me-2">
                               <img class="avatar-img rounded-circle" v-bind:src="user.avatar_url" alt="...">
-                            </div> <a class="item-name text-reset" href="profile-posts.html">{{ user.first_name }} {{ user.last_name }}</a>
+                            </div> <a class="item-name text-reset" href="#!">{{ user.first_name }} {{ user.last_name }}</a>
 
                           </td>
                            <td>
 
                             <!-- Email -->
-                            <a class="item-email text-reset" :href="'mailto:'+user.email">{{user.email}}</a>
+                            <a class="item-email text-reset" href="#!">{{user.email}}</a>
 
                           </td>
                           <td class="">
@@ -261,7 +261,7 @@
                           <td>
 
                             <!-- Phone -->
-                            <a class="item-phone text-reset" href="tel:1-123-456-7890">{{user.card_brand}}</a>
+                            <a class="item-phone text-reset" href="#!">{{user.card_brand}}</a>
 
                           </td>
                           <td>
@@ -273,7 +273,7 @@
                           <td>
 
                             <!-- Link -->
-                            <a class="item-company text-reset" href="team-overview.html">{{user.date_joined}}</a>
+                            <a class="item-company text-reset" href="#!">{{user.date_joined}}</a>
 
                           </td>
                           <td class="text-end">
