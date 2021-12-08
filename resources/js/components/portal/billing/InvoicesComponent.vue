@@ -7,7 +7,7 @@
             </h4>
     
         </div>
-        <div v-if="!invoices || invoices.count == 0" class="row g-0 pt-4 text-center">
+        <div v-if="!invoices || invoices == '' || invoices.count == 0" class="row g-0 pt-4 text-center">
             <h5 class="text-center text-muted my-5">No invoices found!</h5>
         </div>
         <div v-else>

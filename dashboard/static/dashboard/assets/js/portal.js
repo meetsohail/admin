@@ -521,6 +521,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -7041,6 +7065,53 @@ var render = function () {
               _vm._v(" "),
               _vm._m(2),
               _vm._v(" "),
+              _vm.delmethod
+                ? _c("div", { staticClass: "alert alert-warning" }, [
+                    _c("span", { staticClass: "d-block mb-2" }, [
+                      _vm._v(
+                        "If this payment method is removed, your subscription renewals will fail. To\n        keep your subscriptions active, you need to have a valid payment method on file.\n        Do you really want to remove your current card?"
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-sm btn-warning",
+                        attrs: { disabled: _vm.deleting },
+                        on: {
+                          click: function ($event) {
+                            return _vm.removePaymentMethod()
+                          },
+                        },
+                      },
+                      [
+                        _c("loading-component", {
+                          attrs: {
+                            busy: _vm.deleting,
+                            nText: "Remove",
+                            bText: "Removing",
+                          },
+                        }),
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-sm btn-success",
+                        attrs: { disabled: _vm.deleting },
+                        on: {
+                          click: function ($event) {
+                            _vm.delmethod = false
+                          },
+                        },
+                      },
+                      [_vm._v("\n        Cancel\n      ")]
+                    ),
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
               _c("div", { staticClass: "card" }, [
                 _c("div", { staticClass: "card-header" }, [
                   _c("div", { staticClass: "row align-items-center" }, [
@@ -7324,7 +7395,7 @@ var render = function () {
       ]),
     ]),
     _vm._v(" "),
-    !_vm.invoices || _vm.invoices.count == 0
+    !_vm.invoices || _vm.invoices == "" || _vm.invoices.count == 0
       ? _c("div", { staticClass: "row g-0 pt-4 text-center" }, [
           _c("h5", { staticClass: "text-center text-muted my-5" }, [
             _vm._v("No invoices found!"),

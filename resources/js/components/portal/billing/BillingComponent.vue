@@ -96,7 +96,31 @@
 
               </div>
             </div>
-
+   <div v-if="delmethod" class="alert alert-warning">
+        <span class="d-block mb-2"
+          >If this payment method is removed, your subscription renewals will fail. To
+          keep your subscriptions active, you need to have a valid payment method on file.
+          Do you really want to remove your current card?</span
+        >
+        <button
+          :disabled="deleting"
+          class="btn btn-sm btn-warning"
+          @click="removePaymentMethod()"
+        >
+          <loading-component
+            :busy="deleting"
+            nText="Remove"
+            bText="Removing"
+          ></loading-component>
+        </button>
+        <button
+          :disabled="deleting"
+          class="btn btn-sm btn-success"
+          @click="delmethod = false"
+        >
+          Cancel
+        </button>
+      </div>
             <!-- Card -->
             <div class="card">
               <div class="card-header">
