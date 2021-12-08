@@ -12,7 +12,7 @@ from django.utils.html import strip_tags
 from django.utils.timezone import make_aware
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-
+from billing.models import Product
 
 
 class CustomUserManager(BaseUserManager):
@@ -58,6 +58,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True, null=True)
     trial_used = models.BooleanField(default=False)
     locations = models.ManyToManyField(Location, related_name='users')
+    subscriptions = models.ManyToManyField(Product, related_name='users')
     stripe_cust_id = models.CharField(max_length=255, null=True)
     stripe_sub_id = models.CharField(max_length=255, null=True)
     payment_method_id = models.CharField(max_length=150, null=True)
