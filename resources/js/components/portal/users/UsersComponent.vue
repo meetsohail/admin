@@ -238,7 +238,6 @@
 
                           </td>
                            <td>
-
                             <!-- Avatar -->
                             <div class="avatar avatar-xs align-middle me-2">
                               <img class="avatar-img rounded-circle" v-bind:src="user.avatar_url" alt="...">
@@ -276,25 +275,12 @@
                             <a class="item-company text-reset" href="#!">{{user.date_joined}}</a>
 
                           </td>
-                          <td class="text-end">
+                            <td>
 
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fe fe-more-vertical"></i>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#!" class="dropdown-item">
-                                  Action
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  Another action
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  Something else here
-                                </a>
-                              </div>
-                            </div>
+                            <!-- Link -->
+                            <router-link :to="{name: 'updateuser', params:{id: user.id}}" class="btn btn-black btn-sm text-white">
+                              <i class="fe fe-edit"></i> 
+                            </router-link>
 
                           </td>
                         </tr>

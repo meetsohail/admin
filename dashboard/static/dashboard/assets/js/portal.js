@@ -3894,6 +3894,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3960,20 +3984,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -12712,172 +12722,201 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.user != []
-    ? _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-12 pr-lg-2" }, [
-          _c("div", { staticClass: "card mb-3" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _c("h5", { staticClass: "mb-0" }, [
-                _vm._v(
-                  "\n          User Stats #" + _vm._s(_vm.$route.params.id)
-                ),
-                _vm.user.email
-                  ? _c("span", [_vm._v(" (" + _vm._s(_vm.user.email) + ")")])
-                  : _vm._e(),
+  return _c("div", { staticClass: "container-fluid" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm.user != []
+      ? _c("div", { staticClass: "row align-items-center" }, [
+          _c("div", { staticClass: "col-lg-12 pr-lg-2" }, [
+            _c("div", { staticClass: "card mb-3" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h5", { staticClass: "mb-0" }, [
+                  _vm.user.email
+                    ? _c("span", [_vm._v(" " + _vm._s(_vm.user.email))])
+                    : _vm._e(),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body bg-light" }, [
-              _c("div", { staticClass: "table-responsive" }, [
-                _c("table", { staticClass: "table table-striped" }, [
-                  _c("tbody", [
-                    _c("tr", [
-                      _c("td", { staticStyle: { width: "30%" } }, [
-                        _vm._v("All-time Calls"),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body bg-light" }, [
+                _c("div", { staticClass: "table-responsive" }, [
+                  _c("table", { staticClass: "table table-striped" }, [
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", { staticStyle: { width: "30%" } }, [
+                          _vm._v("All-time Calls"),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            _vm._s(_vm._f("toNumber")(_vm.user.alltime_calls))
+                          ),
+                        ]),
                       ]),
                       _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(_vm._f("toNumber")(_vm.user.alltime_calls))
-                        ),
+                      _c("tr", [
+                        _c("td", [_vm._v("Monthly Calls")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            _vm._s(_vm._f("toNumber")(_vm.user.monthly_calls))
+                          ),
+                        ]),
                       ]),
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Monthly Calls")]),
                       _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(_vm._f("toNumber")(_vm.user.monthly_calls))
-                        ),
-                      ]),
+                      _vm._m(1),
                     ]),
-                    _vm._v(" "),
-                    _vm._m(0),
                   ]),
                 ]),
               ]),
             ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card mb-3" }, [
-            _vm._m(1),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body bg-light" }, [
-              _c("div", { staticClass: "row g-3" }, [
-                _c("div", { staticClass: "col-lg-12" }, [
-                  _c("div", { staticClass: "form-group" }, [
-                    _c(
-                      "label",
-                      { staticClass: "form-label", attrs: { for: "credit" } },
-                      [
-                        _vm._v("Credits"),
-                        _c("span", [
-                          _vm._v(
-                            "\n                  (" +
-                              _vm._s(_vm._f("toNumber")(_vm.user.credit)) +
-                              ")"
-                          ),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.credit,
-                          expression: "credit",
+            _c("div", { staticClass: "card mb-3" }, [
+              _vm._m(2),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body bg-light" }, [
+                _c("div", { staticClass: "row g-3" }, [
+                  _c("div", { staticClass: "col-lg-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c(
+                        "label",
+                        { staticClass: "form-label", attrs: { for: "credit" } },
+                        [
+                          _vm._v("Credits"),
+                          _c("span", [
+                            _vm._v(
+                              "\n                    (" +
+                                _vm._s(_vm._f("toNumber")(_vm.user.credit)) +
+                                ")"
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.credit,
+                            expression: "credit",
+                          },
+                        ],
+                        staticClass: "form-control form-control-lg",
+                        class: { "is-invalid": _vm.errors.credit },
+                        attrs: {
+                          placeholder: "Enter credits amount, i.e. 1000",
+                          id: "credit",
+                          type: "text",
                         },
-                      ],
-                      staticClass: "form-control form-control-lg",
-                      class: { "is-invalid": _vm.errors.credit },
-                      attrs: {
-                        placeholder: "Enter credits amount, i.e. 1000",
-                        id: "credit",
-                        type: "text",
-                      },
-                      domProps: { value: _vm.credit },
-                      on: {
-                        input: function ($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.credit = $event.target.value
+                        domProps: { value: _vm.credit },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.credit = $event.target.value
+                          },
                         },
-                      },
-                    }),
+                      }),
+                      _vm._v(" "),
+                      _vm.errors.credit
+                        ? _c("div", { staticClass: "invalid-feedback" }, [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(_vm.errors.credit[0]) +
+                                "\n                "
+                            ),
+                          ])
+                        : _vm._e(),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-12 d-flex" }, [
+                    !_vm.update_user
+                      ? _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-primary",
+                            attrs: { disabled: _vm.busy },
+                            on: {
+                              click: function ($event) {
+                                _vm.update_user = true
+                              },
+                            },
+                          },
+                          [
+                            _vm._v(
+                              "\n                Add Credits\n              "
+                            ),
+                          ]
+                        )
+                      : _vm._e(),
                     _vm._v(" "),
-                    _vm.errors.credit
-                      ? _c("div", { staticClass: "invalid-feedback" }, [
-                          _vm._v(
-                            "\n                " +
-                              _vm._s(_vm.errors.credit[0]) +
-                              "\n              "
-                          ),
-                        ])
+                    _vm.update_user
+                      ? _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-success mr-1",
+                            attrs: { disabled: _vm.busy },
+                            on: {
+                              click: function ($event) {
+                                _vm.update_user = false
+                              },
+                            },
+                          },
+                          [_vm._v("\n                Cancel\n              ")]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.update_user
+                      ? _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger",
+                            attrs: { disabled: _vm.busy },
+                            on: {
+                              click: function ($event) {
+                                return _vm.updateUser()
+                              },
+                            },
+                          },
+                          [_vm._v("\n                Confirm\n              ")]
+                        )
                       : _vm._e(),
                   ]),
                 ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-12 d-flex" }, [
-                  !_vm.update_user
-                    ? _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-primary",
-                          attrs: { disabled: _vm.busy },
-                          on: {
-                            click: function ($event) {
-                              _vm.update_user = true
-                            },
-                          },
-                        },
-                        [_vm._v("\n              Add Credits\n            ")]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.update_user
-                    ? _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-success mr-1",
-                          attrs: { disabled: _vm.busy },
-                          on: {
-                            click: function ($event) {
-                              _vm.update_user = false
-                            },
-                          },
-                        },
-                        [_vm._v("\n              Cancel\n            ")]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.update_user
-                    ? _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-danger",
-                          attrs: { disabled: _vm.busy },
-                          on: {
-                            click: function ($event) {
-                              return _vm.updateUser()
-                            },
-                          },
-                        },
-                        [_vm._v("\n              Confirm\n            ")]
-                      )
-                    : _vm._e(),
-                ]),
               ]),
             ]),
           ]),
-        ]),
-      ])
-    : _vm._e()
+        ])
+      : _vm._e(),
+  ])
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "header" }, [
+      _c("div", { staticClass: "header-body" }, [
+        _c("div", { staticClass: "row align-items-center" }, [
+          _c("div", { staticClass: "col" }, [
+            _c("h6", { staticClass: "header-pretitle" }, [
+              _vm._v(
+                "\n                        Overview\n                    "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("h1", { staticClass: "header-title text-truncate" }, [
+              _vm._v(
+                "\n                        User Stats\n                    "
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
@@ -13138,7 +13177,30 @@ var render = function () {
                                       ),
                                     ]),
                                     _vm._v(" "),
-                                    _vm._m(6, true),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c(
+                                          "router-link",
+                                          {
+                                            staticClass:
+                                              "btn btn-black btn-sm text-white",
+                                            attrs: {
+                                              to: {
+                                                name: "updateuser",
+                                                params: { id: user.id },
+                                              },
+                                            },
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass: "fe fe-edit",
+                                            }),
+                                          ]
+                                        ),
+                                      ],
+                                      1
+                                    ),
                                   ])
                                 }),
                               ],
@@ -13148,7 +13210,7 @@ var render = function () {
                         ),
                       ]),
                   _vm._v(" "),
-                  _vm._m(7),
+                  _vm._m(6),
                 ]
               ),
             ]
@@ -13175,9 +13237,9 @@ var render = function () {
                   },
                 },
                 [
-                  _vm._m(8),
+                  _vm._m(7),
                   _vm._v(" "),
-                  _vm._m(9),
+                  _vm._m(8),
                   _vm._v(" "),
                   _c("div", { staticClass: "row g-0" }, [
                     _c(
@@ -13246,7 +13308,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm._m(10),
+                  _vm._m(9),
                 ]
               ),
             ]
@@ -13641,49 +13703,6 @@ var staticRenderFns = [
           staticClass: "form-check-label",
           attrs: { for: "listCheckboxOne" },
         }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { staticClass: "text-end" }, [
-      _c("div", { staticClass: "dropdown" }, [
-        _c(
-          "a",
-          {
-            staticClass: "dropdown-ellipses dropdown-toggle",
-            attrs: {
-              href: "#",
-              role: "button",
-              "data-bs-toggle": "dropdown",
-              "aria-haspopup": "true",
-              "aria-expanded": "false",
-            },
-          },
-          [_c("i", { staticClass: "fe fe-more-vertical" })]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "dropdown-menu dropdown-menu-end" }, [
-          _c("a", { staticClass: "dropdown-item", attrs: { href: "#!" } }, [
-            _vm._v(
-              "\n                               Action\n                             "
-            ),
-          ]),
-          _vm._v(" "),
-          _c("a", { staticClass: "dropdown-item", attrs: { href: "#!" } }, [
-            _vm._v(
-              "\n                               Another action\n                             "
-            ),
-          ]),
-          _vm._v(" "),
-          _c("a", { staticClass: "dropdown-item", attrs: { href: "#!" } }, [
-            _vm._v(
-              "\n                               Something else here\n                             "
-            ),
-          ]),
-        ]),
       ]),
     ])
   },
